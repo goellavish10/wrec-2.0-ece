@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+  <title>
+    COMMITTE
+  </title>
+  <meta name="description"
+    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+
+  <meta property="og:title" content="WREC'23" />
+
+  <meta property="og:locale" content="en_US" />
+
+  <meta property="og:type" content="website" />
+
+  <meta property="og:site_name" content="NITJ WREC'23" />
+
+  <meta property="og:image" content="assets/img/logo_nitj.png" />
+
+  <link rel="canonical" href="index.html" />
+
+  <meta property="og:url" content="/img/logo_nitj.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="twitter:site" content="@GuptaAnubhav12" />
+
+  <link rel="icon" type="image/png" href="/img/logo_nitj.pngg" />
+
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&amp;family=Poppins:wght@100;200;300;400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
+
+  <link rel="stylesheet" href="assets/styles/main.min.css" />
+  <link rel="stylesheet" href="./assets/styles/commitee.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body x-data="{ mobileMenu: false }" :class="{'relative overflow-hidden max-h-screen': mobileMenu }">
+  <main>
+    <div>
+      <!--Mobile menu-->
+      <div x-cloak x-show="mobileMenu">
+        <div class="absolute inset-0 z-50 bg-black/75"></div>
+        <div class="fixed right-0 z-50 h-screen w-64 bg-slate-500 xl:hidden">
+          <button class="absolute top-0 right-0 mt-4 mr-4" @click="mobileMenu = false">
+            <img src="/assets/img/logo_nitj.png" class="h-10 w-auto" alt="" />
+          </button>
+          <ul class="absolute top-20 py-10 text-left">
+            <li class="py-3">
+              <a href="index.html"
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors">Home</a>
+            </li>
+            <li class="py-2">
+              <a href="episodes/index.html"
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"> Dates</a>
+            </li>
+            <li class="py-2">
+              <a href="episode/index.html"
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"> Tracks</a>
+            </li>
+            <li class="py-2">
+              <a href="blog/index.html"
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors">Keynote
+                Speakers</a>
+            </li>
+            <li class="py-2">
+              <a href="#eventSchedule"
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors">Schedule</a>
+            </li>
+            <li class="py-2">
+              <a href="single/index.html"
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors">Committe</a>
+            </li>
+            <li class="py-2">
+              <a href="single/index.html"
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors">For
+                Authors</a>
+            </li>
+            <li class="py-2">
+              <a href="single/index.html"
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors">About</a>
+            </li>
+            <li class="py-2">
+              <a href="single/index.html"
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- <div class="absolute top-0 z-40 w-full bg-gradient-to-b from-black/70 to-transparent"> -->
+      <div class="absolute top-0 z-40 w-full ">
+        <div class="container relative z-40 flex items-center justify-between py-7">
+          <div class="flex items-center justify-between">
+            <a href="index.html" class="w-40">
+              <img src="assets/img/logo_nitj.png" height="100" width="100" alt="logo" />
+            </a>
+
+            <!--Menu -->
+            <ul class="ml-12 hidden xl:flex bg-primary p-6 rounded-full">
+              <li>
+                <a href="index.html"
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">Home</a>
+              </li>
+              <li>
+                <a href="index.html#eventTimeline"
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">
+                  Dates</a>
+              </li>
+              <li>
+                <a href="index.html#conferenceTracks"
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">
+                  Tracks</a>
+              </li>
+              <li>
+                <a href="index.html#keynoteSpeakers"
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">Keynote
+                  Speakers</a>
+              </li>
+              <li>
+                <a href="/index.html#eventSchedule"
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">
+                  Schedule</a>
+              </li>
+              <li>
+                <a href="commitee.html"
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">Committe</a>
+              </li>
+              <li>
+                <a href=""
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">For
+                  Authors</a>
+              </li>
+              <li>
+                <a href="about.html"
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">About Us
+                </a>
+              </li>
+              <li>
+                <a href="index.html#contact"
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+
+          <!--Mobile menu button-->
+          <div class="absolute right-0 md:right-2 xl:hidden">
+            <button @click="mobileMenu = true" x-show=" !mobileMenu ">
+              <i class="bx bx-menu-alt-right text-4xl text-black"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative">
+      <div
+        class="mix-blend-normal absolute inset-0 bg-right md:bg-center bg-cover bg-no-repeat w-full object-cover bg-black"
+        style="background-image:url(assets/img/hero.jpg)"></div>
+
+      <div class="relative z-10 pt-16 md:pt-10 pb-12 md:pb-10 border-b-4 border-primary">
+        <div class="container-new">
+          <div class="w-full text-center text-home">
+            <h2 class="text-black text-xl font-semibold"></h2>
+            <h1 class="font-header font-bold text-3xl md:text-5xl uppercase">
+            </h1>
+            <div class="mt-6">
+              <div class="flex mt-4">
+                <div class="mx-auto">
+                  <span class="font-header text-black text-sm md:text-base uppercase block"></span>
+                  <span class="font-body font-bold text-xl text-black">
+                  </span>
+                </div>
+                <!-- <div class="mr-10">
+                            <span class="font-header text-black text-sm md:text-base uppercase block">Episodes</span>
+                            <span class="font-body font-bold text-xl text-black">8</span>
+                        </div> -->
+                <!-- <div class="mr-10">
+                            <span class="font-header text-black text-sm md:text-base uppercase block">Downloads</span>
+                            <span class="font-body font-bold text-xl  text-black">7,200</span>
+                        </div> -->
+              </div>
+              <!-- <h1 class="font-header font-bold text-3xl md:text-5xl uppercase">WOMEN RESEARCHERS IN ELECTRONICS
+                AND
+                COMPUTING
+                
+                </p> -->
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1 class="heading">CONFERENCE TEAM</h1>
+            </div>
+            <div class="flex flex-col md:flex-row mt-16">
+              
+              <div class="flex">
+                <div class="mt-4 ml-6 text-lg font-bold ">
+                 
+                </div>
+
+                <!-- <img src="/assets/img/springer.png" height="150" width="190" alt="springer "> -->
+
+
+              </div>
+
+            </div>
+            <div class="flex items-center mt-8 mx-auto  animate-ping">
+              <span class="font-header text-black text-xl animate-ping uppercase">
+                <!-- Detailed Schedule Coming Soon -->
+              </span>
+              <!-- <div class="pl-3">
+                        <a href="index.html">
+                            <i class='bx bxl-spotify text-white hover:text-primary transition-colors text-xl'></i>
+                        </a>
+                        <a href="index.html">
+                            <i class='bx bxl-soundcloud text-white hover:text-primary transition-colors text-xl pl-2' ></i>
+                        </a>
+                        <a href="index.html">
+                            <i class='bx bxl-instagram text-white hover:text-primary transition-colors text-xl pl-2'></i>
+                        </a>
+                        <a href="index.html">
+                            <i class='bx bxl-youtube text-white hover:text-primary transition-colors text-xl pl-2'></i>
+                        </a>
+                    </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Collaboration  -->
+    
+
+    <!-- Timeline starts -->
+       
+    <div class="container">
+      <div class="box">
+      <h1 class="headings">CHIEF PATRONS</h1>
+          <div class="content">
+            
+           <p> Dr. B K Kanaujia, Professor, Director, NIT Jalandhar </p>
+           <p> Dr. Amita Dev, Professor, Vice-Chancellor, IGDTUW Delhi</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <h1 class="headings">EXECUTIVE GENERAL CHAIR</h1>    
+          <div class="content">
+           <p> Dr. Mamta Khosla, Associate Professor, NIT Jalandhar</p>
+           <p>Dr. Indu Saini, Assistant Professor, NIT Jalandhar</P>
+            <p>Dr. Vrinda Gupta, Associate Professor, NIT Kurukshetra</P>
+            <p>Dr. Poonam Bansal, Professor, IGDTUW Delhi </P>
+          </div>
+        </div>
+
+        <div class="box">
+          <h1 class="headings">PROGRAM GENERAL CHAIR</h1>    
+          <div class="content">
+           <p> Dr. Neetu Sood, Assistant Professor, NIT Jalandhar</p>
+           <p>Dr. Deepti Kakkar, Assistant Professor, NIT Jalandhar</P>
+            <p>Dr. Nonita Sharma, Associate Professor, IGDTUW Delhi </P>
+            <p> Dr. Niyati Baliyan, Assistant Professor, IGDTUW Delhi </P>
+          </div>
+        </div>
+
+        <div class="box">
+          <h1 class="headings">ORGANISING SECETARY</h1>    
+          <div class="content">
+           <p> Dr. Rajneesh Rani, Assistant professor, NIT Jalandhar </p>
+           <p>Dr. Tarun Chaudhary, Assistant Professor, NIT Jalandhar</P>
+            <p> Dr. Bhawna, Assistant professor, IGDTUW Delhi </P>
+          </div>
+        </div>
+
+
+          <div class="box">
+          <h1 class="headings">ADVISORY COMMITTEE</h1>    
+          <div class="content">
+           <p> Dr. Nilmini Wickramasinghe, Professor & Deputy Director, Iverson Health Innovation Research Institute Swinburne University of Technology, Australia</p>
+           <P>Dr. Gayatri Mehta, Professor, Electrical Engineering Department, University of North Texas, USA</P> 
+           <p> Dr S. Indu, Professor, DTU, Delhi</p>
+           <p>Dr Parul Garg, Professor, NSUT, Delhi </p>
+           <p> Dr Savita Gupta, Professor, UIET, Panjab University, Chandigarh</p>
+           <p>Dr Rajeevan Chandel, Professor, NIT Hamirpur</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <h1 class="headings">TECHNICAL PROGRAM COMMITTEE</h1>    
+          <div class="content">
+            <p> Dr. Nilmini Wickramasinghe, Professor & Deputy Director, Iverson Health Innovation Research Institute Swinburne University of Technology, Australia</p>
+            <P>Dr. Gayatri Mehta, Professor, Electrical Engineering Department, University of North Texas, USA</P> 
+           <p>Dr. Trapti Jain, Professor, IIT Indore</p>
+           <p>Dr. Sumam David S, Professor, NIT, Surathkal</p>
+           <p>Dr. Karabi Biswas, Assistant Professor, IIT Kharagpur</p> 
+           <p>Dr. Shilpi Gupta, Associate Professor, SVNIT, Surat</p>
+           <p>Dr. Meenakshi Sood, Associate Professor, NITTTR Chandigarh</p>
+           <p>Dr. R.K.Jeyachitra, Associate Professor, NIT, Tiruchirappalli</p>
+           <p>Dr. R.K.Jeyachitra, Associate Professor, NIT, Tiruchirappalli</p>
+           <p>Dr. Vijaya Bhadauria, Professor, MNNIT Allahabad</p>
+           <p>Dr. Amandeep Kaur, Assistant Professor, IIT Jodhpur</p>
+           <p>Dr. Laxmi B, Associate Professor, NIT Warangal</p>
+           <p>Dr. Rajeevan Chandel, Professor, NIT Hamirpur</p>
+           <p>Dr. Arvinder Kaur, Professor, IPU Delhi </p>
+           <p>Dr. Alpana Aggarwal, Professor, Thapar University, Patiala</p> 
+           <p>Dr. Kirti Inamdar, Lecturer, SVNIT, Surat</p>
+           <p>Dr. Smriti Agarwal, Assistant Professor, MNNIT Allahabad</p>
+           <p>Dr. Banani Basu, Assistant Professor, NIT Silchar</p>
+           <p>Dr. Lintu Rajan, Assistant Professor, NIT Calicut </p>
+           <p>Dr. Bindiya T. S., Assistant Professor, NIT Calicut</p>
+           <p>Dr. Kalpana G Bhat, Assistant Professor, NITK Surathkal</p> 
+           <p>Dr. Vrinda Gupta, Associate Professor, NIT Kurukshetra </p>
+           <p>Dr. Savita Gupta, Professor, Panjab University, Chandigarh </p>
+           <p>Dr. Poonam Bansal, Professor, IGDTUW Delhi </p>
+           <p>Dr. S. Indu, Professor, DTU Delhi </p>
+           <p>Dr. Gurmeet Kaur, Professor, Punjabi University </p>
+           <p>Dr. Renu Dhir, Associate Professor, NIT Jalandhar</p>
+           <p>Dr. Sonia, Assistant Professor, Punjabi University Patiala</p> 
+           <p>Dr. ILA Sharma, Assistant Professor, MNIT Jaipur </p>
+           <p>Dr. Jasdeep Kaur Dhanoa, Professor, IGDTUW Delhi </p>
+           <p>Dr. Geeta Sikka, Associate Professor, NIT Jalandhar </p>
+           <p>Dr. Reecha Sharma, Assistant Professor, Punjabi University, Patiala</p> 
+           <p>Dr. Niyati Baliyan, Assistant Professor, IGDTUW Delhi </p>
+           <p>Dr. Manisha Bharti, Assistant Professor, NIT Delhi</p>
+           <p>Dr. Gargi Khanna, Associate Professor, NIT Hamirpur </p>
+           <p>Dr. Bhawna, Assistant Professor, IGDTUW Delhi </p>
+           <p>Dr. Harmandar Kaur, Assistant Professor, GNDU RC, Jalandhar</p> 
+           <p>Dr. Roop Pahuja, Associate Professor, NIT Jalandhar</p>
+           <p>Dr. Richa Yadav, Assistant Professor, IGDTUW Delhi</p>
+           <p>Dr. Nidhi Goel, Professor, IGDTUW Delhi </p>
+          </div>
+        </div>
+         <form>
+        <h1 class="headings">CONTACT US</h1>
+        <p class="content">We will reach out to your queries soon</p>
+        <p>
+          Name: <input type="text" name="name" id="" placeholder="Enter your name."></p>
+          Email: <input type="email" name="email" id="email" placeholder="Enter your Email.">
+          <p>Subject: 
+            <textarea name="subject" id="subject" cols="8" rows="2" placeholder="Enter the Subject"></textarea></p>
+          <p>Message: 
+            <textarea name="message" id="message" cols="80" rows="8" placeholder="Enter your message"></textarea></p>
+            <input type="submit" value="Send your message">
+      </form>
+        </div>
+
+
+
+    
+        <div class="relative border-t-10 w-screen border-b-4 border-t-brand-300 border-b-primary bg-dark">
+          <div class="absolute top-0 left-0 md:top-32 xl:top-10 xl:-left-28 2xl:left-0">
+            <img src="assets/img/footer-shape-02.svg" alt="" />
+          </div>
+          <div class="absolute bottom-0 right-0 md:top-32 xl:top-10">
+            <img src="assets/img/footer-shape-01.svg" alt="" />
+          </div>
+          <div class="container flex flex-wrap items-center justify-between py-14">
+            <div class="w-full md:w-3/5 xl:w-1/4 2xl:w-1/5">
+              <a href="index.html">
+                <img src="assets/img/logo_nitj.png" height="150" width="150" alt="logo" />
+              </a>
+              <p class="mt-7 block font-body font-bold text-white">
+                WREC'23
+              </p>
+              <p class="pt-3 font-body text-sm text-white md:pr-24 xl:pr-0">
+                WOMEN RESEARCHERS IN ELECTRONICS AND COMPUTING
+              </p>
+              <p class="pt-3 font-body text-sm text-white md:pr-24 xl:pr-0">
+    
+                DEPARTMENT OF ELECTRONICS AND COMMUNICATION ENGINEERING
+              </p>
+            </div>
+    
+            <div class="mt-10 w-full md:mt-12 md:w-3/5 xl:mt-0 xl:w-1/4">
+              <a href="index.html" class="mb-2 flex items-center">
+                <span>
+                  <i class="bx bxs-location-plus text-3xl text-brand-200"></i>
+                </span>
+                <span class="block pl-4 font-body tracking-wide text-white">
+                  Dr B R Ambedkar National Institute of Technology
+                  G.T. Road, Amritsar Bypass,
+                  Jalandhar (Punjab), India - 144011
+                </span>
+              </a>
+              <a href="tel:+919888604632" class="mb-2 flex items-center">
+                <span>
+                  <i class="bx bxs-phone-call text-3xl text-brand-200"></i>
+                </span>
+                <span class="block pl-4 font-body tracking-wide text-white">
+                  +91 98886 04632
+                </span>
+              </a>
+              <a href="mailto:wrec@nitj.ac.in" class="mb-2 flex items-center">
+                <span>
+                  <i class="bx bx-mail-send text-3xl text-brand-200"></i>
+                </span>
+                <span class="block pl-4 font-body tracking-wide text-white">
+                  wrec@nitj.ac.in
+                </span>
+              </a>
+            </div>
+    
+          </div>
+        </div>
+    
+    
+    
+    
+        <!-- Alpine -->
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+      </main>
+  </main>
+</body>
+
+</html>
