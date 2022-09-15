@@ -1719,11 +1719,12 @@ html {
 }
 
 .p-sec {
-  font-size: 1.35rem;
+  font-size: 0.8rem;
 }
 
 .p-sec a {
   color: #4b5563;
+  font-size: 0.8rem;
 }
 
 .p-6 {
@@ -2279,6 +2280,10 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-align-justify {
+  text-align: justify;
+}
+
 @media (min-width: 375px) {
   .xs\:leading-relaxed {
     line-height: 1.625;
@@ -2292,6 +2297,14 @@ html {
 
   .sm\:leading-relaxed {
     line-height: 1.625;
+  }
+  .p-sec {
+    font-size: 1rem;
+  }
+
+  .p-sec a {
+    color: #4b5563;
+    font-size: 1rem;
   }
 }
 
@@ -2620,6 +2633,14 @@ html {
 
   .md\:leading-relaxed {
     line-height: 1.625;
+  }
+  .p-sec {
+    font-size: 1.35rem;
+  }
+
+  .p-sec a {
+    color: #4b5563;
+    font-size: 1.35rem;
   }
 }
 
