@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+  <title>
+    PAPER SUBMISSION
+  </title>
+  <meta name="description"
+    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+
+  <meta property="og:title" content="WREC'23" />
+
+  <meta property="og:locale" content="en_US" />
+
+  <meta property="og:type" content="website" />
+
+  <meta property="og:site_name" content="NITJ WREC'23" />
+
+  <meta property="og:image" content="assets/img/logo_nitj.png" />
+
+  <link rel="canonical" href="index.html" />
+
+  <meta property="og:url" content="/img/logo_nitj.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="twitter:site" content="@GuptaAnubhav12" />
+
+  <link rel="icon" type="image/png" href="/img/logo_nitj.pngg" />
+
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&amp;family=Poppins:wght@100;200;300;400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
+
+  <link rel="stylesheet" href="assets/styles/main.min.css" />
+  
+  <link rel="stylesheet" href="assets/styles/paper.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: black;
+  /* padding: 14px 16px; */
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.dropdown:hover .dropbtn {
+  /* background-color: red; */
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+  </style>
+</head>
+
+<body x-data="{ mobileMenu: false }" :class="{'relative overflow-hidden max-h-screen': mobileMenu }">
+  <main>
+    <div>
+      <!--Mobile menu-->
+      <div x-cloak x-show="mobileMenu">
+        <div class="absolute inset-0 z-50 bg-black/75"></div>
+        <div class="fixed right-0 z-50 h-screen w-64 bg-slate-500 xl:hidden">
+          <button class="absolute top-0 right-0 mt-4 mr-4" @click="mobileMenu = false">
+            <img src="/assets/img/logo_nitj.png" class="h-10 w-auto" alt="" />
+          </button>
+          <ul class="absolute top-20 py-10 text-left">
+            <li class="py-3">
+              <a href="index.html"
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors">Home</a>
+            </li>
+            <li class="py-2">
+              <a href="index.html#eventTimeline"
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"> Dates</a>
+            </li>
+            <li class="py-2">
+              <a href="index.html#conferenceTracks"
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"> Tracks</a>
+            </li>
+            <li class="py-2">
+              <a href="index.html#keynoteSpeakers"
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors">Keynote
+                Speakers</a>
+            </li>
+            <li class="py-2">
+              <a href="index.html#eventSchedule"
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors">Schedule</a>
+            </li>
+            <li class="py-2">
+              <a href="commitee.html"
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors">Committe</a>
+            </li>
+            <li class="py-2">
+              <a href="call_for_papers.html"
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors">Call for papers</a>
+            </li>
+            <li class="py-2">
+                <a href="paper-submission.html"
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors">Paper Submission</a>
+            </li>
+            <li class="py-2">
+              <a href="about.html"
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors">About</a>
+            </li>
+            <li class="py-2">
+              <a href="about.html#contact"
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- <div class="absolute top-0 z-40 w-full bg-gradient-to-b from-black/70 to-transparent"> -->
+      <div class="absolute top-0 z-40 w-full ">
+        <div class="container relative z-40 flex items-center justify-between py-7">
+          <div class="flex items-center justify-between">
+            <a href="index.html" class="w-40">
+              <img src="assets/img/logo_nitj.png" height="100" width="100" alt="logo" />
+            </a>
+
+            <!--Menu -->
+            <ul class="ml-12 hidden xl:flex bg-primary p-6 rounded-full">
+              <li>
+                <a href="index.html"
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">Home</a>
+              </li>
+              <li>
+                <a href="index.html#eventTimeline"
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">
+                  Dates</a>
+              </li>
+              <li>
+                <a href="index.html#conferenceTracks"
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">
+                  Tracks</a>
+              </li>
+              <li>
+                <a href="index.html#keynoteSpeakers"
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">Keynote
+                  Speakers</a>
+              </li>
+              <li>
+                <a href="/index.html#eventSchedule"
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">
+                  Schedule</a>
+              </li>
+              <li>
+                <a href="commitee.html"
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">Committe</a>
+              </li>
+              <li>
+                <!-- <a href=""
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">For
+                  Authors</a> -->
+                  <div class="dropdown">
+                    <button class="dropbtn">For Authors 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="call_for_papers.html">Call for papers</a>
+                      <a href="paper-submission.html">Paper Submission</a>
+                    </div>
+                  </div> 
+              </li>
+              
+              <li>
+                <a href="about.html"
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">About Us
+                </a>
+              </li>
+              <li>
+                <a href="index.html#contact"
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+
+          <!--Mobile menu button-->
+          <div class="absolute right-0 md:right-2 xl:hidden">
+            <button @click="mobileMenu = true" x-show=" !mobileMenu ">
+              <i class="bx bx-menu-alt-right text-4xl text-black"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative">
+      <div
+        class="mix-blend-normal absolute inset-0 bg-right md:bg-center bg-cover bg-no-repeat w-full object-cover bg-black"
+        style="background-image:url(assets/img/hero.jpg)"></div>
+
+      <div class="relative z-10 pt-16 md:pt-10 pb-12 md:pb-10 border-b-4 border-primary">
+        <div class="container-new">
+          <div class="w-full text-center text-home">
+            <h2 class="text-black text-xl font-semibold"></h2>
+            <h1 class="font-header font-bold text-3xl md:text-5xl uppercase">
+            </h1>
+            <div class="mt-6">
+              <div class="flex mt-4">
+                <div class="mx-auto">
+                  <span class="font-header text-black text-sm md:text-base uppercase block"> </span>
+                  <span class="font-body font-bold text-xl text-black">
+                  </span>
+                </div>
+                <!-- <div class="mr-10">
+                            <span class="font-header text-black text-sm md:text-base uppercase block">Episodes</span>
+                            <span class="font-body font-bold text-xl text-black">8</span>
+                        </div> -->
+                <!-- <div class="mr-10">
+                            <span class="font-header text-black text-sm md:text-base uppercase block">Downloads</span>
+                            <span class="font-body font-bold text-xl  text-black">7,200</span>
+                        </div> -->
+              </div>
+              <!-- <h1 class="font-header font-bold text-3xl md:text-5xl uppercase">WOMEN RESEARCHERS IN ELECTRONICS
+                AND
+                COMPUTING
+                
+                </p> -->
+                <br>
+                <br>
+                <br>
+                <br>
+              
+              </div>
+              <div class="container_as">
+              <h1 class="heading">PAPER SUBMISSION</h1>
+              <h2 class="mid-heading">
+            </div>
+            <div class="flex flex-col md:flex-row mt-16">
+              
+              <div class="flex">
+                <div class="mt-4 ml-6 text-lg font-bold "> 
+                 
+                </div>
+
+                <!-- <img src="/assets/img/springer.png" height="150" width="190" alt="springer "> -->
+
+
+              </div>
+              
+            </div>
+            <div class="flex items-center mt-8 mx-auto  animate-ping">
+              <span class="font-header text-black text-xl animate-ping uppercase">
+                <!-- Detailed Schedule Coming Soon -->
+              </span>
+              <!-- <div class="pl-3">
+                        <a href="index.html">
+                            <i class='bx bxl-spotify text-white hover:text-primary transition-colors text-xl'></i>
+                        </a>
+                        <a href="index.html">
+                            <i class='bx bxl-soundcloud text-white hover:text-primary transition-colors text-xl pl-2' ></i>
+                        </a>
+                        <a href="index.html">
+                            <i class='bx bxl-instagram text-white hover:text-primary transition-colors text-xl pl-2'></i>
+                        </a>
+                        <a href="index.html">
+                            <i class='bx bxl-youtube text-white hover:text-primary transition-colors text-xl pl-2'></i>
+                        </a>
+                    </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Collaboration  -->
+    
+
+    <!-- Timeline starts -->
+       
+        
+    <div class="container-af">
+      
+      <div class="box">
+      
+      <h1 class="headings">PAPER SUBMISSION</h1>
+          <div class="content3">
+            
+           <li> Authors from India and abroad are invited to submit manuscripts reporting original unpublished research and recent developments in the topics related to the conference.</li>
+
+           <li>All the papers submitted to the conference should be written in English with length four to six pages (4-6).</li>
+
+           <li>Simultaneous submissions (papers already submitted to other conferences/journals) are not allowed.</li>
+
+           <li>Submission should strictly follow recommended IEEE conference template, which can be found  <a href="./assets/template.doc">here</a>.</li>
+
+           <li>Plagiarism Check using Turnitin.</li>
+
+           <li>Papers having more than 20% plagiarism score will be examined and those that are deemed unacceptable will be rejected/withdrawn without a formal review.</li>
+
+           <li>All the paper submission will be done on EasyChair conference management software.</li>
+            
+           <li>Reviewer assignment will also be made using EasyChair.</li>
+        
+          
+          </div>
+        </div>
+
+        <div class="box">
+          <h1 class="headings">REGISTRATION FEES</h1>    
+          <div class="content2">
+           <li> The EasyChair link would be available soon
+
+           <li> The conference proceedings will get published online in (Coming soon)</li>
+
+           <li> The registration fees for the conference are as follows: </li>
+          </div>
+          <table>
+            <tr>
+                <th>Registration Type</th>
+                <th>Indian</th>
+                <th>Foregin</th>
+            </tr>
+            <tr>
+                <td>Academics / Researchers</td>
+                <td>₹ 8000</td>
+                <td>$ 150</td>
+            </tr>
+            <tr class="2nd-tr">
+                <td>Students</td>
+                <td>₹ 8000</td>
+                <td>$150</td>
+            </tr>
+            
+            <tr>
+                <td>Industry</td>
+                <td>₹ 10000</td>
+                <td>$ 150</td>
+                
+            </tr>
+
+          </table>
+        </div>
+    </div>
+    
+
+
+          
+
+
+
+    
+        <div class="relative border-t-10 w-screen border-b-4 border-t-brand-300 border-b-primary bg-dark">
+          <div class="absolute top-0 left-0 md:top-32 xl:top-10 xl:-left-28 2xl:left-0">
+            <img src="assets/img/footer-shape-02.svg" alt="" />
+          </div>
+          <div class="absolute bottom-0 right-0 md:top-32 xl:top-10">
+            <img src="assets/img/footer-shape-01.svg" alt="" />
+          </div>
+          <div class="container flex flex-wrap items-center justify-between py-14">
+            <div class="w-full md:w-3/5 xl:w-1/4 2xl:w-1/5">
+              <a href="index.html">
+                <img src="assets/img/logo_nitj.png" height="150" width="150" alt="logo" />
+              </a>
+              <p class="mt-7 block font-body font-bold text-white">
+                WREC'23
+              </p>
+              <p class="pt-3 font-body text-sm text-white md:pr-24 xl:pr-0">
+                WOMEN RESEARCHERS IN ELECTRONICS AND COMPUTING
+              </p>
+              <p class="pt-3 font-body text-sm text-white md:pr-24 xl:pr-0">
+    
+                DEPARTMENT OF ELECTRONICS AND COMMUNICATION ENGINEERING
+              </p>
+            </div>
+    
+            <div class="mt-10 w-full md:mt-12 md:w-3/5 xl:mt-0 xl:w-1/4">
+              <a href="index.html" class="mb-2 flex items-center">
+                <span>
+                  <i class="bx bxs-location-plus text-3xl text-brand-200"></i>
+                </span>
+                <span class="block pl-4 font-body tracking-wide text-white">
+                  Dr B R Ambedkar National Institute of Technology
+                  G.T. Road, Amritsar Bypass,
+                  Jalandhar (Punjab), India - 144011
+                </span>
+              </a>
+              <a href="tel:+919888604632" class="mb-2 flex items-center">
+                <span>
+                  <i class="bx bxs-phone-call text-3xl text-brand-200"></i>
+                </span>
+                <span class="block pl-4 font-body tracking-wide text-white">
+                  +91 98886 04632
+                </span>
+              </a>
+              <a href="mailto:wrec@nitj.ac.in" class="mb-2 flex items-center">
+                <span>
+                  <i class="bx bx-mail-send text-3xl text-brand-200"></i>
+                </span>
+                <span class="block pl-4 font-body tracking-wide text-white">
+                  wrec@nitj.ac.in
+                </span>
+              </a>
+            </div>
+    
+          </div>
+        </div>
+    
+    
+    
+    
+        <!-- Alpine -->
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+      </main>
+  </main>
+</body>
+
+</html>

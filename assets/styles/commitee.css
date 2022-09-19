@@ -30,7 +30,7 @@
   transition: 0.5s;
 }
 .container .box:hover {
-  box-shadow: 10px 10px 10px 10px #d4951f;
+  box-shadow: 10px 10px 10px 10px #f7bd14;
   top: -5px;
   right: -5%;
 }

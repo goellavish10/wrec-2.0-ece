@@ -1,0 +1,113 @@
+.heading {
+  font-size: 52px;
+  align-items: center;
+  font-weight: bolder;
+  font-family: "Merriweather Sans", sans-serif;
+}
+.con::before {
+  content: "";
+  position: absolute;
+  background: url("assets/img/about-bg.jpg") no-repeat center center/cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.container-af {
+  background: url("../img/about-bg.jpg") no-repeat center center/cover;
+  display: flex;
+  font-family: Poppins, sans-serif;
+  padding-bottom: 7px;
+  margin: 9px;
+}
+
+.headings {
+  color: rgba(124, 55, 55, 0.866);
+  font-size: 29px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Merriweather Sans", sans-serif;
+  padding: 0 0px;
+}
+.content3 {
+  display: block;
+  padding-bottom: 25px;
+  font-size: 18px;
+  /* align-items: center; */
+  padding-top: 40px;
+  line-height: 1.5;
+
+  /* text-align: center; */
+}
+.content2 {
+  display: block;
+  padding-bottom: 25px;
+  font-size: 18px;
+  /* align-items: center; */
+  padding-top: 40px;
+  padding-left: 25px;
+  line-height: 1.5;
+  /* text-align: center; */
+}
+.container-af .box {
+  display: block;
+  /* margin-left: auto; */
+  background-color: white;
+  align-items: center;
+  transition: 0.5s;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 40px;
+  margin: 19px;
+  width: 50%;
+}
+
+.container-af .box:hover {
+  box-shadow: 10px 10px 10px 10px #f7bd14;
+  top: -5px;
+  right: -5%;
+  border: none;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 2px;
+}
+th,td {
+    text-align: left;
+    padding: 10px;
+}
+th {
+    background-color: gray;
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+}
+tr {
+    font-weight: 500;
+    background-color: rgb(220, 213, 213) ;
+}
+
+@media (max-width:750px) {
+  
+    .container-af {
+        width:100%;
+        flex-direction: column;
+        margin: 0px;
+    }
+    .headings {
+        align-items: center;
+    }
+    .container-af .box{
+        width: 100%;
+        padding: 20px;
+    }
+    .content2 {
+        padding-left: 0px;
+    }
+    .content3 {
+        padding-left: 0px;
+    }
+   
+}
