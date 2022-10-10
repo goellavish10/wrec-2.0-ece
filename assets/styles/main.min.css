@@ -2049,6 +2049,10 @@ html {
   color: rgb(186 151 120 / var(--tw-text-opacity));
 }
 
+/* .text-brand-300:active {
+  background-color: #7d5d41;
+} */
+
 .text-brand-200 {
   --tw-text-opacity: 1;
   color: rgb(220 203 188 / var(--tw-text-opacity));
