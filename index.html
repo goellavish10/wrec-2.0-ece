@@ -1,250 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      name="viewport"
+    />
+    <title>WREC'23</title>
+    <meta
+      name="description"
+      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
-  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
-  <title>
-    WREC'23
-  </title>
-  <meta name="description"
-    content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+    <meta property="og:title" content="WREC'23" />
 
-  <meta property="og:title" content="WREC'23" />
+    <meta property="og:locale" content="en_US" />
 
-  <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
 
-  <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="NITJ WREC'23" />
 
-  <meta property="og:site_name" content="NITJ WREC'23" />
+    <meta property="og:image" content="assets/img/logo_nitj.png" />
 
-  <meta property="og:image" content="assets/img/logo_nitj.png" />
+    <link rel="canonical" href="index.html" />
 
-  <link rel="canonical" href="index.html" />
+    <meta property="og:url" content="/img/logo_nitj.png" />
 
-  <meta property="og:url" content="/img/logo_nitj.png" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-  <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lavishG10" />
 
-  <meta name="twitter:site" content="@GuptaAnubhav12" />
+    <link rel="icon" type="image/png" href="/img/logo_nitj.pngg" />
 
-  <link rel="icon" type="image/png" href="/img/logo_nitj.pngg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&amp;family=Poppins:wght@100;200;300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+    />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="assets/styles/main.min.css" />
+    <link rel="stylesheet" href="assets/styles/design.css" />
+    <link rel="stylesheet" href="assets/styles/new.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/styles/dropdown.css" />
+    <style>
+      .underLineOnHover:hover {
+        text-decoration: underline;
+        font-size: 16px;
+      }
+    </style>
+  </head>
 
-
-
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&amp;family=Poppins:wght@100;200;300;400;500;600;700&amp;display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
-  <script src="script.js"></script>
-  <link rel="stylesheet" href="assets/styles/main.min.css" />
-  <link rel="stylesheet" href="assets/styles/design.css" />
-  <link rel="stylesheet" href="assets/styles/new.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="/assets/styles/dropdown.css">
-  <style>
-    .underLineOnHover:hover {
-      text-decoration: underline;
-      font-size: 16px;
-    }
-  </style>
-</head>
-
-<body x-data="{ mobileMenu: false }" :class="{'relative overflow-hidden max-h-screen': mobileMenu }">
-  <main>
-    <div>
-      <!--Mobile menu-->
-      <div x-cloak x-show="mobileMenu">
-        <div class="absolute inset-0 z-50 bg-black/75"></div>
-        <div class="fixed right-0 z-50 h-screen w-64 bg-slate-500 xl:hidden">
-          <button class="absolute top-0 right-0 mt-4 mr-4" @click="mobileMenu = false">
-            <img src="/assets/img/logo_nitj.png" class="h-10 w-auto" alt="" />
-          </button>
-          <ul class="absolute top-20 py-10 text-left">
-            <li class="py-3">
-              <a href="index.html"
-                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors">Home</a>
-            </li>
-            <li class="py-2">
-              <a href="#eventTimeline"
-                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"> Dates</a>
-            </li>
-            <li class="py-2">
-              <a href="episode/index.html"
-                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"> Tracks</a>
-            </li>
-            <li class="py-2">
-              <a href="blog/index.html"
-                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors">Keynote
-                Speakers</a>
-            </li>
-            <li class="py-2">
-              <a href="#eventSchedule"
-                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors">Schedule</a>
-            </li>
-            <li class="py-2">
-              <a href="commitee.html"
-                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors">Committee</a>
-            </li>
-            <li class="py-2">
-              <a href="single/index.html"
-                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors">For
-                Authors</a>
-            </li>
-            <li class="py-2">
-              <a href="single/index.html"
-                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors">About</a>
-            </li>
-            <li class="py-2">
-              <a href="about.html#contact"
-                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- <div class="absolute top-0 z-40 w-full bg-gradient-to-b from-black/70 to-transparent"> -->
-      <div class="absolute top-0 z-40 w-full">
-        <div class="container relative z-40 flex items-center justify-between py-7">
-          <div class="flex items-center justify-between">
-            <a href="index.html" class="w-40">
-              <img src="assets/img/logo_nitj.png" height="100" width="100" alt="logo" />
-            </a>
-
-            <!--Menu -->
-            <ul class="ml-12 hidden xl:flex bg-primary p-6 rounded-full">
-              <li class="">
-                <a href="index.html"
-                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary underLineOnHover">Home</a>
+  <body
+    x-data="{ mobileMenu: false }"
+    :class="{'relative overflow-hidden max-h-screen': mobileMenu }"
+  >
+    <main>
+      <div>
+        <!--Mobile menu-->
+        <div x-cloak x-show="mobileMenu">
+          <div class="absolute inset-0 z-50 bg-black/75"></div>
+          <div class="fixed right-0 z-50 h-screen w-64 bg-slate-500 xl:hidden">
+            <button
+              class="absolute top-0 right-0 mt-4 mr-4"
+              @click="mobileMenu = false"
+            >
+              <img src="/assets/img/logo_nitj.png" class="h-10 w-auto" alt="" />
+            </button>
+            <ul class="absolute top-20 py-10 text-left">
+              <li class="py-3">
+                <a
+                  href="index.html"
+                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
+                  >Home</a
+                >
               </li>
-              <li>
-                <a href="#eventTimeline"
-                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors underLineOnHover">
-                  Dates</a>
+              <li class="py-2">
+                <a
+                  href="#eventTimeline"
+                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
+                >
+                  Dates</a
+                >
               </li>
-              <li>
-                <a href="#conferenceTracks"
-                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary underLineOnHover">
-                  Tracks</a>
+              <li class="py-2">
+                <a
+                  href="episode/index.html"
+                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
+                >
+                  Tracks</a
+                >
               </li>
-              <li>
-                <a href="#keynoteSpeakers"
-                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary underLineOnHover">Keynote
-                  Speakers</a>
+              <li class="py-2">
+                <a
+                  href="blog/index.html"
+                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
+                  >Keynote Speakers</a
+                >
               </li>
-              <li>
-                <a href="#eventSchedule"
-                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary underLineOnHover">
-                  Schedule</a>
+              <li class="py-2">
+                <a
+                  href="#eventSchedule"
+                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
+                  >Schedule</a
+                >
               </li>
-              <li>
-                <a href="commitee.html"
-                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary underLineOnHover">Committee</a>
+              <li class="py-2">
+                <a
+                  href="commitee.html"
+                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
+                  >Committee</a
+                >
               </li>
-              <li>
-                <!-- <a href="single/index.html"
-                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">For
-                  Authors</a> -->
-                <div class="dropdown">
-                  <a
-                    class="dropbtn font-header text-black transition-colors hover:bg-primary font-medium cursor-pointer uppercase underLineOnHover">For
-                    Authors
-                    <i class="fa fa-caret-down"></i>
-                  </a>
-                  <div class="dropdown-content">
-                    <a href="call_for_papers.html" class="underLineOnHover">Call for papers</a>
-                    <a href="paper-submission.html" class="underLineOnHover">Paper Submission</a>
-                  </div>
-                </div>
+              <li class="py-2">
+                <a
+                  href="single/index.html"
+                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
+                  >For Authors</a
+                >
               </li>
-              <li>
-                <a href="about.html"
-                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">About
-                  Us
-                </a>
+              <li class="py-2">
+                <a
+                  href="single/index.html"
+                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
+                  >About</a
+                >
               </li>
-              <li>
-                <a href="about.html#contact"
-                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">Contact</a>
+              <li class="py-2">
+                <a
+                  href="about.html#contact"
+                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
+                  >Contact</a
+                >
               </li>
             </ul>
           </div>
+        </div>
 
+        <!-- <div class="absolute top-0 z-40 w-full bg-gradient-to-b from-black/70 to-transparent"> -->
+        <div class="absolute top-0 z-40 w-full">
+          <div
+            class="container relative z-40 flex items-center justify-between py-7"
+          >
+            <div class="flex items-center justify-between">
+              <a href="index.html" class="w-40">
+                <img
+                  src="assets/img/logo_nitj.png"
+                  height="100"
+                  width="100"
+                  alt="logo"
+                />
+              </a>
 
-          <!--Mobile menu button-->
-          <div class="absolute right-0 md:right-2 xl:hidden">
-            <button @click="mobileMenu = true" x-show=" !mobileMenu ">
-              <i class="bx bx-menu-alt-right text-4xl text-black"></i>
-            </button>
+              <!--Menu -->
+              <ul class="ml-12 hidden xl:flex bg-primary p-6 rounded-full">
+                <li class="">
+                  <a
+                    href="index.html"
+                    class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary underLineOnHover"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#eventTimeline"
+                    class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors underLineOnHover"
+                  >
+                    Dates</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#conferenceTracks"
+                    class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary underLineOnHover"
+                  >
+                    Tracks</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#keynoteSpeakers"
+                    class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary underLineOnHover"
+                    >Keynote Speakers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#eventSchedule"
+                    class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary underLineOnHover"
+                  >
+                    Schedule</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="commitee.html"
+                    class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary underLineOnHover"
+                    >Committee</a
+                  >
+                </li>
+                <li>
+                  <!-- <a href="single/index.html"
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">For
+                  Authors</a> -->
+                  <div class="dropdown">
+                    <a
+                      class="dropbtn font-header text-black transition-colors hover:bg-primary font-medium cursor-pointer uppercase underLineOnHover"
+                      >For Authors
+                      <i class="fa fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                      <a href="call_for_papers.html" class="underLineOnHover"
+                        >Call for papers</a
+                      >
+                      <a href="paper-submission.html" class="underLineOnHover"
+                        >Paper Submission</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a
+                    href="about.html"
+                    class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"
+                    >About Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="about.html#contact"
+                    class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!--Mobile menu button-->
+            <div class="absolute right-0 md:right-2 xl:hidden">
+              <button @click="mobileMenu = true" x-show=" !mobileMenu ">
+                <i class="bx bx-menu-alt-right text-4xl text-black"></i>
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="relative">
-      <div
-        class="mix-blend-normal absolute inset-0 bg-right md:bg-center bg-cover bg-no-repeat w-full object-cover bg-black"
-        style="background-image:url(assets/img/hero.jpg)"></div>
+      <div class="relative">
+        <div
+          class="mix-blend-normal absolute inset-0 bg-right md:bg-center bg-cover bg-no-repeat w-full object-cover bg-black"
+          style="background-image: url(assets/img/hero.jpg)"
+        ></div>
 
-      <div class="relative z-10 pt-36 md:pt-40 pb-24 md:pb-40 border-b-4 border-primary">
-        <div class="container">
-          <div class="w-full text-center text-home homemainbody">
-            <h2 class="text-black text-3xl italic"><i>2nd International Conference</i></h2>
-            <h1 class="font-header font-bold text-3xl md:text-5xl uppercase">WOMEN RESEARCHERS IN ELECTRONICS
-              AND
-              COMPUTING
-            </h1>
-            <div class="flex flex-col items-center mt-6">
-              <div class="flex mt-4">
-                <div class="mx-auto">
-                  <span class="font-header text-black text-sm md:text-base uppercase block">Dates</span>
-                  <span class="font-body font-bold text-3xl text-black">April 21-23, 2023
-                  </span>
+        <div
+          class="relative z-10 pt-36 md:pt-40 pb-24 md:pb-40 border-b-4 border-primary"
+        >
+          <div class="container">
+            <div class="w-full text-center text-home homemainbody">
+              <h2 class="text-black text-3xl italic">
+                <i>2nd International Conference</i>
+              </h2>
+              <h1 class="font-header font-bold text-3xl md:text-5xl uppercase">
+                WOMEN RESEARCHERS IN ELECTRONICS AND COMPUTING
+              </h1>
+              <div class="flex flex-col items-center mt-6">
+                <div class="flex mt-4">
+                  <div class="mx-auto">
+                    <span
+                      class="font-header text-black text-sm md:text-base uppercase block"
+                      >Dates</span
+                    >
+                    <span class="font-body font-bold text-3xl text-black"
+                      >April 21-23, 2023
+                    </span>
+                  </div>
+                </div>
+                <p
+                  class="font-body font-bold text-xl text-secondary mt-5 text-2xl"
+                >
+                  Department of Electronics and Communication Engineering
+                </p>
+                <p class="font-body font-bold text-secondary text-xl mt-5">
+                  Dr B R Ambedkar National Institute of Technology, Jalandhar,
+                  Punjab, INDIA
+                </p>
+                <img
+                  src="assets/img/springer.png"
+                  height="150"
+                  width="190"
+                  alt="springer"
+                  class="mt-10"
+                />
+              </div>
+              <div class="flex flex-row gap-5 w-full">
+                <div class="flex flex-col md:flex-row mt-16 w-1/2">
+                  <button
+                    class="font-body font-bold text-center text-black px-10 py-4 border-2 border-black hover:border-primary bg-primary hover:bg-transparent rounded-full transition-colors h-5"
+                  >
+                    <a href="about.html">About</a>
+                  </button>
+                  <button
+                    class="md:ml-8 w-2/3 mt-5 md:mt-0 font-body font-bold text-center text-black px-6 py-2 border-2 border-primary hover:border-black bg-primary hover:bg-transparent rounded-full transition-colors flex justify-between items-center group"
+                  >
+                    <a href="https://easychair.org/conferences/?conf=wrec23"
+                      >Easy Chair Link</a
+                    >
+                    <span
+                      class="h-8 w-8 bg-black group-hover:bg-primary transition-colors rounded-full flex items-center justify-center ml-6"
+                    >
+                      <i
+                        class="bx bx-play text-primary group-hover:text-black text-2xl ml-0.5"
+                      ></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="w-1/2 mt-16">
+                  <p class="text-xl">
+                    Peer reviewed and selected papers will be published as
+                    Conference proceedings with Springer in their prestigious
+                    series
+                  </p>
+                  <br />
+                  <h3 class="font-bold text-2xl">
+                    “Lecture Notes in Electrical Engineering”
+                  </h3>
+                  <a
+                    class="text no-underline cursor-pointer"
+                    target="_blank"
+                    href="https://www.springer.com/series/7818"
+                    >https://www.springer.com/series/7818</a
+                  >
                 </div>
               </div>
-              <p class="font-body font-bold text-xl  text-secondary mt-5 text-2xl">Department of
-                Electronics and Communication
-                Engineering</p>
-              <p class="font-body  font-bold text-secondary text-xl mt-5">Dr B R Ambedkar National
-                Institute of Technology,
-                Jalandhar, Punjab, INDIA</p>
-              <img src="/assets/img/springer.png" height="150" width="190" alt="springer" class="mt-10">
-            </div>
-            <div class="flex flex-row gap-5 w-full">
-              <div class="flex flex-col md:flex-row mt-16 w-1/2">
-                <button
-                  class="font-body font-bold text-center text-black px-10 py-4 border-2 border-black hover:border-primary bg-primary hover:bg-transparent  rounded-full transition-colors h-5"><a
-                    href="about.html">About</a>
-                </button>
-                <button
-                  class="md:ml-8 w-2/3 mt-5 md:mt-0 font-body font-bold text-center text-black px-6 py-2 border-2 border-primary hover:border-black bg-primary hover:bg-transparent rounded-full transition-colors flex justify-between items-center group">
-                  <a href="https://easychair.org/conferences/?conf=wrec23">Easy Chair Link</a>
-                  <span
-                    class="h-8 w-8 bg-black group-hover:bg-primary transition-colors rounded-full flex items-center justify-center ml-6">
-                    <i class='bx bx-play text-primary group-hover:text-black text-2xl ml-0.5'></i>
-                  </span>
-                </button>
-              </div>
-              <div class="w-1/2 mt-16">
-                <p class="text-xl">Peer reviewed and selected papers will be published as Conference proceedings with Springer in their prestigious series</p>
-                <br>
-                <h3 class="font-bold text-2xl">“Lecture Notes in Electrical Engineering”</h3>
-                <a class="text no-underline cursor-pointer" target="_blank" href="https://www.springer.com/series/7818">https://www.springer.com/series/7818</a>
-              </div>
-            </div>
-            
 
-            
-            <div class="flex items-center mt-5 mx-auto  animate-ping">
-              <span class="font-header text-black text-xl animate-ping uppercase">
-                Detailed Schedule Coming Soon
-              </span>
-              <!-- <div class="pl-3">
+              <div class="flex items-center mt-5 mx-auto animate-ping">
+                <span
+                  class="font-header text-black text-xl animate-ping uppercase"
+                >
+                  Detailed Schedule Coming Soon
+                </span>
+                <!-- <div class="pl-3">
                         <a href="index.html">
                             <i class='bx bxl-spotify text-white hover:text-primary transition-colors text-xl'></i>
                         </a>
@@ -258,1196 +368,1787 @@
                             <i class='bx bxl-youtube text-white hover:text-primary transition-colors text-xl pl-2'></i>
                         </a>
                     </div> -->
-            </div>
-            <div id="scroll-container">
-              <div id="scroll-text"><a href="https://easychair.org/conferences/?conf=wrec23" class="text-bold" style="font-weight: bold;">Call for papers -
-                  OPEN(https://easychair.org/conferences/?conf=wrec23)</a>
-                <div>
+              </div>
+              <div id="scroll-container">
+                <div id="scroll-text">
+                  <a
+                    href="https://easychair.org/conferences/?conf=wrec23"
+                    class="text-bold"
+                    style="font-weight: bold"
+                    >Call for papers -
+                    OPEN(https://easychair.org/conferences/?conf=wrec23)</a
+                  >
+                  <div></div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-
-
-        <!-- Collaboration  -->
-        <div class="bg-brand-50 relative overflow-hidden border-b-20 border-brand-200">
-          <div class="absolute xl:top-24 -left-56 2xl:-left-32"><img src="assets/img/about-shape-01.svg" alt=""></div>
-          <div class="container py-20 md:py-24 grid-2 grid-cols-3 z-20 relative">
-            <div class="">
-              <div class="lg:w-1/2 xl:w-2/5 flex" style="justify-content: center;align-items: center;width: 100%;">
-                <div class="sm:p-4">
-                  <img src="assets/img/logo_nitj.png" width="450" class="m-20 rounded-2xl" alt="image">
-                </div>
-                <div class="sm:p-4">
-                  <img src="assets/img/logo_igdtuw.png" width="450" class="m-20 rounded-2xl" alt="image">
-                </div>
-              </div>
-              <p
-                class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed text-2xl lg:leading-relaxed xl:leading-relaxed">
-                ORGANIZED BY</p>
-
-              <h2 class="font-header text-secondary md:text-4xl"> Dr B R Ambedkar National Institute of
-                Technology, Jalandhar, Punjab, India.</h2>
-
-              <p
-                class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed text-2xl lg:leading-relaxed xl:leading-relaxed">
-                In Joint Collaboration with</p>
-              <h2 class="font-header text-secondary md:text-4xl"> Indira Gandhi Delhi Technical University For
-                Women, Delhi, India.</h2>
+          <!-- Collaboration  -->
+          <div
+            class="bg-brand-50 relative overflow-hidden border-b-20 border-brand-200"
+          >
+            <div class="absolute xl:top-24 -left-56 2xl:-left-32">
+              <img src="assets/img/about-shape-01.svg" alt="" />
             </div>
+            <div
+              class="container py-20 md:py-24 grid-2 grid-cols-3 z-20 relative"
+            >
+              <div class="">
+                <div
+                  class="lg:w-1/2 xl:w-2/5 flex"
+                  style="
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                  "
+                >
+                  <div class="sm:p-4">
+                    <img
+                      src="assets/img/logo_nitj.png"
+                      width="450"
+                      class="m-20 rounded-2xl"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="sm:p-4">
+                    <img
+                      src="assets/img/logo_igdtuw.png"
+                      width="450"
+                      class="m-20 rounded-2xl"
+                      alt="image"
+                    />
+                  </div>
+                </div>
+                <p
+                  class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed text-2xl lg:leading-relaxed xl:leading-relaxed"
+                >
+                  ORGANIZED BY
+                </p>
 
+                <h2 class="font-header text-secondary md:text-4xl">
+                  Dr B R Ambedkar National Institute of Technology, Jalandhar,
+                  Punjab, India.
+                </h2>
 
-            <div class="lg:pl-12 xl:pl-20 2xl:pr-10 relative mt-8 lg:mt-0 w-100">
-              <h3 class="text-center text-3xl font-bold uppercase">About</h3>
-              <div class="z-30 relative text-lg text-align-justify mt-8">
-                Though women are underrepresented in engineering, but the number has been growing consistently as
-                      more
-                      women are opting to pursue studies in this field and still there is a lot required to be done to
-                      encourage this trend. We would like to dedicate this conference so as to promote and encourage
-                      women
-                      engineers and motivate young girls to follow their academic interests to a career in engineering.
-                      With
-                      a view to inspire women engineers, pioneer and successful women achievers in the domains of VLSI
-                      design, wireless sensor networks, communication, image/ signal processing, machine learning, and
-                      emerging technologies have been identified from across the globe and invited to present their work
-                      and
-                      address the participants in this women oriented conference. All the keynote speakers, tutorial
-                      presenters, session chairs and the members of conference organizing team are women. The conference
-                      aspires to provide a platform for researchers, engineers, academicians as well as industrial
-                      professionals to showcase innovative and interdisciplinary research findings on practical as well
-                      as
-                      theoretical advancements in Electronics, Communication and Signal Processing. <br><b>However,
-                        participation is not limited to women candidates only. It is open for all the
-                        researchers in specified areas.</b></p>
+                <p
+                  class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed text-2xl lg:leading-relaxed xl:leading-relaxed"
+                >
+                  In Joint Collaboration with
+                </p>
+                <h2 class="font-header text-secondary md:text-4xl">
+                  Indira Gandhi Delhi Technical University For Women, Delhi,
+                  India.
+                </h2>
               </div>
-              <div class="absolute -bottom-24 2xl:bottom-48 -left-40 xl:left-auto right-0 xl:-right-24 2xl:-right-32">
-                <img src="assets/img/about-shape-02.svg" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <!-- Collaboration  -->
-
-
-        <!-- Timeline starts -->
-
-        <div class="container py-20 md:py-24" x-data="{ activeTab: 'podcast'}" id="eventTimeline">
-          <h2 class="text-brand-400 font-header text-3xl md:text-5xl uppercase text-center">Event Timeline</h2>
-          <div class="border-b-2 border-brand-200 mt-10 md:mt-16">
-            <div class="md:w-3/4 mx-auto flex flex-col md:flex-row">
               <div
-                class="md:w-1/2 border-l-2 border-t-2 border-r-2 border-brand-200 active:border-brand-300 bg-white active:bg-brand-300 group"
-                @click="activeTab = 'podcast'">
-                <span
-                  class="flex items-center justify-center font-header text-xl group-active:text-white text-brand-300 py-2">
-                  <i class='bx bx-right-arrow-alt text-xl group-active:text-white text-brand-300'></i>Timeline</span>
+                class="lg:pl-12 xl:pl-20 2xl:pr-10 relative mt-8 lg:mt-0 w-100"
+              >
+                <h3 class="text-center text-3xl font-bold uppercase">About</h3>
+                <div class="z-30 relative text-lg text-align-justify mt-8">
+                  <p>
+                    Though women are underrepresented in engineering, but the
+                    number has been growing consistently as more women are
+                    opting to pursue studies in this field and still there is a
+                    lot required to be done to encourage this trend. We would
+                    like to dedicate this conference so as to promote and
+                    encourage women engineers and motivate young girls to follow
+                    their academic interests to a career in engineering. With a
+                    view to inspire women engineers, pioneer and successful
+                    women achievers in the domains of VLSI design, wireless
+                    sensor networks, communication, image/ signal processing,
+                    machine learning, and emerging technologies have been
+                    identified from across the globe and invited to present
+                    their work and address the participants in this women
+                    oriented conference. All the keynote speakers, tutorial
+                    presenters, session chairs and the members of conference
+                    organizing team are women. The conference aspires to provide
+                    a platform for researchers, engineers, academicians as well
+                    as industrial professionals to showcase innovative and
+                    interdisciplinary research findings on practical as well as
+                    theoretical advancements in Electronics, Communication and
+                    Signal Processing. <br /><b
+                      >However, participation is not limited to women candidates
+                      only. It is open for all the researchers in specified
+                      areas.</b
+                    >
+                  </p>
+                </div>
+                <div
+                  class="absolute -bottom-24 2xl:bottom-48 -left-40 xl:left-auto right-0 xl:-right-24 2xl:-right-32"
+                >
+                  <img src="assets/img/about-shape-02.svg" alt="" />
+                </div>
               </div>
             </div>
           </div>
 
-          <div x-show=" activeTab == 'podcast' ">
+          <!-- Collaboration  -->
 
-            <div class="relative mt-7 md:mt-9 lg:mt-16 flex flex-col lg:flex-row">
+          <!-- Timeline starts -->
 
-              <div class="relative lg:absolute lg:-bottom-5 left-0 m-4">
-                <img src="assets/img/deadline.png" width="80" height="80" alt="image">
-              </div>
-              <div class="lg:w-11/12 border border-brand-500 pl-5 md:pl-10 lg:pl-0 pr-5 md:pr-10 py-7 md:py-10 lg:py-6">
-                <div class="lg:w-3/4 xl:w-5/6 ml-auto">
-                  <!-- <p class="font-header text-secondary uppercase text-sm">The Friday Habit • Episode 70</p> -->
-                  <h3 class="font-header text-secondary uppercase text-xl md:text-2xl pt-1">PAPER SUBMISSION DEADLINE:
-                  </h3>
-
-                  <p class="font-body text-secondary md:text-3xl mt-3">10<sup>th</sup>FEBRUARY 2023</p>
-
-                </div>
-              </div>
-
-
-            </div>
-
-            <div class="relative mt-7 md:mt-9 lg:mt-16 flex flex-col lg:flex-row">
-              <div class="relative lg:absolute lg:-bottom-5 left-0 m-4">
-                <img src="assets/img/acceptance.png" width="120" height="120" alt="image">
-              </div>
-              <div class="lg:w-11/12 border border-brand-500 pl-5 md:pl-10 lg:pl-0 pr-5 md:pr-10 py-7 md:py-10 lg:py-6">
-                <div class="lg:w-3/4 xl:w-5/6 ml-auto">
-                  <!-- <p class="font-header text-secondary uppercase text-sm">The Friday Habit • Episode 70</p> -->
-                  <h3 class="font-header text-secondary uppercase text-xl md:text-2xl pt-1">INTIMATION OF ACCEPTANCE:
-                  </h3>
-
-                  <p class="font-body text-secondary md:text-3xl mt-3">20<sup>th</sup>MARCH 2023</p>
-
+          <div
+            class="container py-20 md:py-24"
+            x-data="{ activeTab: 'podcast'}"
+            id="eventTimeline"
+          >
+            <h2
+              class="text-brand-400 font-header text-3xl md:text-5xl uppercase text-center"
+            >
+              Event Timeline
+            </h2>
+            <div class="border-b-2 border-brand-200 mt-10 md:mt-16">
+              <div class="md:w-3/4 mx-auto flex flex-col md:flex-row">
+                <div
+                  class="md:w-1/2 border-l-2 border-t-2 border-r-2 border-brand-200 active:border-brand-300 bg-white active:bg-brand-300 group"
+                  @click="activeTab = 'podcast'"
+                >
+                  <span
+                    class="flex items-center justify-center font-header text-xl group-active:text-white text-brand-300 py-2"
+                  >
+                    <i
+                      class="bx bx-right-arrow-alt text-xl group-active:text-white text-brand-300"
+                    ></i
+                    >Timeline</span
+                  >
                 </div>
               </div>
             </div>
 
-            <div class="relative mt-7 md:mt-9 lg:mt-16 flex flex-col lg:flex-row">
-              <div class="relative lg:absolute lg:-bottom-5 left-0">
-                <img src="assets/img/registration.png" width="150" height="150" alt="image">
+            <div x-show=" activeTab == 'podcast' ">
+              <div
+                class="relative mt-7 md:mt-9 lg:mt-16 flex flex-col lg:flex-row"
+              >
+                <div class="relative lg:absolute lg:-bottom-5 left-0 m-4">
+                  <img
+                    src="assets/img/deadline.png"
+                    width="80"
+                    height="80"
+                    alt="image"
+                  />
+                </div>
+                <div
+                  class="lg:w-11/12 border border-brand-500 pl-5 md:pl-10 lg:pl-0 pr-5 md:pr-10 py-7 md:py-10 lg:py-6"
+                >
+                  <div class="lg:w-3/4 xl:w-5/6 ml-auto">
+                    <!-- <p class="font-header text-secondary uppercase text-sm">The Friday Habit • Episode 70</p> -->
+                    <h3
+                      class="font-header text-secondary uppercase text-xl md:text-2xl pt-1"
+                    >
+                      PAPER SUBMISSION DEADLINE:
+                    </h3>
+
+                    <p class="font-body text-secondary md:text-3xl mt-3">
+                      10<sup>th</sup>FEBRUARY 2023
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="lg:w-11/12 border border-brand-500 pl-5 md:pl-10 lg:pl-0 pr-5 md:pr-10 py-7 md:py-10 lg:py-6">
-                <div class="lg:w-3/4 xl:w-5/6 ml-auto">
-                  <!-- <p class="font-header text-secondary uppercase text-sm">The Friday Habit • Episode 70</p> -->
-                  <h3 class="font-header text-secondary uppercase text-xl md:text-2xl pt-1">SUBMISSION OF CAMERA-READY
-                    PAPERS: AND START OF REGISTRATION</h3>
 
-                  <p class="font-body text-secondary md:text-3xl mt-3">27<sup>th</sup>MARCH 2023</p>
+              <div
+                class="relative mt-7 md:mt-9 lg:mt-16 flex flex-col lg:flex-row"
+              >
+                <div class="relative lg:absolute lg:-bottom-5 left-0 m-4">
+                  <img
+                    src="assets/img/acceptance.png"
+                    width="120"
+                    height="120"
+                    alt="image"
+                  />
+                </div>
+                <div
+                  class="lg:w-11/12 border border-brand-500 pl-5 md:pl-10 lg:pl-0 pr-5 md:pr-10 py-7 md:py-10 lg:py-6"
+                >
+                  <div class="lg:w-3/4 xl:w-5/6 ml-auto">
+                    <!-- <p class="font-header text-secondary uppercase text-sm">The Friday Habit • Episode 70</p> -->
+                    <h3
+                      class="font-header text-secondary uppercase text-xl md:text-2xl pt-1"
+                    >
+                      INTIMATION OF ACCEPTANCE:
+                    </h3>
 
+                    <p class="font-body text-secondary md:text-3xl mt-3">
+                      20<sup>th</sup>MARCH 2023
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="relative mt-7 md:mt-9 lg:mt-16 flex flex-col lg:flex-row"
+              >
+                <div class="relative lg:absolute lg:-bottom-5 left-0">
+                  <img
+                    src="assets/img/registration.png"
+                    width="150"
+                    height="150"
+                    alt="image"
+                  />
+                </div>
+                <div
+                  class="lg:w-11/12 border border-brand-500 pl-5 md:pl-10 lg:pl-0 pr-5 md:pr-10 py-7 md:py-10 lg:py-6"
+                >
+                  <div class="lg:w-3/4 xl:w-5/6 ml-auto">
+                    <!-- <p class="font-header text-secondary uppercase text-sm">The Friday Habit • Episode 70</p> -->
+                    <h3
+                      class="font-header text-secondary uppercase text-xl md:text-2xl pt-1"
+                    >
+                      SUBMISSION OF CAMERA-READY PAPERS: AND START OF
+                      REGISTRATION
+                    </h3>
+
+                    <p class="font-body text-secondary md:text-3xl mt-3">
+                      27<sup>th</sup>MARCH 2023
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="relative mt-7 md:mt-9 lg:mt-16 flex flex-col lg:flex-row"
+              >
+                <div class="relative lg:absolute lg:-bottom-5 left-0 m-4">
+                  <img
+                    src="assets/img/lastdate.png"
+                    width="150"
+                    height="150"
+                    alt="image"
+                  />
+                </div>
+                <div
+                  class="lg:w-11/12 border border-brand-500 pl-5 md:pl-10 lg:pl-0 pr-5 md:pr-10 py-7 md:py-10 lg:py-6"
+                >
+                  <div class="lg:w-3/4 xl:w-5/6 ml-auto">
+                    <!-- <p class="font-header text-secondary uppercase text-sm">The Friday Habit • Episode 70</p> -->
+                    <h3
+                      class="font-header text-secondary uppercase text-xl md:text-2xl pt-1"
+                    >
+                      LAST DATE OF REGISTRATION:
+                    </h3>
+
+                    <p class="font-body text-secondary md:text-3xl mt-3">
+                      10<sup>th</sup>APRIL 2023
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-
-            <div class="relative mt-7 md:mt-9 lg:mt-16 flex flex-col lg:flex-row">
-              <div class="relative lg:absolute lg:-bottom-5 left-0 m-4">
-                <img src="assets/img/lastdate.png" width="150" height="150" alt="image">
-              </div>
-              <div class="lg:w-11/12 border border-brand-500 pl-5 md:pl-10 lg:pl-0 pr-5 md:pr-10 py-7 md:py-10 lg:py-6">
-                <div class="lg:w-3/4 xl:w-5/6 ml-auto">
-                  <!-- <p class="font-header text-secondary uppercase text-sm">The Friday Habit • Episode 70</p> -->
-                  <h3 class="font-header text-secondary uppercase text-xl md:text-2xl pt-1">LAST DATE OF REGISTRATION:
-                  </h3>
-
-                  <p class="font-body text-secondary md:text-3xl mt-3">10<sup>th</sup>APRIL 2023</p>
-
-                </div>
-              </div>
-            </div>
-
           </div>
+          <div
+            class="bg-brand-50 relative overflow-hidden border-b-20 border-brand-200"
+            id="conferenceTracks"
+          >
+            <div class="absolute xl:top-24 -left-56 2xl:-left-32">
+              <img src="assets/img/about-shape-01.svg" alt="" />
+            </div>
+            <div
+              class="container py-20 md:py-24 justify-between z-20 relative"
+              style="padding-top: 3rem"
+            >
+              <div
+                class="lg:w-1/2 xl:w-3/5 lg:pl-12 xl:pl-20 2xl:pr-10 relative mt-12 lg:mt-0"
+                style="width: 100%"
+              >
+                <div
+                  class="absolute -bottom-24 2xl:bottom-48 -left-40 xl:left-auto right-0 xl:-right-24 2xl:-right-32"
+                >
+                  <img src="assets/img/about-shape-02.svg" alt="" />
+                </div>
+                <div class="z-30 relative m-auto">
+                  <h3
+                    class="cursor-pointer px-5 py-3 font-header text-secondary text-3xl md:text-5xl text-white inline-block hover:opacity-75 hover:shadow hover:-mb-3 rounded-t"
+                    style="text-align: center"
+                  >
+                    CONFERENCE TRACKS
+                  </h3>
 
-        </div>
-        <div class="bg-brand-50 relative overflow-hidden border-b-20 border-brand-200" id="conferenceTracks">
-          <div class="absolute xl:top-24 -left-56 2xl:-left-32"><img src="assets/img/about-shape-01.svg" alt=""></div>
-          <div class="container py-20 md:py-24 justify-between z-20 relative" style="padding-top: 3rem;">
-            <div class="lg:w-1/2 xl:w-3/5 lg:pl-12 xl:pl-20 2xl:pr-10 relative mt-12 lg:mt-0" style="width: 100%;">
-              <div class="absolute -bottom-24 2xl:bottom-48 -left-40 xl:left-auto right-0 xl:-right-24 2xl:-right-32">
-                <img src="assets/img/about-shape-02.svg" alt="">
-              </div>
-              <div class="z-30 relative m-auto">
-                <h3
-                  class="cursor-pointer px-5 py-3 font-header text-secondary text-3xl md:text-5xl text-white  inline-block hover:opacity-75 hover:shadow hover:-mb-3 rounded-t"
-                  style="text-align: center;">
-                  CONFERENCE TRACKS </h3>
+                  <ul
+                    class="block w-11/12 my-4 mx-auto"
+                    x-data="{selected:null}"
+                  >
+                    <li class="flex align-center flex-col">
+                      <h4
+                        @click="selected !== 0 ? selected = 0 : selected = null"
+                        class="cursor-pointer px-5 py-3 font-header text-secondary font-bold text-xl md:text-2xl text-white inline-block hover:opacity-75 hover:shadow hover:-mb-3 rounded-t"
+                      >
+                        Signal/Image Processing and Applications
+                      </h4>
+                      <div x-show="selected == 0" class="py-4 px-2">
+                        <ul class="list-disc list-inside">
+                          <li>- Image/ Video/ Multimedia Signal Processing</li>
+                          <li>- Audio/ Speech/ Spoken Language Processing</li>
+                          <li>- Biomedical Signal Processing and Systems</li>
+                          <li>
+                            - Machine Learning and Deep Learning for Signal
+                            Processing
+                          </li>
+                          <li>
+                            - Sensor Array and Multichannel Signal Processing
+                          </li>
+                          <li>
+                            - Signal Processing for Communication & Networking
+                          </li>
+                          <li>- Emerging Technologies in Signal Processing</li>
+                          <li>- Human- Computer Interface</li>
+                        </ul>
+                      </div>
+                    </li>
 
-                <ul class="block w-11/12 my-4 mx-auto" x-data="{selected:null}">
-                  <li class="flex align-center flex-col">
-                    <h4 @click="selected !== 0 ? selected = 0 : selected = null"
-                      class="cursor-pointer px-5 py-3 font-header text-secondary font-bold text-xl md:text-2xl text-white  inline-block hover:opacity-75 hover:shadow hover:-mb-3 rounded-t">
-                      Signal/Image Processing and Applications </h4>
-                    <div x-show="selected == 0" class=" py-4 px-2">
-                      <ul class="list-disc  list-inside">
-                        <li>- Image/ Video/ Multimedia Signal Processing</li>
-                        <li>- Audio/ Speech/ Spoken Language Processing</li>
-                        <li>- Biomedical Signal Processing and Systems</li>
-                        <li>- Machine Learning and Deep Learning for Signal Processing</li>
-                        <li>- Sensor Array and Multichannel Signal Processing</li>
-                        <li>- Signal Processing for Communication & Networking</li>
-                        <li>- Emerging Technologies in Signal Processing</li>
-                        <li>- Human- Computer Interface</li>
-                      </ul>
-                    </div>
-                  </li>
-
-                  <li class="flex align-center flex-col">
-                    <h4 @click="selected !== 1 ? selected = 1 : selected = null"
-                      class="cursor-pointer px-5 py-3 font-header text-secondary  font-bold  text-xl md:text-2xl text-white  inline-block hover:opacity-75 hover:shadow hover:-mb-3 rounded-t">
-                      Futuristic Communication System</h4>
-                    <div x-show="selected == 1" class=" py-4 px-2">
-                      <ul class="list-disc  list-inside">
-                        <ul>
-                          <li>- Next generation Ad-hoc, Mobile and Sensor Networks</li>
+                    <li class="flex align-center flex-col">
+                      <h4
+                        @click="selected !== 1 ? selected = 1 : selected = null"
+                        class="cursor-pointer px-5 py-3 font-header text-secondary font-bold text-xl md:text-2xl text-white inline-block hover:opacity-75 hover:shadow hover:-mb-3 rounded-t"
+                      >
+                        Futuristic Communication System
+                      </h4>
+                      <div x-show="selected == 1" class="py-4 px-2">
+                        <ul class="list-disc list-inside">
+                          <!-- <ul> -->
+                          <li>
+                            - Next generation Ad-hoc, Mobile and Sensor Networks
+                          </li>
                           <li>- Satellite and Space Communications</li>
                           <li>- Optical Communication and Networks</li>
                           <li>- 5G/6G Wireless Technologies</li>
                           <li>- MIMO, Massive MIMO, mm Wave MIMO</li>
                           <li>- Software-Defined Networking (SDN)</li>
                           <li>- Ad-hoc, Mesh and Sensor Networks</li>
-                          <li>- Green and energy efficient wireless networks</li>
-                          <li>- Machine learning and deep learning for all types of networks</li>
-                          <li>- Ultra-reliable low latency communications (URLLC)</li>
-                          <li>- Multiple Radio Access Technologies (M-RATs) interworking</li>
+                          <li>
+                            - Green and energy efficient wireless networks
+                          </li>
+                          <li>
+                            - Machine learning and deep learning for all types
+                            of networks
+                          </li>
+                          <li>
+                            - Ultra-reliable low latency communications (URLLC)
+                          </li>
+                          <li>
+                            - Multiple Radio Access Technologies (M-RATs)
+                            interworking
+                          </li>
                           <li>- Next generation radio access networks (RAN)</li>
                           <li>- Mobility management and models</li>
                           <li>- RF Circuits, Systems and Antennas</li>
                         </ul>
-                    </div>
-                  </li>
+                      </div>
+                    </li>
 
-                  <li class="flex align-center flex-col">
-                    <h4 @click="selected !== 2 ? selected = 2 : selected = null"
-                      class="cursor-pointer px-5 py-3 font-header text-secondary  font-bold  text-xl md:text-2xl text-white  inline-block hover:opacity-75 hover:shadow hover:-mb-3 rounded-t">
-                      VLSI Design </h4>
-                    <div x-show="selected == 2" class=" py-4 px-2">
-                      <ul>
-                        <li>- Nanoscale devices/Nanoelectronics</li>
-                        <li>- Analog/Digital and Mixed Signal ICs</li>
-                        <li>- VLSI Signal Processing</li>
-                        <li>- Electronic Design Automation</li>
-                        <li>- Physical Design Automation</li>
-                        <li>- VLSI Testing</li>
-                        <li>- ASIC/FPGA Design</li>
-                        <li>- Electronic Devices, Materials and Fabrication Process</li>
-                        <li>- Device Modeling and Characterization</li>
-                        <li>- Advanced CMOS Devices and Process</li>
-                        <li>- System-on-Chip (SoC)</li>
-                        <li>- Biosensors and Bioelectronics</li>
-                        <li>- MEMS/NEMS Microfluidics</li>
-                        <li>- RF, Microwave and Tera Hertz Devices</li>
-                        <li>- Spintronic Devices for Memory and Computing</li>
-                        <li>- Emerging Logic, Memories and Neuromorphic Devices</li>
-                        <li>- Flexible Electronics and Organic semiconductors</li>
-                        <li>- Photovoltaics and Energy Harvesting</li>
-                      </ul>
+                    <li class="flex align-center flex-col">
+                      <h4
+                        @click="selected !== 2 ? selected = 2 : selected = null"
+                        class="cursor-pointer px-5 py-3 font-header text-secondary font-bold text-xl md:text-2xl text-white inline-block hover:opacity-75 hover:shadow hover:-mb-3 rounded-t"
+                      >
+                        VLSI Design
+                      </h4>
+                      <div x-show="selected == 2" class="py-4 px-2">
+                        <ul>
+                          <li>- Nanoscale devices/Nanoelectronics</li>
+                          <li>- Analog/Digital and Mixed Signal ICs</li>
+                          <li>- VLSI Signal Processing</li>
+                          <li>- Electronic Design Automation</li>
+                          <li>- Physical Design Automation</li>
+                          <li>- VLSI Testing</li>
+                          <li>- ASIC/FPGA Design</li>
+                          <li>
+                            - Electronic Devices, Materials and Fabrication
+                            Process
+                          </li>
+                          <li>- Device Modeling and Characterization</li>
+                          <li>- Advanced CMOS Devices and Process</li>
+                          <li>- System-on-Chip (SoC)</li>
+                          <li>- Biosensors and Bioelectronics</li>
+                          <li>- MEMS/NEMS Microfluidics</li>
+                          <li>- RF, Microwave and Tera Hertz Devices</li>
+                          <li>- Spintronic Devices for Memory and Computing</li>
+                          <li>
+                            - Emerging Logic, Memories and Neuromorphic Devices
+                          </li>
+                          <li>
+                            - Flexible Electronics and Organic semiconductors
+                          </li>
+                          <li>- Photovoltaics and Energy Harvesting</li>
+                        </ul>
+                      </div>
+                    </li>
 
-                    </div>
-                  </li>
-
-                  <li class="flex align-center flex-col">
-                    <h4 @click="selected !== 3 ? selected = 3 : selected = null"
-                      class="cursor-pointer px-5 py-3 font-header text-secondary   font-bold  text-xl md:text-2xl text-white  inline-block hover:opacity-75 hover:shadow hover:-mb-3 rounded-t">
-                      Computational Technologies </h4>
-                    <div x-show="selected == 3" class=" py-4 px-2">
-                      <ul>
-                        <li>- Big Data Analytics and Cloud Computing</li>
-                        <li>- Networks, IoT and Cyber Security</li>
-                        <li>- Computational Intelligence</li>
-                        <li>- Blockchain Technology and Applications</li>
-                        <li>- 3-D Printing and Scanning</li>
-                        <li>- Deep Learning/ Artificial Intelligence and Machine Learning Applications</li>
-                        <li>- Geographic Information Systems and Applications</li>
-                        <li>- Augmented Reality/ Virtual Reality</li>
-                        <li>- Quantum Computing and Informatics</li>
-                        <li>- Knowledge Engineering</li>
-                        <li>- Computational Biology & Bioinformatics</li>
-                        <li>- Data, Text, Web Mining & Visualization</li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
+                    <li class="flex align-center flex-col">
+                      <h4
+                        @click="selected !== 3 ? selected = 3 : selected = null"
+                        class="cursor-pointer px-5 py-3 font-header text-secondary font-bold text-xl md:text-2xl text-white inline-block hover:opacity-75 hover:shadow hover:-mb-3 rounded-t"
+                      >
+                        Computational Technologies
+                      </h4>
+                      <div x-show="selected == 3" class="py-4 px-2">
+                        <ul>
+                          <li>- Big Data Analytics and Cloud Computing</li>
+                          <li>- Networks, IoT and Cyber Security</li>
+                          <li>- Computational Intelligence</li>
+                          <li>- Blockchain Technology and Applications</li>
+                          <li>- 3-D Printing and Scanning</li>
+                          <li>
+                            - Deep Learning/ Artificial Intelligence and Machine
+                            Learning Applications
+                          </li>
+                          <li>
+                            - Geographic Information Systems and Applications
+                          </li>
+                          <li>- Augmented Reality/ Virtual Reality</li>
+                          <li>- Quantum Computing and Informatics</li>
+                          <li>- Knowledge Engineering</li>
+                          <li>- Computational Biology & Bioinformatics</li>
+                          <li>- Data, Text, Web Mining & Visualization</li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-
-        <div class="container py-20 md:py-24" x-data="{ activeTab: '2023'}" id="keynoteSpeakers">
-          <h2 class="text-brand-400 font-header text-3xl md:text-5xl uppercase text-center">Keynote Speakers</h2>
-          <div class="border-b-2 border-brand-200 mt-10 md:mt-16">
-            <div class="md:w-3/4 mx-auto flex flex-col md:flex-row">
+          <div
+            class="container py-20 md:py-24"
+            x-data="{ activeTab: '2023'}"
+            id="keynoteSpeakers"
+          >
+            <h2
+              class="text-brand-400 font-header text-3xl md:text-5xl uppercase text-center"
+            >
+              Keynote Speakers
+            </h2>
+            <div class="border-b-2 border-brand-200 mt-10 md:mt-16">
+              <div class="md:w-3/4 mx-auto flex flex-col md:flex-row">
+                <div
+                  class="md:w-1/2 border-l-2 border-t-2 border-r-2 border-brand-200 active:border-brand-300 bg-white active:bg-brand-300 group"
+                  @click="activeTab = '2023'"
+                >
+                  <span
+                    class="flex items-center justify-center font-header text-xl group-active:text-white text-brand-300 py-2 cursor-pointer"
+                  >
+                    <i
+                      class="bx bx-right-arrow-alt text-xl group-active:text-white text-brand-300"
+                    ></i
+                    >2023</span
+                  >
+                </div>
+                <div
+                  class="md:w-1/2 border-l-2 md:border-l-0 border-t-2 border-r-2 border-brand-200 active:border-brand-300 bg-white active:bg-brand-300"
+                  @click="activeTab = '2021'"
+                >
+                  <span
+                    class="flex items-center justify-center font-header text-xl active:text-white text-brand-300 py-2 cursor-pointer"
+                  >
+                    <i
+                      class="bx bx-right-arrow-alt text-xl active:text-white text-brand-300"
+                    ></i
+                    >2021</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="relative mt-10 md:mt-16 lg:mt-28 flex flex-col lg:flex-row"
+              x-show=" activeTab == '2021'"
+            >
               <div
-                class="md:w-1/2 border-l-2 border-t-2 border-r-2 border-brand-200 active:border-brand-300 bg-white active:bg-brand-300 group"
-                @click="activeTab = '2023'">
-                <span
-                  class="flex items-center justify-center font-header text-xl group-active:text-white text-brand-300 py-2 cursor-pointer">
-                  <i class='bx bx-right-arrow-alt text-xl group-active:text-white text-brand-300'></i>2023</span>
+                class="relative overflow-hidden border-b-20 border-brand-300"
+              >
+                <div class="relative">
+                  <h2
+                    class="text-brand-400 font-header text-3xl md:text-4xl uppercase text-center"
+                  >
+                    2021
+                  </h2>
+                  <div
+                    class="absolute top-7 md:top-0 xl:top-32 lg:-right-156 xl:-right-120 2xl:-right-52"
+                  >
+                    <img src="assets/img/authors-shape-02.svg" alt="shape" />
+                  </div>
+                  <div class="container my-16 md:my-24 relative z-30">
+                    <div
+                      class="flex flex-col-reverse lg:flex-row justify-between"
+                    >
+                      <div
+                        class="lg:w-3/4 2xl:w-2/5 lg:pr-16 2xl:pr-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0"
+                      >
+                        <div>
+                          <h4
+                            class="font-header text-brand-400 text-3xl md:text-4xl"
+                          >
+                            Health 4.0
+                          </h4>
+                          <p
+                            class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed"
+                          >
+                            Digital Health is essential in today's world. The
+                            COVID-19 pandemic has highlighted the benefits of
+                            digital health. Digital Health is powered by the
+                            developments of technologies making up Internet of
+                            Things (IoT) including sensors, mobile, 3D printing,
+                            analytics and more. This presentation will highlight
+                            key areas and provide insights into how the
+                            technologies of IoT can provide superior healthcare
+                            for all..
+                          </p>
+                        </div>
+                        <div>
+                          <h2
+                            class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6"
+                          >
+                            Prof Nilmini Wickramasinghe
+                          </h2>
+                          <p
+                            class="font-body font-medium text-secondary text-md md:text-md mt-6"
+                          >
+                            Swinburne University of Technology, Australia
+                          </p>
+                          <span class="flex mt-2">
+                            <a
+                              href="https://www.linkedin.com/in/nilmini-wickramasinghe-13834ab2/e"
+                            >
+                              <i
+                                class="bx bxl-linkedin text-xl text-primary hover:text-brand-400"
+                              ></i>
+                            </a>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="lg:w-1/4">
+                        <img
+                          src="assets/img/prof_nilimi.jpeg"
+                          class="w-full h-80 md:h-100 object-fir rounded-2xl"
+                          alt="image"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="relative">
+                  <div
+                    class="absolute top-7 md:top-0 xl:top-32 lg:-left-156 xl:-left-120 2xl:-left-52"
+                  >
+                    <img src="assets/img/authors-shape-02.svg" alt="shape" />
+                  </div>
+
+                  <div class="container my-16 md:my-24 relative z-30">
+                    <div class="flex flex-col lg:flex-row justify-between">
+                      <div class="lg:w-1/4">
+                        <img
+                          src="assets/img/prof_maryam.jpg"
+                          class="w-full h-80 md:h-100 object-cover rounded-2xl"
+                          alt="image"
+                        />
+                      </div>
+                      <div
+                        class="lg:w-3/4 2xl:w-2/5 lg:pl-16 2xl:pl-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0"
+                      >
+                        <div>
+                          <h4
+                            class="font-header text-brand-400 text-3xl md:text-4xl"
+                          >
+                            Modular Sensor Interfacing and Signal Conditioning
+                          </h4>
+                          <p
+                            class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed"
+                          >
+                            Sensing devices are becoming a part of communication
+                            technologies or a part of portable and mobile
+                            measurement devices to bring a new age of ubiquitous
+                            sensing. Integrable sensor modules demand modular
+                            interfacing, analog signal conditioning and
+                            integrable solutions compatible with the analog to
+                            data and information transformation. The solutions
+                            must suppress the noise, have the required
+                            sensitivity, and reduce effect of non-idealities. In
+                            this talk examples of low-noise, discrete and
+                            integrated designs for the interacting and signal
+                            conditioning of sensor signals in various forms and
+                            from different sensing elements are presented.
+                          </p>
+                        </div>
+                        <div>
+                          <h2
+                            class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6"
+                          >
+                            Prof. Maryam Shojaei Baghini
+                          </h2>
+                          <p
+                            class="font-body font-medium text-secondary text-md md:text-md mt-6"
+                          >
+                            IIT-Bombay
+                          </p>
+
+                          <span class="flex mt-2">
+                            <a
+                              href="https://www.linkedin.com/in/maryam-shojaei-baghini-04697b13/"
+                            >
+                              <i
+                                class="bx bxl-linkedin text-xl text-primary hover:text-brand-400"
+                              ></i>
+                            </a>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
+            <div x-show=" activeTab == '2023' ">
               <div
-                class="md:w-1/2 border-l-2 md:border-l-0 border-t-2 border-r-2 border-brand-200 active:border-brand-300 bg-white active:bg-brand-300"
-                @click="activeTab = '2021'">
-                <span
-                  class="flex items-center justify-center font-header text-xl active:text-white text-brand-300 py-2 cursor-pointer">
-                  <i class='bx bx-right-arrow-alt text-xl active:text-white text-brand-300'></i>2021</span>
-              </div>
-            </div>
-          </div>
-          <div class="relative mt-10 md:mt-16 lg:mt-28 flex flex-col lg:flex-row" x-show=" activeTab == '2021'">
+                class="relative overflow-hidden border-b-20 border-brand-300"
+              >
+                <div class="relative">
+                  <h2
+                    class="text-brand-400 font-header text-3xl md:text-4xl uppercase mt-4 text-center"
+                  >
+                    2023
+                  </h2>
 
-            <div class="relative overflow-hidden border-b-20 border-brand-300">
-              <div class="relative">
-
-                <h2 class="text-brand-400 font-header text-3xl md:text-4xl uppercase text-center">2021</h2>
-                <div class="absolute top-7 md:top-0 xl:top-32 lg:-right-156 xl:-right-120 2xl:-right-52"><img
-                    src="assets/img/authors-shape-02.svg" alt="shape"></div>
-                <div class="container my-16 md:my-24 relative z-30">
-                  <div class="flex flex-col-reverse lg:flex-row justify-between">
+                  <div
+                    class="absolute top md:top-0 xl:top-32 lg:-right-156 xl:-right-120 2xl:-right-52"
+                  >
+                    <img src="assets/img/authors-shape-02.svg" alt="shape" />
+                  </div>
+                  <div class="container my-8 md:my-24 relative z-30">
                     <div
-                      class="lg:w-3/4 2xl:w-2/5 lg:pr-16 2xl:pr-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0">
-                      <div>
-                        <h4 class="font-header text-brand-400 text-3xl md:text-4xl">Health 4.0
-                        </h4>
-                        <p
-                          class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed">
-                          Digital Health is essential in today's world. The COVID-19 pandemic has highlighted the
-                          benefits
-                          of digital health. Digital Health is powered by the developments of technologies making up
-                          Internet of Things (IoT) including sensors, mobile, 3D printing, analytics and more. This
-                          presentation will highlight key areas and provide insights into how the technologies of IoT
-                          can
-                          provide superior healthcare for all..</p>
+                      class="flex flex-col-reverse lg:flex-row justify-between md:gap-8"
+                    >
+                      <div
+                        class="lg:w-3/4 lg:pr-16 2xl:pr-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0"
+                      >
+                        <div>
+                          <h4
+                            class="font-header text-brand-400 text-3xl md:text-4xl"
+                          >
+                            Characteristics in MRIs: Can we train DL networks
+                            using tumor bounding box images without requiring
+                            tumor annotation?"
+                          </h4>
+                          <p
+                            class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed text-align-justify"
+                          >
+                            Irene Gu is a Professor in the Department of
+                            Electrical Engineering, Chalmers University of
+                            Technology, Sweden. She has received the PhD degree
+                            in electrical engineering from Eindhoven University
+                            of Technology, The Netherlands, in 1992. From 1992
+                            to 1994, she was a Research Fellow at the Philips
+                            Research Institute IPO, The Netherlands, and a
+                            Post-Doctoral Fellow at Staffordshire University,
+                            U.K. She was a University Lecturer at the University
+                            of Birmingham, U.K, 1995-1996 before joining
+                            Chalmers. Since Sept. 1996, she has been with the
+                            Department of Signals and Systems, Chalmers
+                            University of Technology, where she has been a
+                            Professor since 2004. She has coauthored over 200
+                            journal and conference articles, and coauthored the
+                            book on Signal Processing of Power Quality
+                            Disturbances. Irene Gu’s main research areas include
+                            statistical image analysis and video processing,
+                            machine learning and deep learning, visual object
+                            tracking and recognition, signal analysis and
+                            processing with applications to electric power
+                            systems, and biomedical image analysis for
+                            AI-assisted brain disease diagnosis. Her current
+                            main research activities include: Biomedical image
+                            analysis for diagnosis of brain tumors and
+                            Alzheimers' disease; Privacy-protected machine
+                            learning for vehicle/traffic safety and
+                            transportation systems; Signal processing and
+                            machine learning with applications to big data
+                            analytics in power systems (finding underlying
+                            causes and patterns from disturbance and variation
+                            measurement data).
+                          </p>
+                        </div>
+                        <div>
+                          <h2
+                            class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6"
+                          >
+                            Prof. Irene Yu-Hua Gu
+                          </h2>
+                          <p
+                            class="font-body font-medium text-secondary text-md md:text-md mt-6"
+                          >
+                            Professor, Chalmers University of Technology, Sweden
+                          </p>
+                          <span class="flex mt-2">
+                            <a
+                              href="https://www.linkedin.com/in/irene-yu-hua-gu-a3a54816/?originalSubdomain=se"
+                            >
+                              <i
+                                class="bx bxl-linkedin text-xl text-primary hover:text-brand-400"
+                              ></i>
+                            </a>
+                          </span>
+                        </div>
                       </div>
-                      <div>
-                        <h2 class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6">
-                          Prof Nilmini Wickramasinghe
-                        </h2>
-                        <p class="font-body font-medium text-secondary text-md md:text-md mt-6"> Swinburne University of
-                          Technology, Australia</p>
-                        <span class="flex mt-2">
-                          <a href="https://www.linkedin.com/in/nilmini-wickramasinghe-13834ab2/e">
-                            <i class='bx bxl-linkedin text-xl text-primary hover:text-brand-400'></i>
-                          </a>
-                        </span>
+                      <div class="lg:w-1/4">
+                        <img
+                          src="assets/img/prof_irene.jpeg"
+                          class="w-full h-80 md:h-100 object-fir rounded-2xl"
+                          alt="image"
+                        />
                       </div>
-                    </div>
-                    <div class="lg:w-1/4">
-                      <img src="assets/img/prof_nilimi.jpeg" class="w-full h-80 md:h-100 object-fir rounded-2xl"
-                        alt="image">
                     </div>
                   </div>
                 </div>
 
-              </div>
+                <div class="relative">
+                  <div
+                    class="absolute top-7 md:top-0 xl:top-32 lg:-left-156 xl:-left-120 2xl:-left-52"
+                  >
+                    <img src="assets/img/authors-shape-02.svg" alt="shape" />
+                  </div>
 
-              <div class="relative">
-                <div class="absolute top-7 md:top-0 xl:top-32 lg:-left-156 xl:-left-120 2xl:-left-52"><img
-                    src="assets/img/authors-shape-02.svg" alt="shape"></div>
-
-                <div class="container my-16 md:my-24 relative z-30">
-                  <div class="flex flex-col lg:flex-row justify-between">
-                    <div class="lg:w-1/4">
-                      <img src="assets/img/prof_maryam.jpg" class="w-full h-80 md:h-100 object-cover rounded-2xl"
-                        alt="image">
-                    </div>
+                  <div class="container my-16 md:my-24 relative z-30">
                     <div
-                      class="lg:w-3/4 2xl:w-2/5 lg:pl-16 2xl:pl-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0">
-                      <div>
-                        <h4 class="font-header text-brand-400 text-3xl md:text-4xl">Modular Sensor Interfacing and
-                          Signal
-                          Conditioning</h4>
-                        <p
-                          class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed">
-                          Sensing devices are becoming a part of communication technologies or a part of portable and
-                          mobile
-                          measurement devices to bring a new age of ubiquitous sensing. Integrable sensor modules demand
-                          modular interfacing, analog signal conditioning and integrable solutions compatible with the
-                          analog to data and information transformation. The solutions must suppress the noise, have the
-                          required sensitivity, and reduce effect of non-idealities. In this talk examples of low-noise,
-                          discrete and integrated designs for the interacting and signal conditioning of sensor signals
-                          in
-                          various forms and from different sensing elements are presented.</p>
+                      class="flex flex-col lg:flex-row justify-between md:gap-8"
+                    >
+                      <div class="lg:w-1/4">
+                        <img
+                          src="assets/img/bina_patel.jpeg"
+                          class="w-full h-80 md:h-100 object-cover rounded-2xl"
+                          alt="image"
+                        />
                       </div>
-                      <div>
-                        <h2 class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6">Prof. Maryam Shojaei
-                          Baghini</h2>
-                        <p class="font-body font-medium text-secondary text-md md:text-md mt-6"> IIT-Bombay
-                        </p>
+                      <div
+                        class="lg:w-3/4 lg:pl-16 2xl:pl-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0"
+                      >
+                        <div>
+                          <h4
+                            class="font-header text-brand-400 text-3xl md:text-4xl"
+                          >
+                            Career for Women in Semiconductors
+                          </h4>
+                          <p
+                            class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed text-align-justify"
+                          >
+                            Binta Patel is Chief Engineer at Intel, Austin,
+                            Texas, United States. She is an experienced Senior
+                            Principal Engineer with a demonstrated history of
+                            working in the semiconductors industry as a
+                            Technologist. She did her BE in Electronics
+                            Engineering from Nagpur University, and MS in
+                            Electrical Engineering from New York University. Her
+                            areas of specialization are Low Power PLL and
+                            Clocking Design, SoC, Microarchitectural Design,
+                            Sensors. She has several patents to her credit.
+                          </p>
+                        </div>
+                        <div>
+                          <h2
+                            class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6"
+                          >
+                            Binta Patel
+                          </h2>
+                          <p
+                            class="font-body font-medium text-secondary text-md md:text-md mt-6"
+                          >
+                            Cloud Architect - Intel
+                          </p>
 
-                        <span class="flex mt-2">
-                          <a href="https://www.linkedin.com/in/maryam-shojaei-baghini-04697b13/">
-                            <i class='bx bxl-linkedin text-xl text-primary hover:text-brand-400'></i>
-                          </a>
-
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-          <div x-show=" activeTab == '2023' ">
-
-            <div class="relative overflow-hidden border-b-20 border-brand-300">
-              <div class="relative">
-                <h2 class="text-brand-400 font-header text-3xl md:text-4xl uppercase mt-4 text-center">2023</h2>
-
-                <div class="absolute top md:top-0 xl:top-32 lg:-right-156 xl:-right-120 2xl:-right-52"><img
-                    src="assets/img/authors-shape-02.svg" alt="shape"></div>
-                <div class="container my-8 md:my-24 relative z-30">
-                  <div class="flex flex-col-reverse lg:flex-row justify-between md:gap-8">
-                    <div class="lg:w-3/4 lg:pr-16 2xl:pr-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0">
-                      <div>
-                        <h4 class="font-header text-brand-400 text-3xl md:text-4xl"> Characteristics in MRIs: Can we
-                          train DL networks using tumor bounding box images without requiring tumor annotation?"</h4>
-                        <p
-                          class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed text-align-justify">
-                          Irene Gu is a Professor in the Department of Electrical Engineering, Chalmers University of
-                          Technology, Sweden. She has received the PhD degree in electrical engineering from Eindhoven
-                          University of Technology, The Netherlands, in 1992. From 1992 to 1994, she was a Research
-                          Fellow
-                          at
-                          the Philips Research Institute IPO, The Netherlands, and a Post-Doctoral Fellow at
-                          Staffordshire
-                          University, U.K. She was a University Lecturer at the University of Birmingham, U.K, 1995-1996
-                          before
-                          joining Chalmers. Since Sept. 1996, she has been with the Department of Signals and Systems,
-                          Chalmers
-                          University of Technology, where she has been a Professor since 2004. She has coauthored over
-                          200
-                          journal and conference articles, and coauthored the book on Signal Processing of Power Quality
-                          Disturbances. Irene Gu’s main research areas include statistical image analysis and video
-                          processing,
-                          machine learning and deep learning, visual object tracking and recognition, signal analysis
-                          and
-                          processing with applications to electric power systems, and biomedical image analysis for
-                          AI-assisted
-                          brain disease diagnosis. Her current main research activities include: Biomedical image
-                          analysis
-                          for
-                          diagnosis of brain tumors and Alzheimers' disease; Privacy-protected machine learning for
-                          vehicle/traffic safety and transportation systems; Signal processing and machine learning with
-                          applications to big data analytics in power systems (finding underlying causes and patterns
-                          from
-                          disturbance and variation measurement data).</p>
-                      </div>
-                      <div>
-                        <h2 class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6">Prof. Irene Yu-Hua Gu
-                        </h2>
-                        <p class="font-body font-medium text-secondary text-md md:text-md mt-6"> Professor, Chalmers
-                          University
-                          of Technology, Sweden </p>
-                        <span class="flex mt-2">
-                          <a href="https://www.linkedin.com/in/irene-yu-hua-gu-a3a54816/?originalSubdomain=se">
-                            <i class='bx bxl-linkedin text-xl text-primary hover:text-brand-400'></i>
-                          </a>
-                        </span>
-                      </div>
-                    </div>
-                    <div class="lg:w-1/4">
-                      <img src="assets/img/prof_irene.jpeg" class="w-full h-80 md:h-100 object-fir rounded-2xl"
-                        alt="image">
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="relative">
-                <div class="absolute top-7 md:top-0 xl:top-32 lg:-left-156 xl:-left-120 2xl:-left-52"><img
-                    src="assets/img/authors-shape-02.svg" alt="shape"></div>
-
-                <div class="container my-16 md:my-24 relative z-30">
-                  <div class="flex flex-col lg:flex-row justify-between md:gap-8">
-                    <div class="lg:w-1/4">
-                      <img src="assets/img/bina_patel.jpeg" class="w-full h-80 md:h-100 object-cover rounded-2xl"
-                        alt="image">
-                    </div>
-                    <div class="lg:w-3/4 lg:pl-16 2xl:pl-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0">
-                      <div>
-                        <h4 class="font-header text-brand-400 text-3xl md:text-4xl">Career for Women in Semiconductors
-                        </h4>
-                        <p
-                          class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed text-align-justify">
-                          Binta Patel is Chief Engineer at Intel, Austin, Texas, United States. She is an experienced
-                          Senior
-                          Principal Engineer with a demonstrated history of working in the semiconductors industry as a
-                          Technologist. She did her BE in Electronics Engineering from Nagpur University, and MS in
-                          Electrical
-                          Engineering from New York University. Her areas of specialization are Low Power PLL and
-                          Clocking
-                          Design, SoC, Microarchitectural Design, Sensors. She has several patents to her credit.</p>
-                      </div>
-                      <div>
-                        <h2 class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6">Binta Patel</h2>
-                        <p class="font-body font-medium text-secondary text-md md:text-md mt-6"> Cloud Architect - Intel
-                        </p>
-
-                        <span class="flex mt-2">
-                          <a href="https://www.linkedin.com/in/binta-patel-0a26421a/">
-                            <i class='bx bxl-linkedin text-xl text-primary hover:text-brand-400'></i>
-                          </a>
-
-                        </span>
+                          <span class="flex mt-2">
+                            <a
+                              href="https://www.linkedin.com/in/binta-patel-0a26421a/"
+                            >
+                              <i
+                                class="bx bxl-linkedin text-xl text-primary hover:text-brand-400"
+                              ></i>
+                            </a>
+                          </span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="relative">
-                <div class="absolute top md:top-0 xl:top-32 lg:-right-156 xl:-right-120 2xl:-right-52"><img
-                    src="assets/img/authors-shape-02.svg" alt="shape"></div>
-                <div class="container my-8 md:my-24 relative z-30">
-                  <div class="flex flex-col-reverse lg:flex-row justify-between md:gap-8">
-                    <div class="lg:w-3/4 lg:pr-16 2xl:pr-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0">
-                      <div>
-                        <!-- <h4 class="font-header text-brand-400 text-3xl md:text-4xl"> Characteristics in MRIs: Can we
+                <div class="relative">
+                  <div
+                    class="absolute top md:top-0 xl:top-32 lg:-right-156 xl:-right-120 2xl:-right-52"
+                  >
+                    <img src="assets/img/authors-shape-02.svg" alt="shape" />
+                  </div>
+                  <div class="container my-8 md:my-24 relative z-30">
+                    <div
+                      class="flex flex-col-reverse lg:flex-row justify-between md:gap-8"
+                    >
+                      <div
+                        class="lg:w-3/4 lg:pr-16 2xl:pr-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0"
+                      >
+                        <div>
+                          <!-- <h4 class="font-header text-brand-400 text-3xl md:text-4xl"> Characteristics in MRIs: Can we
                           train DL networks using tumor bounding box images without requiring tumor annotation?"</h4> -->
-                        <p
-                          class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed text-align-justify">
-                          Rashmi Sharan Sinha received B.Tech, M.Tech, in electronics and communication engineering from
-                          PTU Punjab, Rep. of India and PhD degrees in electronics and electrical engineering from
-                          Dongguk University, Seoul, Rep. of Korea in 2011, 2015, and 2020, respectively. From 2015 to
-                          2020, she received SRD scholarship funded by Dongguk University to work in the field of 5G
-                          LTE, Cellular Networks, Artificial Intelligence, Convolutional Neural Network, Indoor
-                          Positioning System, Localization in Dongguk University, Rep. of Korea. She is now a Research
-                          Scientist, Urban Sensing in the Division of Centre of Communication & Signal Processing at
-                          Nanyang Technological University, Singapore. </p>
-                      </div>
-                      <div>
-                        <h2 class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6">Dr. Rashmi Sharan
-                          Sinha
-                        </h2>
-                        <p class="font-body font-medium text-secondary text-md md:text-md mt-6"> Research Scientist,
-                          Urban Sensing in the Division of Centre of Communication & Signal Processing at Nanyang
-                          Technological University, Singapore </p>
-                        <!-- <span class="flex mt-2">
+                          <p
+                            class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed text-align-justify"
+                          >
+                            Rashmi Sharan Sinha received B.Tech, M.Tech, in
+                            electronics and communication engineering from PTU
+                            Punjab, Rep. of India and PhD degrees in electronics
+                            and electrical engineering from Dongguk University,
+                            Seoul, Rep. of Korea in 2011, 2015, and 2020,
+                            respectively. From 2015 to 2020, she received SRD
+                            scholarship funded by Dongguk University to work in
+                            the field of 5G LTE, Cellular Networks, Artificial
+                            Intelligence, Convolutional Neural Network, Indoor
+                            Positioning System, Localization in Dongguk
+                            University, Rep. of Korea. She is now a Research
+                            Scientist, Urban Sensing in the Division of Centre
+                            of Communication & Signal Processing at Nanyang
+                            Technological University, Singapore.
+                          </p>
+                        </div>
+                        <div>
+                          <h2
+                            class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6"
+                          >
+                            Dr. Rashmi Sharan Sinha
+                          </h2>
+                          <p
+                            class="font-body font-medium text-secondary text-md md:text-md mt-6"
+                          >
+                            Research Scientist, Urban Sensing in the Division of
+                            Centre of Communication & Signal Processing at
+                            Nanyang Technological University, Singapore
+                          </p>
+                          <!-- <span class="flex mt-2">
                           <a href="https://www.linkedin.com/in/irene-yu-hua-gu-a3a54816/?originalSubdomain=se">
                             <i class='bx bxl-linkedin text-xl text-primary hover:text-brand-400'></i>
                           </a>
                         </span> -->
+                        </div>
+                      </div>
+                      <div class="lg:w-1/4">
+                        <img
+                          src="assets/img/rashmi.jpeg"
+                          class="w-full h-80 md:h-100 object-fir rounded-2xl"
+                          alt="image"
+                        />
                       </div>
                     </div>
-                    <div class="lg:w-1/4">
-                      <img src="assets/img/rashmi.jpeg" class="w-full h-80 md:h-100 object-fir rounded-2xl" alt="image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative overflow-hidden border-b-20 border-brand-300">
+            <div class="relative">
+              <h2
+                class="text-brand-400 font-header text-3xl md:text-5xl uppercase text-center"
+              >
+                Tutorials 2021
+              </h2>
+              <div
+                class="absolute top-7 md:top-0 xl:top-32 lg:-right-156 xl:-right-120 2xl:-right-52"
+              >
+                <img src="assets/img/authors-shape-02.svg" alt="shape" />
+              </div>
+              <div class="container my-16 md:my-24 relative z-30">
+                <div
+                  class="flex flex-col-reverse lg:flex-row justify-between md:gap-8"
+                >
+                  <div
+                    class="lg:w-3/4 lg:pr-16 2xl:pr-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0"
+                  >
+                    <div>
+                      <h4
+                        class="font-header text-brand-400 text-3xl md:text-4xl"
+                      >
+                        Game-driven Electronic Design Automation
+                      </h4>
+                      <p
+                        class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed text-align-justify"
+                      >
+                        In this tutorial, I will present highly visual
+                        interactive design frameworks that we have developed to
+                        harness human intelligence for mapping/placement and
+                        architecture design for custom reconfigurable devices.
+                        People excel at navigating complex and dynamically
+                        changing situations, recognizing recurring patterns, and
+                        identifying potential opportunities. I will show how
+                        these reasoning and problem solving skills can be
+                        brought to bear in solving the mapping challenge for
+                        custom reconfigurable architectures.
+                      </p>
+                    </div>
+                    <div>
+                      <h2
+                        class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6"
+                      >
+                        Dr Gayatri Mehta
+                      </h2>
+                      <p
+                        class="font-body font-medium text-secondary text-md md:text-md mt-6"
+                      >
+                        University of North Texas
+                      </p>
+                      <span class="flex mt-2">
+                        <a
+                          href="https://www.linkedin.com/in/gayatri-mehta-64aa7411/"
+                        >
+                          <i
+                            class="bx bxl-linkedin text-xl text-primary hover:text-brand-400"
+                          ></i>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="lg:w-1/4">
+                    <img
+                      src="assets/img/prof_gaytri.jpg"
+                      class="w-full h-80 md:h-100 object-fir rounded-2xl"
+                      alt="image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative">
+              <div
+                class="absolute top-7 md:top-0 xl:top-32 lg:-left-156 xl:-left-120 2xl:-left-52"
+              >
+                <img src="assets/img/authors-shape-02.svg" alt="shape" />
+              </div>
+
+              <div class="container my-16 md:my-24 relative z-30">
+                <div class="flex flex-col lg:flex-row justify-between md:gap-8">
+                  <div class="lg:w-1/4">
+                    <img
+                      src=""
+                      class="w-full h-80 md:h-100 object-cover rounded-2xl"
+                      alt="image"
+                    />
+                  </div>
+                  <div
+                    class="lg:w-3/4 lg:pl-16 2xl:pl-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0"
+                  >
+                    <div>
+                      <h4
+                        class="font-header text-brand-400 text-3xl md:text-4xl"
+                      >
+                        AI tools to combat antimicrobial resistance (AMR)
+                      </h4>
+                      <p
+                        class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed text-align-justify"
+                      >
+                        Antimicrobial Resistance is fast emerging to be one of
+                        the biggest challenges in healthcare across the world.
+                        Rampant inappropriate use of antibiotics is by far the
+                        biggest contributor to this problem. Dr Seema Singh will
+                        be conducting a tutorial around the potential role of
+                        data analytics and AI based decision support systems in
+                        driving the judicious use of antibiotics in healthcare
+                        practice.
+                      </p>
+                    </div>
+                    <div>
+                      <h2
+                        class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6"
+                      >
+                        Dr Seema Singh
+                      </h2>
+                      <p
+                        class="font-body font-medium text-secondary text-md md:text-md mt-6"
+                      >
+                        MS (Surgery), PGDM (IIM-A)
+                        <br />
+                        Digital Health Consultant
+                      </p>
+
+                      <span class="flex mt-2">
+                        <a href="https://www.linkedin.com/in/drseema/">
+                          <i
+                            class="bx bxl-linkedin text-xl text-primary hover:text-brand-400"
+                          ></i>
+                        </a>
+                      </span>
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
-
-
           </div>
-        </div>
 
+          <!-- Schedule  -->
 
+          <div
+            class="container py-10 md:py-24 bg-brand-50"
+            x-data="{ activeTab: 'd1'}"
+            id="eventSchedule"
+          >
+            <h2
+              class="text-brand-400 font-header text-3xl md:text-5xl uppercase text-center"
+            >
+              Event Schedule
+            </h2>
+            <div class="border-b-2 border-brand-200 mt-10 md:mt-16">
+              <div class="md:w-3/4 mx-auto flex flex-col md:flex-row">
+                <div
+                  class="md:w-1/3 border-l-2 border-t-2 border-r-2 border-brand-200 active:border-brand-300 bg-white active:bg-brand-300 group"
+                  id="d1Bg"
+                  @click="activeTab = 'd1'"
+                >
+                  <span
+                    class="flex items-center justify-center font-header text-xl group-active:text-white text-brand-300 py-2 cursor-pointer"
+                    onclick="changeFocusTab('d1Bg')"
+                    id="d1BgText"
+                  >
+                    <i
+                      class="bx bx-right-arrow-alt text-xl group-active:text-white text-brand-300"
+                    ></i>
+                    Day 1</span
+                  >
+                </div>
+                <div
+                  class="md:w-1/3 border-l-2 md:border-l-0 border-t-2 border-r-2 border-brand-200 active:border-brand-300 bg-white active:bg-brand-300"
+                  @click="activeTab = 'd2'"
+                  id="d2Bg"
+                >
+                  <span
+                    class="flex items-center justify-center font-header text-xl active:text-white text-brand-300 py-2 cursor-pointer"
+                    onclick="changeFocusTab('d2Bg')"
+                    id="d2BgText"
+                  >
+                    <i
+                      class="bx bx-right-arrow-alt text-xl active:text-white text-brand-300"
+                    ></i
+                    >Day 2</span
+                  >
+                </div>
+                <div
+                  class="md:w-1/3 border-l-2 md:border-l-0 border-t-2 border-r-2 border-brand-200 active:border-brand-300 bg-white active:bg-brand-300"
+                  @click="activeTab = 'd3'"
+                  id="d3Bg"
+                >
+                  <span
+                    class="flex items-center justify-center font-header text-xl active:text-white text-brand-300 py-2 cursor-pointer"
+                    onclick="changeFocusTab('d3Bg')"
+                    id="d3BgText"
+                  >
+                    <i
+                      class="bx bx-right-arrow-alt text-xl active:text-white text-brand-300"
+                    ></i
+                    >Day 3</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="relative mt-6" x-show=" activeTab == 'd1'">
+              <div class="flow-root">
+                <ul role="list" class="mx-auto text-center">
+                  <li class="">
+                    <div
+                      class="flex md:flex-col justify-center relative focus-within:ring-2 focus-within:ring-indigo-500"
+                    >
+                      <h4
+                        class="font-header text-brand-400 text-xl md:text-4xl"
+                      >
+                        10:00 AM :
+                      </h4>
+                      <h4
+                        class="font-header text-brand-400 text-xl ml-4 md:text-4xl"
+                      >
+                        Inaugration
+                      </h4>
+                    </div>
+                    <p
+                      class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed"
+                    ></p>
+                  </li>
+                </ul>
+              </div>
 
-        <div class="relative overflow-hidden border-b-20 border-brand-300">
-          <div class="relative">
-
-            <h2 class="text-brand-400 font-header text-3xl md:text-5xl uppercase text-center">Tutorials 2021</h2>
-            <div class="absolute top-7 md:top-0 xl:top-32 lg:-right-156 xl:-right-120 2xl:-right-52"><img
-                src="assets/img/authors-shape-02.svg" alt="shape"></div>
-            <div class="container my-16 md:my-24 relative z-30">
-              <div class="flex flex-col-reverse lg:flex-row justify-between md:gap-8">
-                <div class="lg:w-3/4 lg:pr-16 2xl:pr-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0">
-                  <div>
-                    <h4 class="font-header text-brand-400 text-3xl md:text-4xl">Game-driven Electronic Design Automation
+              <div class="flow-root">
+                <ul role="list" class="mx-auto text-center">
+                  <li class="">
+                    <div
+                      class="flex md:flex-col justify-center relative focus-within:ring-2 focus-within:ring-indigo-500"
+                    >
+                      <h4
+                        class="font-header text-brand-400 text-xl md:text-4xl"
+                      >
+                        11:30 AM :
+                      </h4>
+                      <h4
+                        class="font-header text-brand-400 text-xl ml-4 md:text-4xl"
+                      >
+                        Plenary Talk
+                      </h4>
+                    </div>
+                    <p
+                      class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed"
+                    ></p>
+                  </li>
+                </ul>
+              </div>
+              <div class="flow-root">
+                <ul role="list" class="mx-auto text-center">
+                  <li class="text-center m-auto">
+                    <div
+                      class="flex md:flex-col justify-center relative focus-within:ring-2 focus-within:ring-indigo-500"
+                    >
+                      <h4
+                        class="font-header text-brand-400 text-xl md:text-4xl"
+                      >
+                        2:30 PM :
+                      </h4>
+                      <h4
+                        class="font-header text-brand-400 text-xl ml-4 md:text-4xl"
+                      >
+                        Paper Presentation
+                      </h4>
+                    </div>
+                    <h4
+                      class="font-header text-secondary text-xl mt-4 md:text-xl"
+                    >
+                      Session 1
                     </h4>
+
+                    <h4
+                      class="font-header text-secondary text-xl mt-4 md:text-xl"
+                    >
+                      Session 2
+                    </h4>
+
+                    <h4
+                      class="font-header text-secondary text-xl mt-4 md:text-xl"
+                    >
+                      Session 3
+                    </h4>
+
                     <p
-                      class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed text-align-justify">
-                      In this tutorial, I will present highly visual interactive design frameworks that we have
-                      developed to
-                      harness human intelligence for mapping/placement and architecture design for custom reconfigurable
-                      devices. People excel at navigating complex and dynamically changing situations, recognizing
-                      recurring
-                      patterns, and identifying potential opportunities. I will show how these reasoning and problem
-                      solving
-                      skills can be brought to bear in solving the mapping challenge for custom reconfigurable
-                      architectures.</p>
-                  </div>
-                  <div>
-                    <h2 class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6">
-                      Dr Gayatri Mehta
-
-                    </h2>
-                    <p class="font-body font-medium text-secondary text-md md:text-md mt-6"> University of North Texas
-                    </p>
-                    <span class="flex mt-2">
-                      <a href="https://www.linkedin.com/in/gayatri-mehta-64aa7411/">
-                        <i class='bx bxl-linkedin text-xl text-primary hover:text-brand-400'></i>
-                      </a>
-                    </span>
-                  </div>
-                </div>
-                <div class="lg:w-1/4">
-                  <img src="assets/img/prof_gaytri.jpg" class="w-full h-80 md:h-100 object-fir rounded-2xl" alt="image">
-                </div>
+                      class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed"
+                    ></p>
+                  </li>
+                </ul>
               </div>
             </div>
 
-          </div>
-
-          <div class="relative">
-            <div class="absolute top-7 md:top-0 xl:top-32 lg:-left-156 xl:-left-120 2xl:-left-52"><img
-                src="assets/img/authors-shape-02.svg" alt="shape"></div>
-
-            <div class="container my-16 md:my-24 relative z-30">
-              <div class="flex flex-col lg:flex-row justify-between md:gap-8">
-                <div class="lg:w-1/4">
-                  <img src="" class="w-full h-80 md:h-100 object-cover rounded-2xl" alt="image">
-                </div>
-                <div class="lg:w-3/4 lg:pl-16 2xl:pl-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0">
-                  <div>
-                    <h4 class="font-header text-brand-400 text-3xl md:text-4xl">AI tools to combat antimicrobial
-                      resistance
-                      (AMR)</h4>
+            <div class="relative mt-6" x-show=" activeTab == 'd2'">
+              <div class="flow-root">
+                <ul role="list" class="mx-auto text-center">
+                  <li class="">
+                    <div
+                      class="flex md:flex-col justify-center relative focus-within:ring-2 focus-within:ring-indigo-500"
+                    >
+                      <h4
+                        class="font-header text-brand-400 text-xl md:text-4xl"
+                      >
+                        8:30 AM :
+                      </h4>
+                      <h4
+                        class="font-header text-brand-400 text-xl ml-4 md:text-4xl"
+                      >
+                        Keynote Address 1
+                      </h4>
+                    </div>
                     <p
-                      class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed text-align-justify">
-                      Antimicrobial Resistance is fast emerging to be one of the biggest challenges in healthcare across
-                      the
-                      world. Rampant inappropriate use of antibiotics is by far the biggest contributor to this problem.
-                      Dr
-                      Seema Singh will be conducting a tutorial around the potential role of data analytics and AI based
-                      decision support systems in driving the judicious use of antibiotics in healthcare practice.</p>
-                  </div>
-                  <div>
-                    <h2 class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6">Dr Seema Singh</h2>
-                    <p class="font-body font-medium text-secondary text-md md:text-md mt-6"> MS (Surgery), PGDM (IIM-A)
-                      <br />
-                      Digital Health Consultant
-                    </p>
+                      class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed"
+                    ></p>
+                  </li>
+                </ul>
+              </div>
 
-                    <span class="flex mt-2">
-                      <a href="https://www.linkedin.com/in/drseema/">
-                        <i class='bx bxl-linkedin text-xl text-primary hover:text-brand-400'></i>
-                      </a>
+              <div class="flow-root">
+                <ul role="list" class="mx-auto text-center">
+                  <li class="">
+                    <div
+                      class="flex md:flex-col justify-center relative focus-within:ring-2 focus-within:ring-indigo-500"
+                    >
+                      <h4
+                        class="font-header text-brand-400 text-xl md:text-4xl"
+                      >
+                        10:30 AM :
+                      </h4>
+                      <h4
+                        class="font-header text-brand-400 text-xl ml-4 md:text-4xl"
+                      >
+                        Keynote Address 2
+                      </h4>
+                    </div>
+                    <p
+                      class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed"
+                    ></p>
+                  </li>
+                </ul>
+              </div>
+              <div class="flow-root">
+                <ul role="list" class="mx-auto text-center">
+                  <li class="text-center m-auto">
+                    <div
+                      class="flex md:flex-col justify-center relative focus-within:ring-2 focus-within:ring-indigo-500"
+                    >
+                      <h4
+                        class="font-header text-brand-400 text-xl md:text-4xl"
+                      >
+                        12:00 Noon :
+                      </h4>
+                      <h4
+                        class="font-header text-brand-400 text-xl ml-4 md:text-4xl"
+                      >
+                        Paper Presentation
+                      </h4>
+                    </div>
+                    <h4
+                      class="font-header text-secondary text-xl mt-4 md:text-xl"
+                    >
+                      Session 4
+                    </h4>
 
-                    </span>
-                  </div>
-                </div>
+                    <h4
+                      class="font-header text-secondary text-xl mt-4 md:text-xl"
+                    >
+                      Session 5
+                    </h4>
+
+                    <p
+                      class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed"
+                    ></p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="flow-root">
+                <ul role="list" class="mx-auto text-center">
+                  <li class="text-center m-auto">
+                    <div
+                      class="flex md:flex-col justify-center relative focus-within:ring-2 focus-within:ring-indigo-500"
+                    >
+                      <h4
+                        class="font-header text-brand-400 text-xl md:text-4xl"
+                      >
+                        2:30 PM :
+                      </h4>
+                      <h4
+                        class="font-header text-brand-400 text-xl ml-4 md:text-4xl"
+                      >
+                        Paper Presentation
+                      </h4>
+                    </div>
+                    <h4
+                      class="font-header text-secondary text-xl mt-4 md:text-xl"
+                    >
+                      Session 6
+                    </h4>
+
+                    <h4
+                      class="font-header text-secondary text-xl mt-4 md:text-xl"
+                    >
+                      Session 7
+                    </h4>
+
+                    <h4
+                      class="font-header text-secondary text-xl mt-4 md:text-xl"
+                    >
+                      Session 8
+                    </h4>
+
+                    <p
+                      class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed"
+                    ></p>
+                  </li>
+                </ul>
               </div>
             </div>
-          </div>
-        </div>
 
-
-
-
-        <!-- Schedule  -->
-
-        <div class="container py-10 md:py-24 bg-brand-50" x-data="{ activeTab: 'd1'}" id="eventSchedule">
-          <h2 class="text-brand-400 font-header text-3xl md:text-5xl uppercase text-center">Event Schedule</h2>
-          <div class="border-b-2 border-brand-200 mt-10 md:mt-16">
-            <div class="md:w-3/4 mx-auto flex flex-col md:flex-row">
-              <div
-                class="md:w-1/3 border-l-2 border-t-2 border-r-2 border-brand-200 active:border-brand-300 bg-white active:bg-brand-300 group" id="d1Bg"
-                @click="activeTab = 'd1'">
-                <span
-                  class="flex items-center justify-center font-header text-xl group-active:text-white text-brand-300 py-2 cursor-pointer" onclick="changeFocusTab('d1Bg')" id="d1BgText">
-                  <i class='bx bx-right-arrow-alt text-xl group-active:text-white text-brand-300'></i> Day 1</span>
+            <div class="relative mt-6" x-show=" activeTab == 'd3'">
+              <div class="flow-root">
+                <ul role="list" class="mx-auto text-center">
+                  <li class="">
+                    <div
+                      class="flex md:flex-col justify-center relative focus-within:ring-2 focus-within:ring-indigo-500"
+                    >
+                      <h4
+                        class="font-header text-brand-400 text-xl md:text-4xl"
+                      >
+                        10:00 AM :
+                      </h4>
+                      <h4
+                        class="font-header text-brand-400 text-xl ml-4 md:text-4xl"
+                      >
+                        Inaugration
+                      </h4>
+                    </div>
+                    <p
+                      class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed"
+                    ></p>
+                  </li>
+                </ul>
               </div>
-              <div
-                class="md:w-1/3 border-l-2 md:border-l-0 border-t-2 border-r-2 border-brand-200 active:border-brand-300 bg-white active:bg-brand-300"
-                @click="activeTab = 'd2'" id="d2Bg">
-                <span
-                  class="flex items-center justify-center font-header text-xl active:text-white text-brand-300 py-2 cursor-pointer" onclick="changeFocusTab('d2Bg')" id="d2BgText">
-                  <i class='bx bx-right-arrow-alt text-xl active:text-white text-brand-300'></i>Day 2</span>
+
+              <div class="flow-root">
+                <ul role="list" class="mx-auto text-center">
+                  <li class="">
+                    <div
+                      class="flex md:flex-col justify-center relative focus-within:ring-2 focus-within:ring-indigo-500"
+                    >
+                      <h4
+                        class="font-header text-brand-400 text-xl md:text-4xl"
+                      >
+                        11:30 AM :
+                      </h4>
+                      <h4
+                        class="font-header text-brand-400 text-xl ml-4 md:text-4xl"
+                      >
+                        Plenary Talk
+                      </h4>
+                    </div>
+                    <p
+                      class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed"
+                    ></p>
+                  </li>
+                </ul>
               </div>
-              <div
-                class="md:w-1/3 border-l-2 md:border-l-0 border-t-2 border-r-2 border-brand-200 active:border-brand-300 bg-white active:bg-brand-300"
-                @click="activeTab = 'd3'" id="d3Bg">
-                <span
-                  class="flex items-center justify-center font-header text-xl active:text-white text-brand-300 py-2 cursor-pointer" onclick="changeFocusTab('d3Bg')" id="d3BgText">
-                  <i class='bx bx-right-arrow-alt text-xl active:text-white text-brand-300'></i>Day 3</span>
+              <div class="flow-root">
+                <ul role="list" class="mx-auto text-center">
+                  <li class="text-center m-auto">
+                    <div
+                      class="flex md:flex-col justify-center relative focus-within:ring-2 focus-within:ring-indigo-500"
+                    >
+                      <h4
+                        class="font-header text-brand-400 text-xl md:text-4xl"
+                      >
+                        2:30 PM :
+                      </h4>
+                      <h4
+                        class="font-header text-brand-400 text-xl ml-4 md:text-4xl"
+                      >
+                        Paper Presentation
+                      </h4>
+                    </div>
+                    <h4
+                      class="font-header text-secondary text-xl mt-4 md:text-xl"
+                    >
+                      Session 1
+                    </h4>
+
+                    <h4
+                      class="font-header text-secondary text-xl mt-4 md:text-xl"
+                    >
+                      Session 2
+                    </h4>
+
+                    <h4
+                      class="font-header text-secondary text-xl mt-4 md:text-xl"
+                    >
+                      Session 3
+                    </h4>
+
+                    <p
+                      class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed"
+                    ></p>
+                  </li>
+                </ul>
               </div>
             </div>
-          </div>
-          <div class="relative mt-6" x-show=" activeTab == 'd1'">
 
-            <div class="flow-root">
-              <ul role="list" class="mx-auto text-center">
-                <li class="">
-                  <div
-                    class="flex md:flex-col justify-center relative focus-within:ring-2 focus-within:ring-indigo-500">
-                    <h4 class="font-header text-brand-400 text-xl md:text-4xl">10:00 AM :</h4>
-                    <h4 class="font-header text-brand-400 text-xl ml-4 md:text-4xl">Inaugration</h4>
+            <!-- end schedule -->
 
-                  </div>
-                  <p
-                    class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed">
-                  </p>
-                </li>
-
-
-              </ul>
-            </div>
-
-            <div class="flow-root">
-              <ul role="list" class="mx-auto text-center">
-                <li class="">
-                  <div
-                    class="flex md:flex-col justify-center relative focus-within:ring-2 focus-within:ring-indigo-500">
-                    <h4 class="font-header text-brand-400 text-xl md:text-4xl">11:30 AM :</h4>
-                    <h4 class="font-header text-brand-400 text-xl ml-4 md:text-4xl">Plenary Talk</h4>
-
-                  </div>
-                  <p
-                    class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed">
-                  </p>
-                </li>
-
-
-              </ul>
-            </div>
-            <div class="flow-root">
-              <ul role="list" class="mx-auto text-center">
-                <li class="text-center m-auto">
-                  <div
-                    class="flex md:flex-col justify-center relative focus-within:ring-2 focus-within:ring-indigo-500">
-                    <h4 class="font-header text-brand-400 text-xl md:text-4xl">2:30 PM :</h4>
-                    <h4 class="font-header text-brand-400 text-xl ml-4 md:text-4xl">
-                      Paper Presentation</h4>
-                  </div>
-                  <h4 class="font-header text-secondary text-xl mt-4 md:text-xl">
-                    Session 1</h4>
-
-                  <h4 class="font-header text-secondary text-xl mt-4 md:text-xl">
-                    Session 2</h4>
-
-                  <h4 class="font-header text-secondary text-xl mt-4 md:text-xl">
-                    Session 3</h4>
-
-                  <p
-                    class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed">
-                  </p>
-                </li>
-
-
-              </ul>
-            </div>
-
-
+            <!--Tabs  -->
           </div>
 
+          <!-- Conference Chairs -->
 
-          <div class="relative  mt-6" x-show=" activeTab == 'd2'">
-
-            <div class="flow-root">
-              <ul role="list" class="mx-auto text-center">
-                <li class="">
-                  <div
-                    class="flex md:flex-col justify-center relative focus-within:ring-2 focus-within:ring-indigo-500">
-                    <h4 class="font-header text-brand-400 text-xl md:text-4xl">8:30 AM :</h4>
-                    <h4 class="font-header text-brand-400 text-xl ml-4 md:text-4xl">Keynote Address 1</h4>
-
-                  </div>
-                  <p
-                    class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed">
-                  </p>
-                </li>
-
-
-              </ul>
-            </div>
-
-            <div class="flow-root">
-              <ul role="list" class="mx-auto text-center">
-                <li class="">
-                  <div
-                    class="flex md:flex-col justify-center relative focus-within:ring-2 focus-within:ring-indigo-500">
-                    <h4 class="font-header text-brand-400 text-xl md:text-4xl">10:30 AM :</h4>
-                    <h4 class="font-header text-brand-400 text-xl ml-4 md:text-4xl"> Keynote Address 2</h4>
-
-                  </div>
-                  <p
-                    class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed">
-                  </p>
-                </li>
-
-
-              </ul>
-            </div>
-            <div class="flow-root">
-              <ul role="list" class="mx-auto text-center">
-                <li class="text-center m-auto">
-                  <div
-                    class="flex md:flex-col justify-center relative focus-within:ring-2 focus-within:ring-indigo-500">
-                    <h4 class="font-header text-brand-400 text-xl md:text-4xl">12:00 Noon
-                      :</h4>
-                    <h4 class="font-header text-brand-400 text-xl ml-4 md:text-4xl">
-                      Paper Presentation</h4>
-                  </div>
-                  <h4 class="font-header text-secondary text-xl mt-4 md:text-xl">
-                    Session 4</h4>
-
-                  <h4 class="font-header text-secondary text-xl mt-4 md:text-xl">
-                    Session 5</h4>
-
-
-                  <p
-                    class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed">
-                  </p>
-                </li>
-
-
-              </ul>
-            </div>
-
-
-            <div class="flow-root">
-              <ul role="list" class="mx-auto text-center">
-                <li class="text-center m-auto">
-                  <div
-                    class="flex md:flex-col justify-center relative focus-within:ring-2 focus-within:ring-indigo-500">
-                    <h4 class="font-header text-brand-400 text-xl md:text-4xl">2:30 PM
-                      :</h4>
-                    <h4 class="font-header text-brand-400 text-xl ml-4 md:text-4xl">
-                      Paper Presentation</h4>
-                  </div>
-                  <h4 class="font-header text-secondary text-xl mt-4 md:text-xl">
-                    Session 6</h4>
-
-                  <h4 class="font-header text-secondary text-xl mt-4 md:text-xl">
-                    Session 7</h4>
-
-                  <h4 class="font-header text-secondary text-xl mt-4 md:text-xl">
-                    Session 8</h4>
-
-
-                  <p
-                    class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed">
-                  </p>
-                </li>
-
-
-              </ul>
-            </div>
-
-
-          </div>
-
-
-          <div class="relative  mt-6" x-show=" activeTab == 'd3'">
-
-            <div class="flow-root">
-              <ul role="list" class="mx-auto text-center">
-                <li class="">
-                  <div
-                    class="flex md:flex-col justify-center relative focus-within:ring-2 focus-within:ring-indigo-500">
-                    <h4 class="font-header text-brand-400 text-xl md:text-4xl">10:00 AM :</h4>
-                    <h4 class="font-header text-brand-400 text-xl ml-4 md:text-4xl">Inaugration</h4>
-
-                  </div>
-                  <p
-                    class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed">
-                  </p>
-                </li>
-
-
-              </ul>
-            </div>
-
-            <div class="flow-root">
-              <ul role="list" class="mx-auto text-center">
-                <li class="">
-                  <div
-                    class="flex md:flex-col justify-center relative focus-within:ring-2 focus-within:ring-indigo-500">
-                    <h4 class="font-header text-brand-400 text-xl md:text-4xl">11:30 AM :</h4>
-                    <h4 class="font-header text-brand-400 text-xl ml-4 md:text-4xl">Plenary Talk</h4>
-
-                  </div>
-                  <p
-                    class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed">
-                  </p>
-                </li>
-
-
-              </ul>
-            </div>
-            <div class="flow-root">
-              <ul role="list" class="mx-auto text-center">
-                <li class="text-center m-auto">
-                  <div
-                    class="flex md:flex-col justify-center relative focus-within:ring-2 focus-within:ring-indigo-500">
-                    <h4 class="font-header text-brand-400 text-xl md:text-4xl">2:30 PM :</h4>
-                    <h4 class="font-header text-brand-400 text-xl ml-4 md:text-4xl">
-                      Paper Presentation</h4>
-                  </div>
-                  <h4 class="font-header text-secondary text-xl mt-4 md:text-xl">
-                    Session 1</h4>
-
-                  <h4 class="font-header text-secondary text-xl mt-4 md:text-xl">
-                    Session 2</h4>
-
-                  <h4 class="font-header text-secondary text-xl mt-4 md:text-xl">
-                    Session 3</h4>
-
-                  <p
-                    class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed">
-                  </p>
-                </li>
-
-
-              </ul>
-            </div>
-
-
-          </div>
-
-
-
-          <!-- end schedule -->
-
-          <!--Tabs  -->
-        </div>
-
-
-
-        <!-- Conference Chairs -->
-
-        <div class="container py-20 md:py-24">
-          <h2 class="text-brand-400 font-header text-3xl md:text-5xl uppercase text-center">CONFERENCE CHAIRS FROM
-            ORGANIZING INSTITUTE</h2>
-          <h3 class="font-header text-secondary uppercase text-xl md:text-2xl pt-1 text-center">Dr BR Ambedkar National
-            Institute of Technology, Jalandhar
-          </h3>
-          <div class="flex flex-col xl:flex-row justify-between pt-20">
-            <div class="w-full xl:w-full">
-              <div class="pb-5" style="padding-bottom: 45px;width: 50%;margin: auto;">
-                <a href="../index.html" style="display: flex;justify-content: center;align-items: center;">
-                  <div class="flip-card">
+          <div class="container py-20 md:py-24">
+            <h2
+              class="text-brand-400 font-header text-3xl md:text-5xl uppercase text-center"
+            >
+              CONFERENCE CHAIRS FROM ORGANIZING INSTITUTE
+            </h2>
+            <h3
+              class="font-header text-secondary uppercase text-xl md:text-2xl pt-1 text-center"
+            >
+              Dr BR Ambedkar National Institute of Technology, Jalandhar
+            </h3>
+            <div class="flex flex-col xl:flex-row justify-between pt-20">
+              <div class="w-full xl:w-full">
+                <div class="pb-5 mx-auto" style="padding-bottom: 45px">
+                  <div class="flip-card" style="margin: auto; width: 40%">
                     <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="./assets/img/director.jpg" class="rounded-2xl" alt="image">
+                      <div
+                        class="flip-card-front flex flex-col justify-center items-center"
+                        style="background: none; border: none"
+                      >
+                        <img
+                          src="./assets/img/director.jpg"
+                          alt="image"
+                          class="rounded-full"
+                          style="width: 40%; margin-top: 10px"
+                        />
+                        <div class="text-center">
+                          <a
+                            href="https://www.nitj.ac.in/index.php/nitj_cinfo/Faculty/214"
+                            class="font-header text-secondary hover:text-primary text-2xl mt-3 block"
+                            >Dr Binod Kumar Kanaujia</a
+                          >
+                          <p class="font-medium text-secondary mt-3">
+                            Director, Dr BR Ambedkar National Institute of
+                            Technology
+                          </p>
+                        </div>
                       </div>
                       <div class="flip-card-back-1">
                         <h1>CHIEF PATRON</h1>
-                        <p>Dr. BINOD KUMAR KANAUJIA received his B.Tech. degree in electronics engineering from the
-                          Kamla Nehru Institute of Technology, Sultanpur, India, in 1994, and the M.Tech. and Ph.D.
-                          degrees from the Department of Electronics Engineering, IIT Banaras Hindu University,
-                          Varanasi, India, in 1998 and 2004, respectively. He is a Professor with the School of
-                          Computational and Integrative Sciences, Jawaharlal Nehru University, New Delhi, India. He
-                          has been credited to publish more than 250 research articles with more than 1900 citations
-                          and H-index of 21 in several peer-reviewed journals and conferences. He had 55 M.Tech. and
-                          35 Ph.D. scholars in the field of RF and microwave engineering. He is also a member of
-                          several academic and professional bodies, such as the Institution of Engineers, India, the
-                          Indian Society for Technical Education and the Institute of Electronics and
-                          Telecommunication Engineering of India. He had successfully executed eight research projects
-                          sponsored by several agencies of the Government of India, such as DRDO, DST, AICTE and ISRO.
-                          He is currently on the editorial board of several international journals. Formerly he has
-                          worked as Vice Chancellor of Jawaharlal Nehru University, Delhi, India 110067 and presently
-                          appointed as Director, Dr B R Ambedkar National Institute of Technology Jalandhar, Punjab,
-                          India-144011</p>
+                        <p>
+                          Dr. BINOD KUMAR KANAUJIA received his B.Tech. degree
+                          in electronics engineering from the Kamla Nehru
+                          Institute of Technology, Sultanpur, India, in 1994,
+                          and the M.Tech. and Ph.D. degrees from the Department
+                          of Electronics Engineering, IIT Banaras Hindu
+                          University, Varanasi, India, in 1998 and 2004,
+                          respectively. He is a Professor with the School of
+                          Computational and Integrative Sciences, Jawaharlal
+                          Nehru University, New Delhi, India. He has been
+                          credited to publish more than 250 research articles
+                          with more than 1900 citations and H-index of 21 in
+                          several peer-reviewed journals and conferences. He had
+                          55 M.Tech. and 35 Ph.D. scholars in the field of RF
+                          and microwave engineering. He is also a member of
+                          several academic and professional bodies, such as the
+                          Institution of Engineers, India, the Indian Society
+                          for Technical Education and the Institute of
+                          Electronics and Telecommunication Engineering of
+                          India. He had successfully executed eight research
+                          projects sponsored by several agencies of the
+                          Government of India, such as DRDO, DST, AICTE and
+                          ISRO. He is currently on the editorial board of
+                          several international journals. Formerly he has worked
+                          as Vice Chancellor of Jawaharlal Nehru University,
+                          Delhi, India 110067 and presently appointed as
+                          Director, Dr B R Ambedkar National Institute of
+                          Technology Jalandhar, Punjab, India-144011
+                        </p>
                       </div>
                     </div>
                   </div>
-                </a>
-                <div class="mt-6 lg:mt-8 text-center">
-                  <a href="https://www.nitj.ac.in/index.php/nitj_cinfo/Faculty/214"
-                    class="font-header text-secondary hover:text-primary text-2xl mt-3 block">Dr Binod Kumar
-                    Kanaujia</a>
-                  <p class="font-medium text-secondary mt-3">Director, Dr BR Ambedkar National Institute of Technology
-                  </p>
                 </div>
-              </div>
-              <div class="grid grid-cols-1 md:grid-cols-2   gap-12 md:gap-8 lg:gap-12 xl:gap-8">
-                <div class="md:mt-0">
-                  <a href="../index.html" style="display: flex;justify-content: center;align-items: center;">
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 lg:gap-12 xl:gap-8"
+                >
+                  <div class="md:mt-0 flex justify-center align-center">
                     <div class="flip-card">
                       <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                          <img src="./assets/img/mamtakhosla.jpg" class="rounded-2xl " alt="image">
+                        <div
+                          class="flip-card-front flex flex-col justify-center items-center"
+                          style="background: none; border: none"
+                        >
+                          <img
+                            src="./assets/img/mamtakhosla.jpg"
+                            class="rounded-full"
+                            style="width: 40%; margin-top: 10px"
+                            alt="image"
+                          />
+                          <div class="text-center">
+                            <a
+                              href="../index.html"
+                              class="font-header text-secondary hover:text-primary text-2xl mt-3 block"
+                              >Dr Mamta Khosla</a
+                            >
+                            <p class="font-medium text-secondary mt-3">
+                              Associate Professor & Head, Electronics and Comm.
+                              Engg.
+                            </p>
+                          </div>
                         </div>
                         <div class="flip-card-back">
                           <h1>Executive General Chair</h1>
-                          <p>Dr Mamta Khosla is currently working as an Associate Professor in the Department of
-                            Electronics and Communication Engineering, NIT Jalandhar. She joined the institute in year
-                            1992. She is actively involved in the various administrative responsibilities at institute
-                            level and department level. She is the coordinator of SMDP- C2S Project funded by MHRD, New
-                            Delhi and also coordinated other sponsored projects from MHRD and DST-FIST project. So far,
-                            she has guided 07 students for research guidance at Doctorate’s level. Her research interest
-                            includes Digital Systems Design, Soft Computing and Nano scale Semiconductor Devices.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <div class="mt-6 lg:mt-8 text-center">
-
-                    <a href="../index.html" class="font-header text-secondary hover:text-primary text-2xl mt-3 block">Dr
-                      Mamta Khosla</a>
-                    <p class="font-medium text-secondary mt-3">Associate Professor & Head, Electronics and Comm. Engg.
-                    </p>
-
-                  </div>
-                </div>
-                <div class="md:mt-4">
-                  <a href="../index.html" style="display: flex;justify-content: center;align-items: center;">
-                    <div class="flip-card">
-                      <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                          <img src="./assets/img/indu.jpeg" class="rounded-2xl" alt="image">
-                        </div>
-                        <div class="flip-card-back">
-                          <h1>Executive General Chair</h1>
-                          <p>Dr Indu Saini is currently working as an Assistant Professor in the Department of
-                            Electronics and Communication Engineering, NIT Jalandhar. She joined the institute in year
-                            2002. She has received sponsored projects from MeitY, and MHRD, New Delhi. She is also
-                            awarded with Distinguished Woman in engineering award from Centre for Advanced Research and
-                            Design (CARD) of Venus International Foundation and Bharat Excellence Award by FFI, India in
-                            the year 2019. She has contributed more than 59 research articles in refereed International
-                            Journals and International Conferences papers. Her research interests include Biomedical
-                            Signal Processing; Machine Learning Algorithms, and VLSI Design.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <div class="mt-6 lg:mt-8 text-center">
-
-                    <a href="../index.html" class="font-header text-secondary hover:text-primary text-2xl mt-3 block">Dr
-                      Indu Saini</a>
-                    <p class="font-medium text-secondary mt-3">Assistant Professor, Electronics and Comm. Engg.</p>
-
-                  </div>
-                </div>
-                <div class="md:mt-4">
-                  <a href="../index.html" style="display: flex;justify-content: center;align-items: center;">
-                    <div class="flip-card">
-                      <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                          <img src="./assets/img/neetusood.jpeg" class="rounded-2xl" alt="image">
-                        </div>
-                        <div class="flip-card-back">
-                          <h1>Program General Chair</h1>
-                          <p>Dr Neetu Sood is currently working as an Assistant Professor in the Department of
-                            Electronics and Communication Engineering, NIT Jalandhar. She joined the institute in year
-                            2007. She has received sponsored projects from MeitY, New Delhi. She is also awarded with
-                            outstanding woman in engineering award from Centre for Advanced Research and Design (CARD)
-                            of Venus International Foundation in the year 2020. She has contributed more than 40
-                            research articles in refereed International Journals and International Conferences papers.
-                            She is an active researcher in the field of Wireless Communication Systems, OFDM based
-                            Systems and Signal Processing.
+                          <p>
+                            Dr Mamta Khosla is currently working as an Associate
+                            Professor in the Department of Electronics and
+                            Communication Engineering, NIT Jalandhar. She joined
+                            the institute in year 1992. She is actively involved
+                            in the various administrative responsibilities at
+                            institute level and department level. She is the
+                            coordinator of SMDP- C2S Project funded by MHRD, New
+                            Delhi and also coordinated other sponsored projects
+                            from MHRD and DST-FIST project. So far, she has
+                            guided 07 students for research guidance at
+                            Doctorate's level. Her research interest includes
+                            Digital Systems Design, Soft Computing and Nano
+                            scale Semiconductor Devices.
                           </p>
                         </div>
                       </div>
                     </div>
-                  </a>
-                  <div class="mt-6 lg:mt-8 text-center">
-
-                    <a href="../index.html" class="font-header text-secondary hover:text-primary text-2xl mt-3 block">
-                      Dr Neetu Sood</a>
-                    <p class="font-medium text-secondary mt-3">Assistant Professor, Electronics and Comm. Engg.</p>
-
                   </div>
-                </div>
-                <div class="md:mt-4">
-                  <a href="../index.html" style="display: flex;justify-content: center;align-items: center;">
+                  <div class="md:mt-4 flex justify-center align-center">
                     <div class="flip-card">
                       <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                          <img src="./assets/img/deeptikakkar.jpg" class="rounded-2xl" alt="image">
+                        <div
+                          class="flip-card-front flex flex-col justify-center items-center"
+                          style="background: none; border: none"
+                        >
+                          <img
+                            src="./assets/img/indu.jpeg"
+                            class="rounded-full"
+                            style="width: 40%; margin-top: 10px"
+                            alt="image"
+                          />
+                          <div class="text-center">
+                            <a
+                              href="../index.html"
+                              class="font-header text-secondary hover:text-primary text-2xl mt-3 block"
+                              >Dr Indu Saini</a
+                            >
+                            <p class="font-medium text-secondary mt-3">
+                              Assistant Professor, Electronics and Comm. Engg.
+                            </p>
+                          </div>
                         </div>
                         <div class="flip-card-back">
-                          <h1>Program General Chair</h1>
-                          <p>Dr Deepti Kakkar is currently working as an Assistant Professor in the Department of
-                            Electronics and Communication Engineering, NIT Jalandhar. She joined the institute in year
-                            2007. She is actively involved in the various activities at institute and department level.
-                            She has edited various books with reputed publishers and authored many research papers. Her
-                            research interest includes Cognitive Radios, Signal Processing, Wireless Systems, Behavior
-                            Modelling, Neuro-developmental Disorder.
+                          <h1>Executive General Chair</h1>
+                          <p>
+                            Dr Indu Saini is currently working as an Assistant
+                            Professor in the Department of Electronics and
+                            Communication Engineering, NIT Jalandhar. She joined
+                            the institute in year 2002. She has received
+                            sponsored projects from MeitY, and MHRD, New Delhi.
+                            She is also awarded with Distinguished Woman in
+                            engineering award from Centre for Advanced Research
+                            and Design (CARD) of Venus International Foundation
+                            and Bharat Excellence Award by FFI, India in the
+                            year 2019. She has contributed more than 59 research
+                            articles in refereed International Journals and
+                            International Conferences papers. Her research
+                            interests include Biomedical Signal Processing;
+                            Machine Learning Algorithms, and VLSI Design.
                           </p>
                         </div>
                       </div>
                     </div>
-                  </a>
-                  <div class="mt-6 lg:mt-8 text-center">
-
-                    <a href="../index.html" class="font-header text-secondary hover:text-primary text-2xl mt-3 block">Dr
-                      Deepti Kakkar</a>
-                    <p class="font-medium text-secondary mt-3">Assistant Professor, Electronics and Comm. Engg.</p>
                   </div>
-                </div>
-                <div class="md:mt-4">
-                  <a href="../index.html" style="display: flex;justify-content: center;align-items: center;">
+                  <div class="md:mt-4 flex justify-center align-center">
                     <div class="flip-card">
                       <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                          <img src="./assets/img/tarun.jpg" class="rounded-2xl" alt="image">
+                        <div
+                          class="flip-card-front flex flex-col justify-center items-center"
+                          style="background: none; border: none"
+                        >
+                          <img
+                            src="./assets/img/neetusood.jpeg"
+                            class="rounded-full"
+                            style="width: 40%; margin-top: 10px"
+                            alt="image"
+                          />
+                          <div class="text-center">
+                            <a
+                              href="../index.html"
+                              class="font-header text-secondary hover:text-primary text-2xl mt-3 block"
+                            >
+                              Dr Neetu Sood</a
+                            >
+                            <p class="font-medium text-secondary mt-3">
+                              Assistant Professor, Electronics and Comm. Engg.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="flip-card-back">
+                          <h1>Program General Chair</h1>
+                          <p>
+                            Dr Neetu Sood is currently working as an Assistant
+                            Professor in the Department of Electronics and
+                            Communication Engineering, NIT Jalandhar. She joined
+                            the institute in year 2007. She has received
+                            sponsored projects from MeitY, New Delhi. She is
+                            also awarded with outstanding woman in engineering
+                            award from Centre for Advanced Research and Design
+                            (CARD) of Venus International Foundation in the year
+                            2020. She has contributed more than 40 research
+                            articles in refereed International Journals and
+                            International Conferences papers. She is an active
+                            researcher in the field of Wireless Communication
+                            Systems, OFDM based Systems and Signal Processing.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="md:mt-4 flex justify-center align-center">
+                    <div class="flip-card">
+                      <div class="flip-card-inner">
+                        <div
+                          class="flip-card-front flex flex-col justify-center items-center"
+                          style="background: none; border: none"
+                        >
+                          <img
+                            src="./assets/img/deeptikakkar.jpg"
+                            class="rounded-full"
+                            style="width: 40%; margin-top: 10px"
+                            alt="image"
+                          />
+                          <div class="text-center">
+                            <a
+                              href="../index.html"
+                              class="font-header text-secondary hover:text-primary text-2xl mt-3 block"
+                              >Dr Deepti Kakkar</a
+                            >
+                            <p class="font-medium text-secondary mt-3">
+                              Assistant Professor, Electronics and Comm. Engg.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="flip-card-back">
+                          <h1>Program General Chair</h1>
+                          <p>
+                            Dr Deepti Kakkar is currently working as an
+                            Assistant Professor in the Department of Electronics
+                            and Communication Engineering, NIT Jalandhar. She
+                            joined the institute in year 2007. She is actively
+                            involved in the various activities at institute and
+                            department level. She has edited various books with
+                            reputed publishers and authored many research
+                            papers. Her research interest includes Cognitive
+                            Radios, Signal Processing, Wireless Systems,
+                            Behavior Modelling, Neuro-developmental Disorder.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="md:mt-4 flex justify-center align-center">
+                    <div class="flip-card">
+                      <div class="flip-card-inner">
+                        <div
+                          class="flip-card-front flex flex-col justify-center items-center"
+                          style="background: none; border: none"
+                        >
+                          <img
+                            src="./assets/img/tarun.jpg"
+                            class="rounded-full"
+                            style="width: 40%; height: 70%; margin-top: 10px"
+                            alt="image"
+                          />
+                          <div class="text-center">
+                            <a
+                              href="../index.html"
+                              class="font-header text-secondary hover:text-primary text-2xl mt-3 block"
+                              >Dr Tarun Chaudhary</a
+                            >
+                            <p class="font-medium text-secondary mt-3">
+                              Assistant Professor, Electronics and Comm. Engg.
+                            </p>
+                          </div>
                         </div>
                         <div class="flip-card-back">
                           <h1>Organising Sectretary</h1>
-                          <p>Dr Tarun Chaudhary is currently working as Assistant Professor in the Department of
-                            Electronics and Communication Engineering, NIT Jalandhar. She has joined the institute
-                            recently in year 2019 and is currently involved in organizing various events in the
-                            department. Her research interest included Nano scale device modelling, Analysis and design
-                            of low power VLSI Circuits, Characteristic study of 2D Materials based devices for Analog
-                            and Digital applications.</p>
+                          <p>
+                            Dr Tarun Chaudhary is currently working as Assistant
+                            Professor in the Department of Electronics and
+                            Communication Engineering, NIT Jalandhar. She has
+                            joined the institute recently in year 2019 and is
+                            currently involved in organizing various events in
+                            the department. Her research interest included Nano
+                            scale device modelling, Analysis and design of low
+                            power VLSI Circuits, Characteristic study of 2D
+                            Materials based devices for Analog and Digital
+                            applications.
+                          </p>
                         </div>
                       </div>
                     </div>
-                  </a>
-                  <div class="mt-6 lg:mt-8 text-center">
-
-                    <a href="../index.html" class="font-header text-secondary hover:text-primary text-2xl mt-3 block">Dr
-                      Tarun Chaudhary</a>
-                    <p class="font-medium text-secondary mt-3">Assistant Professor, Electronics and Comm. Engg.</p>
                   </div>
                 </div>
               </div>
             </div>
-
-
           </div>
-        </div>
 
-
-        <div class="relative border-t-10 w-screen border-b-4 border-t-brand-300 border-b-primary bg-dark">
-          <div class="absolute top-0 left-0 md:top-32 xl:top-10 xl:-left-28 2xl:left-0">
-            <img src="assets/img/footer-shape-02.svg" alt="" />
-          </div>
-          <div class="absolute bottom-0 right-0 md:top-32 xl:top-10">
-            <img src="assets/img/footer-shape-01.svg" alt="" />
-          </div>
-          <div class="container flex flex-wrap items-center justify-between py-14">
-            <div class="w-full md:w-3/5 xl:w-1/4 2xl:w-1/5">
-              <a href="index.html">
-                <img src="assets/img/logo_nitj.png" height="150" width="150" alt="logo" />
-              </a>
-              <p class="mt-7 block font-body font-bold text-white">
-                WREC'23
-              </p>
-              <p class="pt-3 font-body text-sm text-white md:pr-24 xl:pr-0">
-                WOMEN RESEARCHERS IN ELECTRONICS AND COMPUTING
-              </p>
-              <p class="pt-3 font-body text-sm text-white md:pr-24 xl:pr-0">
-
-                DEPARTMENT OF ELECTRONICS AND COMMUNICATION ENGINEERING
-              </p>
+          <div
+            class="relative border-t-10 w-screen border-b-4 border-t-brand-300 border-b-primary bg-dark"
+          >
+            <div
+              class="absolute top-0 left-0 md:top-32 xl:top-10 xl:-left-28 2xl:left-0"
+            >
+              <img src="assets/img/footer-shape-02.svg" alt="" />
             </div>
-
-            <div class="mt-10 w-full md:mt-12 md:w-3/5 xl:mt-0 xl:w-1/4">
-              <a href="index.html" class="mb-2 flex items-center">
-                <span>
-                  <i class="bx bxs-location-plus text-3xl text-brand-200"></i>
-                </span>
-                <span class="block pl-4 font-body tracking-wide text-white">
-                  Dr B R Ambedkar National Institute of Technology
-                  G.T. Road, Amritsar Bypass,
-                  Jalandhar (Punjab), India - 144011
-                </span>
-              </a>
-              <a href="tel:+919888604632" class="mb-2 flex items-center">
-                <span>
-                  <i class="bx bxs-phone-call text-3xl text-brand-200"></i>
-                </span>
-                <span class="block pl-4 font-body tracking-wide text-white">
-                  +91 98886 04632
-                </span>
-              </a>
-              <a href="mailto:wrec@nitj.ac.in" class="mb-2 flex items-center">
-                <span>
-                  <i class="bx bx-mail-send text-3xl text-brand-200"></i>
-                </span>
-                <span class="block pl-4 font-body tracking-wide text-white">
-                  wrec@nitj.ac.in
-                </span>
-              </a>
+            <div class="absolute bottom-0 right-0 md:top-32 xl:top-10">
+              <img src="assets/img/footer-shape-01.svg" alt="" />
             </div>
+            <div
+              class="container flex flex-wrap items-center justify-between py-14"
+            >
+              <div class="w-full md:w-3/5 xl:w-1/4 2xl:w-1/5">
+                <a href="index.html">
+                  <img
+                    src="assets/img/logo_nitj.png"
+                    height="150"
+                    width="150"
+                    alt="logo"
+                  />
+                </a>
+                <p class="mt-7 block font-body font-bold text-white">WREC'23</p>
+                <p class="pt-3 font-body text-sm text-white md:pr-24 xl:pr-0">
+                  WOMEN RESEARCHERS IN ELECTRONICS AND COMPUTING
+                </p>
+                <p class="pt-3 font-body text-sm text-white md:pr-24 xl:pr-0">
+                  DEPARTMENT OF ELECTRONICS AND COMMUNICATION ENGINEERING
+                </p>
+              </div>
 
+              <div class="mt-10 w-full md:mt-12 md:w-3/5 xl:mt-0 xl:w-1/4">
+                <a href="index.html" class="mb-2 flex items-center">
+                  <span>
+                    <i class="bx bxs-location-plus text-3xl text-brand-200"></i>
+                  </span>
+                  <span class="block pl-4 font-body tracking-wide text-white">
+                    Dr B R Ambedkar National Institute of Technology G.T. Road,
+                    Amritsar Bypass, Jalandhar (Punjab), India - 144011
+                  </span>
+                </a>
+                <a href="tel:+919888604632" class="mb-2 flex items-center">
+                  <span>
+                    <i class="bx bxs-phone-call text-3xl text-brand-200"></i>
+                  </span>
+                  <span class="block pl-4 font-body tracking-wide text-white">
+                    +91 98886 04632
+                  </span>
+                </a>
+                <a href="mailto:wrec@nitj.ac.in" class="mb-2 flex items-center">
+                  <span>
+                    <i class="bx bx-mail-send text-3xl text-brand-200"></i>
+                  </span>
+                  <span class="block pl-4 font-body tracking-wide text-white">
+                    wrec@nitj.ac.in
+                  </span>
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
 
+          <!-- Alpine -->
+          <script
+            defer
+            src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+          ></script>
+          <script>
+            function changeFocusTab(focused) {
+              console.log(focused);
+              const earlierFocused = sessionStorage.getItem("inFocus");
 
+              if (earlierFocused === null) {
+                sessionStorage.setItem("inFocus", focused);
+                return;
+              }
 
+              document.getElementById(earlierFocused).removeAttribute("style");
+              document
+                .getElementById(earlierFocused + "Text")
+                .removeAttribute("style");
 
-        <!-- Alpine -->
-        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-        <script>
-          function changeFocusTab(focused){
-            console.log(focused)
-            const earlierFocused = sessionStorage.getItem("inFocus")
+              document.getElementById(focused).style =
+                "background-color: #BA9778;";
+              document.getElementById(focused + "Text").style = "color: #fff;";
 
-            if(earlierFocused === null) {
               sessionStorage.setItem("inFocus", focused);
-              return;
             }
-
-            document.getElementById(earlierFocused).removeAttribute("style");
-            document.getElementById(earlierFocused + "Text").removeAttribute("style");
-
-            document.getElementById(focused).style = "background-color: #BA9778;";
-            document.getElementById(focused + "Text").style = "color: #fff;";
-
-            sessionStorage.setItem("inFocus", focused);
-          }
-        </script>
-  </main>
-</body>
-
+          </script>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
