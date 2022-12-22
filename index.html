@@ -42,7 +42,6 @@
       rel="stylesheet"
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
     />
-    <script src="script.js"></script>
     <link rel="stylesheet" href="assets/styles/main.min.css" />
     <link rel="stylesheet" href="assets/styles/design.css" />
     <link rel="stylesheet" href="assets/styles/new.css" />
@@ -50,14 +49,15 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="assets/styles/dropdown.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="assets/styles/dropdown.css" />
     <style>
       .underLineOnHover:hover {
         text-decoration: underline;
@@ -66,7 +66,7 @@
     </style>
     <style>
       * {
-        font-family: "Poppins", sans-serif !important;
+        font-family: "Poppins", sans-serif;
       }
     </style>
   </head>
@@ -89,122 +89,177 @@
             </button>
             <ul class="absolute top-20 py-10 text-left">
               <li class="py-3">
-                <a href="index.html"
-                class="rounded-full px-5 py-2 font-header text-xl text-bolduppercase text-black transition-colors"><b>Home</b></a>
-            </li>
-            <li class="py-2">
-              <a href="episodes/index.html"
-                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"><b>Dates</b></a>
-            </li>
-            <li class="py-2">
-              <a href="episode/index.html"
-                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"><b>Tracks</b></a>
-            </li>
-            <li class="py-2">
-              <a href="blog/index.html"
-                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"><b>Keynote
-                Speakers</b></a>
-            </li>
-            <li class="py-2">
-              <a href="#eventSchedule"
-                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"><b>Schedule</b></a>
-            </li>
-            <li class="py-2">
-              <a href="single/index.html"
-                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"><b>Committee</b></a>
-            </li>
-            <li class="py-2">
-              <a href="single/index.html"
-                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"><b>For
-                Authors</b></a>
-            </li>
-            <li class="py-2">
-              <a href="single/index.html"
-                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"><b>About</b></a>
-            </li>
-            <li class="py-2">
-              <a href="single/index.html"
-                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"><b>Contact</b></a>
-            </li>
-          </ul>
+                <a
+                  href="index.html"
+                  class="rounded-full px-5 py-2 font-header text-xl text-bolduppercase text-black transition-colors"
+                  ><b>Home</b></a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  href="episodes/index.html"
+                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
+                  ><b>Dates</b></a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  href="episode/index.html"
+                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
+                  ><b>Tracks</b></a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  href="blog/index.html"
+                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
+                  ><b>Keynote Speakers</b></a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  href="#eventSchedule"
+                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
+                  ><b>Schedule</b></a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  href="single/index.html"
+                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
+                  ><b>Committee</b></a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  href="single/index.html"
+                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
+                  ><b>For Authors</b></a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  href="single/index.html"
+                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
+                  ><b>About</b></a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  href="single/index.html"
+                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
+                  ><b>Contact</b></a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <!-- <div class="absolute top-0 z-40 w-full bg-gradient-to-b from-black/70 to-transparent"> -->
-      <div class="absolute top-0 z-40 w-full ">
-        <div class="container relative z-40 flex items-center justify-between py-7">
-          <div class="flex items-center justify-between">
-            <a href="index.html" class="w-40">
-              <img src="assets/img/logo_nitj.png" height="100" width="100" alt="logo" />
-            </a>
+        <!-- <div class="absolute top-0 z-40 w-full bg-gradient-to-b from-black/70 to-transparent"> -->
+        <div class="absolute top-0 z-40 w-full">
+          <div
+            class="container relative z-40 flex items-center justify-between py-7"
+          >
+            <div class="flex items-center justify-between">
+              <a href="index.html" class="w-40">
+                <img
+                  src="assets/img/logo_nitj.png"
+                  height="100"
+                  width="100"
+                  alt="logo"
+                />
+              </a>
 
-            <!--Menu -->
-            <ul class="ml-12 hidden xl:flex bg-primary p-6 rounded-full">
-              <li>
-                <a href="index.html"
-                  class="rounded-full px-5 py-2 font-header uppercase text-black text-bold transition-colors hover:bg-primary"><b>Home</b></a>
-              </li>
-              <li>
-                <a href="index.html#eventTimeline"
-                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">
-                  <b>Dates</b></a>
-              </li>
-              <li>
-                <a href="index.html#conferenceTracks"
-                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">
-                  <b>Tracks</b></a>
-              </li>
-              <li>
-                <a href="index.html#keynoteSpeakers"
-                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"><b>Keynote
-                  Speakers</b></a>
-              </li>
-              <li>
-                <a href="/index.html#eventSchedule"
-                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">
-                  <b>Schedule</b></a>
-              </li>
-              <li>
-                <a href="commitee.html"
-                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"><b>Committee</b></a>
-              </li>
-              <li>
-                <!-- <a href=""
+              <!--Menu -->
+              <ul class="ml-12 hidden xl:flex bg-primary p-6 rounded-full">
+                <li>
+                  <a
+                    href="index.html"
+                    class="rounded-full px-5 py-2 font-header uppercase text-black text-bold transition-colors hover:bg-primary"
+                    ><b>Home</b></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.html#eventTimeline"
+                    class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"
+                  >
+                    <b>Dates</b></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.html#conferenceTracks"
+                    class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"
+                  >
+                    <b>Tracks</b></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.html#keynoteSpeakers"
+                    class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"
+                    ><b>Keynote Speakers</b></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/index.html#eventSchedule"
+                    class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"
+                  >
+                    <b>Schedule</b></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="commitee.html"
+                    class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"
+                    ><b>Committee</b></a
+                  >
+                </li>
+                <li>
+                  <!-- <a href=""
                   class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">For
                   Authors</a> -->
                   <div class="dropdown">
-                    <button class="dropbtn"><b>For Authors</b> 
-                      <i class="fa fa-caret-down"></i>
+                    <button class="dropbtn">
+                      <b>For Authors</b>
+                      <!-- <i class="far fa-caret-down"></i> -->
+                      <i class="bx bxs-down-arrow"></i>
                     </button>
                     <div class="dropdown-content">
                       <a href="call_for_papers.html">Call for papers</a>
                       <a href="paper-submission.html">Paper Submission</a>
                     </div>
-                  </div> 
-              </li>
-              
-              <li>
-                <a href="about.html"
-                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"><b>About Us</b>
-                </a>
-              </li>
-              <li>
-                <a href="about.html#contact"
-                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"><b>Contact</b></a>
-              </li>
-            </ul>
-          </div>
+                  </div>
+                </li>
 
+                <li>
+                  <a
+                    href="about.html"
+                    class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"
+                    ><b>About Us</b>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="about.html#contact"
+                    class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"
+                    ><b>Contact</b></a
+                  >
+                </li>
+              </ul>
+            </div>
 
-          <!--Mobile menu button-->
-          <div class="absolute right-0 md:right-2 xl:hidden">
-            <button @click="mobileMenu = true" x-show=" !mobileMenu ">
-              <i class="bx bx-menu-alt-right text-4xl text-black"></i>
-            </button>
+            <!--Mobile menu button-->
+            <div class="absolute right-0 md:right-2 xl:hidden">
+              <button @click="mobileMenu = true" x-show=" !mobileMenu ">
+                <i class="bx bx-menu-alt-right text-4xl text-black"></i>
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
       <div class="relative">
         <div
