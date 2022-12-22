@@ -45,6 +45,11 @@
   <link rel="stylesheet" href="assets/styles/new.css">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles/dropdown.css">
+  <style>
+    * {
+      font-family: "Poppins", sans-serif !important;
+    }
+  </style>
 </head>
 
 <body x-data="{ mobileMenu: false }" :class="{'relative overflow-hidden max-h-screen': mobileMenu }">
@@ -60,41 +65,41 @@
           <ul class="absolute top-20 py-10 text-left">
             <li class="py-3">
               <a href="index.html"
-                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors">Home</a>
+                class="rounded-full px-5 py-2 font-header text-xl text-bolduppercase text-black transition-colors"><b>Home</b></a>
             </li>
             <li class="py-2">
               <a href="episodes/index.html"
-                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"> Dates</a>
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"><b>Dates</b></a>
             </li>
             <li class="py-2">
               <a href="episode/index.html"
-                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"> Tracks</a>
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"><b>Tracks</b></a>
             </li>
             <li class="py-2">
               <a href="blog/index.html"
-                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors">Keynote
-                Speakers</a>
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"><b>Keynote
+                Speakers</b></a>
             </li>
             <li class="py-2">
               <a href="#eventSchedule"
-                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors">Schedule</a>
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"><b>Schedule</b></a>
             </li>
             <li class="py-2">
               <a href="single/index.html"
-                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors">Committee</a>
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"><b>Committee</b></a>
             </li>
             <li class="py-2">
               <a href="single/index.html"
-                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors">For
-                Authors</a>
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"><b>For
+                Authors</b></a>
             </li>
             <li class="py-2">
               <a href="single/index.html"
-                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors">About</a>
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"><b>About</b></a>
             </li>
             <li class="py-2">
               <a href="single/index.html"
-                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors">Contact</a>
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"><b>Contact</b></a>
             </li>
           </ul>
         </div>
@@ -112,38 +117,38 @@
             <ul class="ml-12 hidden xl:flex bg-primary p-6 rounded-full">
               <li>
                 <a href="index.html"
-                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">Home</a>
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"><b>Home</b></a>
               </li>
               <li>
                 <a href="index.html#eventTimeline"
                   class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">
-                  Dates</a>
+                  <b>Dates</b></a>
               </li>
               <li>
                 <a href="index.html#conferenceTracks"
                   class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">
-                  Tracks</a>
+                  <b>Tracks</b></a>
               </li>
               <li>
                 <a href="index.html#keynoteSpeakers"
-                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">Keynote
-                  Speakers</a>
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"><b>Keynote
+                  Speakers</b></a>
               </li>
               <li>
                 <a href="/index.html#eventSchedule"
                   class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">
-                  Schedule</a>
+                  <b>Schedule</b></a>
               </li>
               <li>
                 <a href="commitee.html"
-                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">Committee</a>
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"><b>Committee</b></a>
               </li>
               <li>
                 <!-- <a href=""
                   class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">For
                   Authors</a> -->
                   <div class="dropdown">
-                    <button class="dropbtn">For Authors 
+                    <button class="dropbtn"><b>For Authors</b> 
                       <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
@@ -155,12 +160,12 @@
               
               <li>
                 <a href="about.html"
-                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">About Us
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"><b>About Us</b>
                 </a>
               </li>
               <li>
                 <a href="about.html#contact"
-                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">Contact</a>
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"><b>Contact</b></a>
               </li>
             </ul>
           </div>

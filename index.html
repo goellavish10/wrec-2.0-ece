@@ -64,6 +64,11 @@
         font-size: 16px;
       }
     </style>
+    <style>
+      * {
+        font-family: "Poppins", sans-serif !important;
+      }
+    </style>
   </head>
 
   <body
@@ -84,182 +89,122 @@
             </button>
             <ul class="absolute top-20 py-10 text-left">
               <li class="py-3">
-                <a
-                  href="index.html"
-                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
-                  >Home</a
-                >
-              </li>
-              <li class="py-2">
-                <a
-                  href="#eventTimeline"
-                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
-                >
-                  Dates</a
-                >
-              </li>
-              <li class="py-2">
-                <a
-                  href="episode/index.html"
-                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
-                >
-                  Tracks</a
-                >
-              </li>
-              <li class="py-2">
-                <a
-                  href="blog/index.html"
-                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
-                  >Keynote Speakers</a
-                >
-              </li>
-              <li class="py-2">
-                <a
-                  href="#eventSchedule"
-                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
-                  >Schedule</a
-                >
-              </li>
-              <li class="py-2">
-                <a
-                  href="commitee.html"
-                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
-                  >Committee</a
-                >
-              </li>
-              <li class="py-2">
-                <a
-                  href="single/index.html"
-                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
-                  >For Authors</a
-                >
-              </li>
-              <li class="py-2">
-                <a
-                  href="single/index.html"
-                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
-                  >About</a
-                >
-              </li>
-              <li class="py-2">
-                <a
-                  href="about.html#contact"
-                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </div>
+                <a href="index.html"
+                class="rounded-full px-5 py-2 font-header text-xl text-bolduppercase text-black transition-colors"><b>Home</b></a>
+            </li>
+            <li class="py-2">
+              <a href="episodes/index.html"
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"><b>Dates</b></a>
+            </li>
+            <li class="py-2">
+              <a href="episode/index.html"
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"><b>Tracks</b></a>
+            </li>
+            <li class="py-2">
+              <a href="blog/index.html"
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"><b>Keynote
+                Speakers</b></a>
+            </li>
+            <li class="py-2">
+              <a href="#eventSchedule"
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"><b>Schedule</b></a>
+            </li>
+            <li class="py-2">
+              <a href="single/index.html"
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"><b>Committee</b></a>
+            </li>
+            <li class="py-2">
+              <a href="single/index.html"
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"><b>For
+                Authors</b></a>
+            </li>
+            <li class="py-2">
+              <a href="single/index.html"
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"><b>About</b></a>
+            </li>
+            <li class="py-2">
+              <a href="single/index.html"
+                class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"><b>Contact</b></a>
+            </li>
+          </ul>
         </div>
+      </div>
 
-        <!-- <div class="absolute top-0 z-40 w-full bg-gradient-to-b from-black/70 to-transparent"> -->
-        <div class="absolute top-0 z-40 w-full">
-          <div
-            class="container relative z-40 flex items-center justify-between py-7"
-          >
-            <div class="flex items-center justify-between">
-              <a href="index.html" class="w-40">
-                <img
-                  src="assets/img/logo_nitj.png"
-                  height="100"
-                  width="100"
-                  alt="logo"
-                />
-              </a>
+      <!-- <div class="absolute top-0 z-40 w-full bg-gradient-to-b from-black/70 to-transparent"> -->
+      <div class="absolute top-0 z-40 w-full ">
+        <div class="container relative z-40 flex items-center justify-between py-7">
+          <div class="flex items-center justify-between">
+            <a href="index.html" class="w-40">
+              <img src="assets/img/logo_nitj.png" height="100" width="100" alt="logo" />
+            </a>
 
-              <!--Menu -->
-              <ul class="ml-12 hidden xl:flex bg-primary p-6 rounded-full">
-                <li class="">
-                  <a
-                    href="index.html"
-                    class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary underLineOnHover"
-                    >Home</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#eventTimeline"
-                    class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors underLineOnHover"
-                  >
-                    Dates</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#conferenceTracks"
-                    class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary underLineOnHover"
-                  >
-                    Tracks</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#keynoteSpeakers"
-                    class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary underLineOnHover"
-                    >Keynote Speakers</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#eventSchedule"
-                    class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary underLineOnHover"
-                  >
-                    Schedule</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="commitee.html"
-                    class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary underLineOnHover"
-                    >Committee</a
-                  >
-                </li>
-                <li>
-                  <!-- <a href="single/index.html"
+            <!--Menu -->
+            <ul class="ml-12 hidden xl:flex bg-primary p-6 rounded-full">
+              <li>
+                <a href="index.html"
+                  class="rounded-full px-5 py-2 font-header uppercase text-black text-bold transition-colors hover:bg-primary"><b>Home</b></a>
+              </li>
+              <li>
+                <a href="index.html#eventTimeline"
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">
+                  <b>Dates</b></a>
+              </li>
+              <li>
+                <a href="index.html#conferenceTracks"
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">
+                  <b>Tracks</b></a>
+              </li>
+              <li>
+                <a href="index.html#keynoteSpeakers"
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"><b>Keynote
+                  Speakers</b></a>
+              </li>
+              <li>
+                <a href="/index.html#eventSchedule"
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">
+                  <b>Schedule</b></a>
+              </li>
+              <li>
+                <a href="commitee.html"
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"><b>Committee</b></a>
+              </li>
+              <li>
+                <!-- <a href=""
                   class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">For
                   Authors</a> -->
                   <div class="dropdown">
-                    <a
-                      class="dropbtn font-header text-black transition-colors hover:bg-primary font-medium cursor-pointer uppercase underLineOnHover"
-                      >For Authors
+                    <button class="dropbtn"><b>For Authors</b> 
                       <i class="fa fa-caret-down"></i>
-                    </a>
+                    </button>
                     <div class="dropdown-content">
-                      <a href="call_for_papers.html" class="underLineOnHover"
-                        >Call for papers</a
-                      >
-                      <a href="paper-submission.html" class="underLineOnHover"
-                        >Paper Submission</a
-                      >
+                      <a href="call_for_papers.html">Call for papers</a>
+                      <a href="paper-submission.html">Paper Submission</a>
                     </div>
-                  </div>
-                </li>
-                <li>
-                  <a
-                    href="about.html"
-                    class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"
-                    >About Us
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="about.html#contact"
-                    class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"
-                    >Contact</a
-                  >
-                </li>
-              </ul>
-            </div>
+                  </div> 
+              </li>
+              
+              <li>
+                <a href="about.html"
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"><b>About Us</b>
+                </a>
+              </li>
+              <li>
+                <a href="about.html#contact"
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"><b>Contact</b></a>
+              </li>
+            </ul>
+          </div>
 
-            <!--Mobile menu button-->
-            <div class="absolute right-0 md:right-2 xl:hidden">
-              <button @click="mobileMenu = true" x-show=" !mobileMenu ">
-                <i class="bx bx-menu-alt-right text-4xl text-black"></i>
-              </button>
-            </div>
+
+          <!--Mobile menu button-->
+          <div class="absolute right-0 md:right-2 xl:hidden">
+            <button @click="mobileMenu = true" x-show=" !mobileMenu ">
+              <i class="bx bx-menu-alt-right text-4xl text-black"></i>
+            </button>
           </div>
         </div>
       </div>
+    </div>
 
       <div class="relative">
         <div
