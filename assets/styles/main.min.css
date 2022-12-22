@@ -822,8 +822,9 @@ html {
   padding-left: 1em;
 }
 .prose
-  :where(blockquote p:first-of-type):not(:where([class~="not-prose"]
-      *))::before {
+  :where(blockquote p:first-of-type):not(
+    :where([class~="not-prose"] *)
+  )::before {
   content: open-quote;
 }
 .prose
@@ -1457,6 +1458,10 @@ html {
 
 .grid-cols-3 {
   grid-template-columns: 0.3fr 0.7fr;
+}
+
+.grid-cols-4 {
+  grid-template-columns: 0.33fr 0.33fr 0.33fr;
 }
 
 .flex-col {
