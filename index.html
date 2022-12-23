@@ -76,6 +76,23 @@
     :class="{'relative overflow-hidden max-h-screen': mobileMenu }"
   >
     <main>
+      <!-- <div
+        style="
+          position: fixed;
+          right: 0;
+          top: 80vh;
+          z-index: 1000;
+          height: 20vh;
+          border-radius: 10%;
+          margin: 0 0 5px 5px;
+          width: 25vw;
+          background-color: #1c0a0a;
+          color: white;
+          padding: 50px;
+        "
+      >
+        Best paper award for every session
+      </div> -->
       <div>
         <!--Mobile menu-->
         <div x-cloak x-show="mobileMenu">
@@ -156,18 +173,31 @@
         </div>
 
         <!-- <div class="absolute top-0 z-40 w-full bg-gradient-to-b from-black/70 to-transparent"> -->
-        <div class="absolute top-0 z-40 w-full">
+        <div class="absolute top-0 z-40 w-full" style="position: fixed">
           <div
             class="container relative z-40 flex items-center justify-between py-7"
           >
             <div class="flex items-center justify-between">
-              <a href="index.html" class="w-40">
+              <a
+                href="index.html"
+                class="w-40 flex flex-row justify-center items-center"
+              >
                 <img
                   src="assets/img/logo_nitj.png"
                   height="100"
                   width="100"
                   alt="logo"
                 />
+                <p
+                  class="text-bold text-2xl"
+                  style="
+                    font-size: 1.8rem;
+                    font-weight: bolder;
+                    margin-left: 8px;
+                  "
+                >
+                  WREC'23
+                </p>
               </a>
 
               <!--Menu -->
@@ -281,10 +311,6 @@
               <div class="flex flex-col items-center mt-6">
                 <div class="flex mt-4">
                   <div class="mx-auto">
-                    <span
-                      class="font-header text-black text-sm md:text-base uppercase block"
-                      >Dates</span
-                    >
                     <span class="font-body font-bold text-3xl text-black"
                       >April 21-23, 2023
                     </span>
@@ -295,7 +321,10 @@
                 >
                   Department of Electronics and Communication Engineering
                 </p>
-                <p class="font-body font-bold text-secondary text-xl mt-5">
+                <p
+                  class="font-body font-bold text-secondary text-xl"
+                  style="color: #1c0a0a; font-size: 1.5rem"
+                >
                   Dr B R Ambedkar National Institute of Technology, Jalandhar,
                   Punjab, INDIA
                 </p>
@@ -307,30 +336,9 @@
                   class="mt-10"
                 />
               </div>
-              <div class="flex flex-row gap-5 w-full">
-                <div class="flex flex-col md:flex-row mt-16 w-1/2">
-                  <button
-                    class="font-body font-bold text-center text-black px-10 py-4 border-2 border-black hover:border-primary bg-primary hover:bg-transparent rounded-full transition-colors h-5"
-                  >
-                    <a href="about.html">About</a>
-                  </button>
-                  <button
-                    class="md:ml-8 w-2/3 mt-5 md:mt-0 font-body font-bold text-center text-black px-6 py-2 border-2 border-primary hover:border-black bg-primary hover:bg-transparent rounded-full transition-colors flex justify-between items-center group"
-                  >
-                    <a href="https://easychair.org/conferences/?conf=wrec23"
-                      >Easy Chair Link</a
-                    >
-                    <span
-                      class="h-8 w-8 bg-black group-hover:bg-primary transition-colors rounded-full flex items-center justify-center ml-6"
-                    >
-                      <i
-                        class="bx bx-play text-primary group-hover:text-black text-2xl ml-0.5"
-                      ></i>
-                    </span>
-                  </button>
-                </div>
+              <div class="flex flex-row gap-5 w-full justify-center">
                 <div class="w-1/2 mt-16">
-                  <p class="text-xl">
+                  <p class="text-xl text-center">
                     Peer reviewed and selected papers will be published as
                     Conference proceedings with Springer in their prestigious
                     series
@@ -347,13 +355,37 @@
                   >
                 </div>
               </div>
-
-              <div class="flex items-center mt-5 mx-auto animate-ping">
-                <span
-                  class="font-header text-black text-xl animate-ping uppercase"
+              <div class="flex flex-col md:flex-row mt-16 w-1/2 justify-center">
+                <!-- <button
+                  class="font-body font-bold text-center text-black px-10 py-4 border-2 border-black hover:border-primary bg-primary hover:bg-transparent rounded-full transition-colors h-5"
+                >
+                  <a href="about.html">About</a>
+                </button> -->
+                <button
+                  class="md:ml-8 w-2/5 mt-5 md:mt-0 font-body font-bold text-center text-black px-6 p-8 border-2 border-primary hover:border-black bg-primary hover:bg-transparent rounded-full transition-colors flex justify-between items-center group"
+                >
+                  <a
+                    href="https://easychair.org/conferences/?conf=wrec23"
+                    style="font-size: 1.3rem"
+                    >Easy Chair Link</a
+                  >
+                  <span
+                    class="h-8 w-8 bg-black group-hover:bg-primary transition-colors rounded-full flex items-center justify-center ml-6"
+                  >
+                    <i
+                      class="bx bx-play text-primary group-hover:text-black text-2xl ml-0.5"
+                    ></i>
+                  </span>
+                </button>
+                <button
+                  class="md:ml-8 w-2/5 mt-5 md:mt-0 font-body font-bold text-center text-black px-6 p-8 border-2 border-primary hover:border-black bg-primary hover:bg-transparent rounded-full transition-colors flex justify-between items-center group"
+                  style="font-size: 1.3rem"
                 >
                   Detailed Schedule Coming Soon
-                </span>
+                </button>
+              </div>
+
+              <div class="flex items-center mt-5 mx-auto animate-ping">
                 <!-- <div class="pl-3">
                         <a href="index.html">
                             <i class='bx bxl-spotify text-white hover:text-primary transition-colors text-xl'></i>
@@ -369,12 +401,12 @@
                         </a>
                     </div> -->
               </div>
-              <div id="scroll-container">
-                <div id="scroll-text">
+              <div id="scroll-container" style="background-color: black">
+                <div id="scroll-text" style="background-color: black">
                   <a
                     href="https://easychair.org/conferences/?conf=wrec23"
                     class="text-bold"
-                    style="font-weight: bold"
+                    style="font-weight: bold; color: white; font-size: 1.5rem"
                     >Call for papers -
                     OPEN(https://easychair.org/conferences/?conf=wrec23)</a
                   >
@@ -445,7 +477,15 @@
               <div
                 class="lg:pl-12 xl:pl-20 2xl:pr-10 relative mt-8 lg:mt-0 w-100"
               >
-                <h3 class="text-center text-3xl font-bold uppercase">About</h3>
+                <h3
+                  class="text-center text-5xl uppercase"
+                  style="
+                    color: #2a3a5a;
+                    font-family: 'Merriweather Sans', sans-serif;
+                  "
+                >
+                  About
+                </h3>
                 <div class="z-30 relative text-lg text-align-justify mt-8">
                   <p>
                     Though women are underrepresented in engineering, but the
@@ -492,6 +532,7 @@
             class="container py-20 md:py-24"
             x-data="{ activeTab: 'podcast'}"
             id="eventTimeline"
+            style="padding-left: 120px"
           >
             <h2
               class="text-brand-400 font-header text-3xl md:text-5xl uppercase text-center"
@@ -667,15 +708,22 @@
                     class="block w-11/12 my-4 mx-auto"
                     x-data="{selected:null}"
                   >
-                    <li class="flex align-center flex-col">
+                    <li
+                      class="flex align-center flex-col mx-auto"
+                      style="width: 50%"
+                    >
                       <h4
                         @click="selected !== 0 ? selected = 0 : selected = null"
-                        class="cursor-pointer px-5 py-3 font-header text-secondary font-bold text-xl md:text-2xl text-white inline-block hover:opacity-75 hover:shadow hover:-mb-3 rounded-t"
+                        class="cursor-pointer px-5 py-3 font-header text-secondary font-bold text-xl md:text-2xl text-white inline-block hover:opacity-75 hover:shadow hover:-mb-3 rounded-t text-left"
+                        style="font-size: 1.5rem"
                       >
                         Signal/Image Processing and Applications
                       </h4>
                       <div x-show="selected == 0" class="py-4 px-2">
-                        <ul class="list-disc list-inside">
+                        <ul
+                          class="list-disc list-inside"
+                          style="margin-left: 35px"
+                        >
                           <li>- Image/ Video/ Multimedia Signal Processing</li>
                           <li>- Audio/ Speech/ Spoken Language Processing</li>
                           <li>- Biomedical Signal Processing and Systems</li>
@@ -695,15 +743,22 @@
                       </div>
                     </li>
 
-                    <li class="flex align-center flex-col">
+                    <li
+                      class="flex align-center flex-col mx-auto"
+                      style="width: 50%"
+                    >
                       <h4
                         @click="selected !== 1 ? selected = 1 : selected = null"
-                        class="cursor-pointer px-5 py-3 font-header text-secondary font-bold text-xl md:text-2xl text-white inline-block hover:opacity-75 hover:shadow hover:-mb-3 rounded-t"
+                        class="cursor-pointer px-5 py-3 font-header text-secondary font-bold text-xl md:text-2xl text-white inline-block hover:opacity-75 hover:shadow hover:-mb-3 rounded-t text-left"
+                        style="font-size: 1.5rem"
                       >
                         Futuristic Communication System
                       </h4>
                       <div x-show="selected == 1" class="py-4 px-2">
-                        <ul class="list-disc list-inside">
+                        <ul
+                          class="list-disc list-inside"
+                          style="margin-left: 35px"
+                        >
                           <!-- <ul> -->
                           <li>
                             - Next generation Ad-hoc, Mobile and Sensor Networks
@@ -735,15 +790,16 @@
                       </div>
                     </li>
 
-                    <li class="flex align-center flex-col">
+                    <li class="flex flex-col mx-auto" style="width: 50%">
                       <h4
                         @click="selected !== 2 ? selected = 2 : selected = null"
-                        class="cursor-pointer px-5 py-3 font-header text-secondary font-bold text-xl md:text-2xl text-white inline-block hover:opacity-75 hover:shadow hover:-mb-3 rounded-t"
+                        class="cursor-pointer px-5 py-3 font-header text-secondary font-bold text-xl md:text-2xl text-white inline-block hover:opacity-75 hover:shadow hover:-mb-3 rounded-t text-left"
+                        style="font-size: 1.5rem"
                       >
                         VLSI Design
                       </h4>
                       <div x-show="selected == 2" class="py-4 px-2">
-                        <ul>
+                        <ul style="margin-left: 35px">
                           <li>- Nanoscale devices/Nanoelectronics</li>
                           <li>- Analog/Digital and Mixed Signal ICs</li>
                           <li>- VLSI Signal Processing</li>
@@ -773,15 +829,19 @@
                       </div>
                     </li>
 
-                    <li class="flex align-center flex-col">
+                    <li
+                      class="flex align-center flex-col mx-auto"
+                      style="width: 50%"
+                    >
                       <h4
                         @click="selected !== 3 ? selected = 3 : selected = null"
-                        class="cursor-pointer px-5 py-3 font-header text-secondary font-bold text-xl md:text-2xl text-white inline-block hover:opacity-75 hover:shadow hover:-mb-3 rounded-t"
+                        class="cursor-pointer px-5 py-3 font-header text-secondary font-bold text-xl md:text-2xl text-white inline-block hover:opacity-75 hover:shadow hover:-mb-3 rounded-t text-left"
+                        style="font-size: 1.5rem"
                       >
                         Computational Technologies
                       </h4>
                       <div x-show="selected == 3" class="py-4 px-2">
-                        <ul>
+                        <ul style="margin-left: 35px">
                           <li>- Big Data Analytics and Cloud Computing</li>
                           <li>- Networks, IoT and Cyber Security</li>
                           <li>- Computational Intelligence</li>
