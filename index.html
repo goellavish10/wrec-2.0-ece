@@ -76,6 +76,7 @@
     :class="{'relative overflow-hidden max-h-screen': mobileMenu }"
   >
     <main>
+      
       <div>
         <!--Mobile menu-->
         <div x-cloak x-show="mobileMenu">
@@ -260,6 +261,8 @@
           </div>
         </div>
       </div>
+      
+      
 
       <div class="relative">
         <div
@@ -307,11 +310,14 @@
                   class="mt-10"
                 />
               </div>
+
+             
+
               <div class="flex flex-row gap-5 w-full">
                 <div class="flex flex-col md:flex-row mt-16 w-1/2">
                   <button
                     class="font-body font-bold text-center text-black px-10 py-4 border-2 border-black hover:border-primary bg-primary hover:bg-transparent rounded-full transition-colors h-5"
-                  >
+                    >
                     <a href="about.html">About</a>
                   </button>
                   <button
@@ -329,6 +335,7 @@
                     </span>
                   </button>
                 </div>
+
                 <div class="w-1/2 mt-16">
                   <p class="text-xl">
                     Peer reviewed and selected papers will be published as
@@ -339,6 +346,7 @@
                   <h3 class="font-bold text-2xl">
                     “Lecture Notes in Electrical Engineering”
                   </h3>
+                    
                   <a
                     class="text no-underline cursor-pointer"
                     target="_blank"
@@ -347,7 +355,9 @@
                   >
                 </div>
               </div>
-
+              
+             
+              
               <div class="flex items-center mt-5 mx-auto animate-ping">
                 <span
                   class="font-header text-black text-xl animate-ping uppercase"
@@ -369,6 +379,8 @@
                         </a>
                     </div> -->
               </div>
+
+              
               <div id="scroll-container">
                 <div id="scroll-text">
                   <a
@@ -378,11 +390,22 @@
                     >Call for papers -
                     OPEN(https://easychair.org/conferences/?conf=wrec23)</a
                   >
-                  <div></div>
+                  <!-- <div></div> -->
                 </div>
               </div>
             </div>
           </div>
+
+          <!-- css in new.css -->
+          <div class="boxaf">
+            <img src="/cookie2.png" alt="" class="img-melon" />
+            <div class="boxaf2 flex flex-col ">
+              <p class="para text-white px-2 py-2">Best paper award for every session</p>
+              <button class="gotit rounded-full text-white" onclick="invisible()">Got it</button>
+            </div>
+          </div>
+
+
 
           <!-- Collaboration  -->
           <div
@@ -2158,8 +2181,12 @@
               document.getElementById(focused + "Text").style = "color: #fff;";
 
               sessionStorage.setItem("inFocus", focused);
+
             }
-          </script>
+            function invisible() {
+              document.getElementsByClassName("boxaf")[0].style.display="none"
+          }
+            </script>
         </div>
       </div>
     </main>

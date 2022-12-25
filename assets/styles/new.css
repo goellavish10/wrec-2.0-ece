@@ -1,3 +1,4 @@
+
 .heading {
   font-size: 52px;
   align-items: center;
@@ -114,6 +115,40 @@
   color: #2a3a5a;
 }
 
+.gotit {
+  display:block;
+  position: relative;
+  background-color: #f7bd14;
+  width: 27%;
+  margin-left: 6px;
+  padding: 4px 0;
+  font-weight: 600;
+}
+.gotit:hover {
+  background-color: #f5c432;
+}
+
+.boxaf {
+  display: flex;
+  position:relative;
+  max-width: 450px;
+  background-color: black;
+  position: sticky;
+  bottom: 5px;
+  top: 631px;
+  height: 120px;
+  overflow-y: hidden;
+  z-index: 100;
+  margin-left: auto;
+  border: none;
+  border-radius: 16px;
+  transition: ease-out;
+}
+.img-melon {
+  width: 35%;
+  position:relative
+}
+
 @media (max-width:830px) {
   .container-af {
     flex-direction: column;
@@ -131,4 +166,7 @@
   .content2 {
     padding-left: 0;
   }
+}
+footer {
+  overflow-y: hidden;
 }
