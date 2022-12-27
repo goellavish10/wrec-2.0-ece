@@ -147,7 +147,7 @@
 .img-melon {
   width: 35%;
   position: relative;
-  background-color: #f5c432;
+  /* background-color: #f5c432; */
 }
 
 @media (max-width: 830px) {
