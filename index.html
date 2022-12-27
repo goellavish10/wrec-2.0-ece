@@ -187,11 +187,15 @@
         <!-- <div class="absolute top-0 z-40 w-full bg-gradient-to-b from-black/70 to-transparent"> -->
         <div
           class="absolute top-0 z-40 w-full"
-          style="position: fixed; background-color: rgba(0, 0, 0, 0.1)"
+          style="
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+          "
         >
-          <div
-            class="container relative z-40 flex items-center justify-between py-7"
-          >
+          <div class="z-40 flex items-center justify-between py-7">
             <div class="flex items-center justify-between">
               <a
                 href="index.html"
@@ -882,437 +886,442 @@
               </div>
             </div>
           </div>
-
-          <div
-            class="container py-20 md:py-24"
-            x-data="{ activeTab: '2023'}"
-            id="keynoteSpeakers"
-            style="padding-left: 13.5vw; padding-right: 13.5vw"
-          >
-            <h2
-              class="text-brand-400 font-header text-3xl md:text-5xl uppercase text-center"
+          <div class="relative">
+            <div
+              class="container py-20 md:py-24"
+              x-data="{ activeTab: '2023'}"
+              id="keynoteSpeakers"
+              style="padding: 0 8.8rem 0 5rem"
             >
-              Keynote Speakers
-            </h2>
-            <div class="border-b-2 border-brand-200 mt-10 md:mt-16">
-              <div class="md:w-3/4 mx-auto flex flex-col md:flex-row">
-                <div
-                  class="md:w-1/2 border-l-2 border-t-2 border-r-2 border-brand-200 active:border-brand-300 bg-white active:bg-brand-300 group"
-                  @click="activeTab = '2023'"
-                >
-                  <span
-                    class="flex items-center justify-center font-header text-xl group-active:text-white text-brand-300 py-2 cursor-pointer"
+              <h2
+                class="text-brand-400 font-header text-3xl md:text-5xl uppercase text-center"
+              >
+                Keynote Speakers
+              </h2>
+              <div class="border-b-2 border-brand-200 mt-10 md:mt-16">
+                <div class="md:w-3/4 mx-auto flex flex-col md:flex-row">
+                  <div
+                    class="md:w-1/2 border-l-2 border-t-2 border-r-2 border-brand-200 active:border-brand-300 bg-white active:bg-brand-300 group"
+                    @click="activeTab = '2023'"
                   >
-                    <i
-                      class="bx bx-right-arrow-alt text-xl group-active:text-white text-brand-300"
-                    ></i
-                    >2023</span
+                    <span
+                      class="flex items-center justify-center font-header text-xl group-active:text-white text-brand-300 py-2 cursor-pointer"
+                    >
+                      <i
+                        class="bx bx-right-arrow-alt text-xl group-active:text-white text-brand-300"
+                      ></i
+                      >2023</span
+                    >
+                  </div>
+                  <div
+                    class="md:w-1/2 border-l-2 md:border-l-0 border-t-2 border-r-2 border-brand-200 active:border-brand-300 bg-white active:bg-brand-300"
+                    @click="activeTab = '2021'"
                   >
-                </div>
-                <div
-                  class="md:w-1/2 border-l-2 md:border-l-0 border-t-2 border-r-2 border-brand-200 active:border-brand-300 bg-white active:bg-brand-300"
-                  @click="activeTab = '2021'"
-                >
-                  <span
-                    class="flex items-center justify-center font-header text-xl active:text-white text-brand-300 py-2 cursor-pointer"
-                  >
-                    <i
-                      class="bx bx-right-arrow-alt text-xl active:text-white text-brand-300"
-                    ></i
-                    >2021</span
-                  >
+                    <span
+                      class="flex items-center justify-center font-header text-xl active:text-white text-brand-300 py-2 cursor-pointer"
+                    >
+                      <i
+                        class="bx bx-right-arrow-alt text-xl active:text-white text-brand-300"
+                      ></i
+                      >2021</span
+                    >
+                  </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="relative mt-10 md:mt-16 lg:mt-28 flex flex-col lg:flex-row"
-              x-show=" activeTab == '2021'"
-            >
               <div
-                class="relative overflow-hidden border-b-20 border-brand-300"
+                class="relative mt-10 md:mt-16 lg:mt-28 flex flex-col lg:flex-row"
+                x-show=" activeTab == '2021'"
               >
-                <div class="relative">
-                  <h2
-                    class="text-brand-400 font-header text-3xl md:text-4xl uppercase text-center"
-                  >
-                    2021
-                  </h2>
-                  <div
-                    class="absolute top-7 md:top-0 xl:top-32 lg:-right-156 xl:-right-120 2xl:-right-52"
-                  >
-                    <img src="assets/img/authors-shape-02.svg" alt="shape" />
-                  </div>
-                  <div class="container my-16 md:my-24 relative z-30">
-                    <div
-                      class="flex flex-col-reverse lg:flex-row justify-between"
+                <div
+                  class="relative overflow-hidden border-b-20 border-brand-300"
+                >
+                  <div class="relative">
+                    <h2
+                      class="text-brand-400 font-header text-3xl md:text-4xl uppercase text-center"
                     >
+                      2021
+                    </h2>
+                    <div
+                      class="absolute top-7 md:top-0 xl:top-32 lg:-right-156 xl:-right-120 2xl:-right-52"
+                    >
+                      <img src="assets/img/authors-shape-02.svg" alt="shape" />
+                    </div>
+                    <div class="container my-16 md:my-24 relative z-30">
                       <div
-                        class="lg:w-3/4 2xl:w-2/5 lg:pr-16 2xl:pr-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0"
+                        class="flex flex-col-reverse lg:flex-row justify-between"
                       >
-                        <div>
-                          <h4
-                            class="font-header text-brand-400 text-3xl md:text-4xl"
-                          >
-                            Health 4.0
-                          </h4>
-                          <p
-                            class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed"
-                          >
-                            Digital Health is essential in today's world. The
-                            COVID-19 pandemic has highlighted the benefits of
-                            digital health. Digital Health is powered by the
-                            developments of technologies making up Internet of
-                            Things (IoT) including sensors, mobile, 3D printing,
-                            analytics and more. This presentation will highlight
-                            key areas and provide insights into how the
-                            technologies of IoT can provide superior healthcare
-                            for all..
-                          </p>
-                        </div>
-                        <div>
-                          <h2
-                            class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6"
-                          >
-                            Prof Nilmini Wickramasinghe
-                          </h2>
-                          <p
-                            class="font-body font-medium text-secondary text-md md:text-md mt-6"
-                          >
-                            Swinburne University of Technology, Australia
-                          </p>
-                          <span class="flex mt-2">
-                            <a
-                              href="https://www.linkedin.com/in/nilmini-wickramasinghe-13834ab2/e"
+                        <div
+                          class="lg:w-3/4 2xl:w-2/5 lg:pr-16 2xl:pr-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0"
+                        >
+                          <div>
+                            <h4
+                              class="font-header text-brand-400 text-3xl md:text-4xl"
                             >
-                              <i
-                                class="bx bxl-linkedin text-xl text-primary hover:text-brand-400"
-                              ></i>
-                            </a>
-                          </span>
+                              Health 4.0
+                            </h4>
+                            <p
+                              class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed"
+                            >
+                              Digital Health is essential in today's world. The
+                              COVID-19 pandemic has highlighted the benefits of
+                              digital health. Digital Health is powered by the
+                              developments of technologies making up Internet of
+                              Things (IoT) including sensors, mobile, 3D
+                              printing, analytics and more. This presentation
+                              will highlight key areas and provide insights into
+                              how the technologies of IoT can provide superior
+                              healthcare for all..
+                            </p>
+                          </div>
+                          <div>
+                            <h2
+                              class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6"
+                            >
+                              Prof Nilmini Wickramasinghe
+                            </h2>
+                            <p
+                              class="font-body font-medium text-secondary text-md md:text-md mt-6"
+                            >
+                              Swinburne University of Technology, Australia
+                            </p>
+                            <span class="flex mt-2">
+                              <a
+                                href="https://www.linkedin.com/in/nilmini-wickramasinghe-13834ab2/e"
+                              >
+                                <i
+                                  class="bx bxl-linkedin text-xl text-primary hover:text-brand-400"
+                                ></i>
+                              </a>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="lg:w-1/4">
+                          <img
+                            src="assets/img/prof_nilimi.jpeg"
+                            class="w-full h-80 md:h-100 object-fir rounded-2xl"
+                            alt="image"
+                          />
                         </div>
                       </div>
-                      <div class="lg:w-1/4">
+                    </div>
+                  </div>
+
+                  <div class="relative">
+                    <div
+                      class="absolute top-7 md:top-0 xl:top-32 lg:-left-156 xl:-left-120 2xl:-left-52"
+                    >
+                      <img src="assets/img/authors-shape-02.svg" alt="shape" />
+                    </div>
+
+                    <div class="container my-16 md:my-24 relative z-30">
+                      <div class="flex flex-col lg:flex-row justify-between">
+                        <div class="lg:w-1/4">
+                          <img
+                            src="assets/img/prof_maryam.jpg"
+                            class="w-full h-80 md:h-100 object-cover rounded-2xl"
+                            alt="image"
+                          />
+                        </div>
+                        <div
+                          class="lg:w-3/4 2xl:w-2/5 lg:pl-16 2xl:pl-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0"
+                        >
+                          <div>
+                            <h4
+                              class="font-header text-brand-400 text-3xl md:text-4xl"
+                            >
+                              Modular Sensor Interfacing and Signal Conditioning
+                            </h4>
+                            <p
+                              class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed"
+                            >
+                              Sensing devices are becoming a part of
+                              communication technologies or a part of portable
+                              and mobile measurement devices to bring a new age
+                              of ubiquitous sensing. Integrable sensor modules
+                              demand modular interfacing, analog signal
+                              conditioning and integrable solutions compatible
+                              with the analog to data and information
+                              transformation. The solutions must suppress the
+                              noise, have the required sensitivity, and reduce
+                              effect of non-idealities. In this talk examples of
+                              low-noise, discrete and integrated designs for the
+                              interacting and signal conditioning of sensor
+                              signals in various forms and from different
+                              sensing elements are presented.
+                            </p>
+                          </div>
+                          <div>
+                            <h2
+                              class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6"
+                            >
+                              Prof. Maryam Shojaei Baghini
+                            </h2>
+                            <p
+                              class="font-body font-medium text-secondary text-md md:text-md mt-6"
+                            >
+                              IIT-Bombay
+                            </p>
+
+                            <span class="flex mt-2">
+                              <a
+                                href="https://www.linkedin.com/in/maryam-shojaei-baghini-04697b13/"
+                              >
+                                <i
+                                  class="bx bxl-linkedin text-xl text-primary hover:text-brand-400"
+                                ></i>
+                              </a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div x-show=" activeTab == '2023' ">
+                <div
+                  class="relative overflow-hidden border-b-20 border-brand-300"
+                >
+                  <div class="relative">
+                    <h2
+                      class="text-brand-400 font-header text-3xl md:text-4xl uppercase mt-4 text-center"
+                    >
+                      2023
+                    </h2>
+
+                    <div
+                      class="absolute top md:top-0 xl:top-32 lg:-right-156 xl:-right-120 2xl:-right-52"
+                    >
+                      <img src="assets/img/authors-shape-02.svg" alt="shape" />
+                    </div>
+                    <div class="container my-8 md:my-24 relative z-30">
+                      <div
+                        class="flex flex-col-reverse lg:flex-row justify-between md:gap-5"
+                      >
+                        <div
+                          class="lg:w-3/4 lg:pr-16 2xl:pr-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0"
+                        >
+                          <div>
+                            <h4
+                              class="font-header text-brand-400 text-5xl md:text-3xl"
+                            >
+                              Characteristics in MRIs: Can we train DL networks
+                              using tumor bounding box images without requiring
+                              tumor annotation?"
+                            </h4>
+                            <p
+                              class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed text-align-justify"
+                            >
+                              Irene Gu is a Professor in the Department of
+                              Electrical Engineering, Chalmers University of
+                              Technology, Sweden. She has received the PhD
+                              degree in electrical engineering from Eindhoven
+                              University of Technology, The Netherlands, in
+                              1992. From 1992 to 1994, she was a Research Fellow
+                              at the Philips Research Institute IPO, The
+                              Netherlands, and a Post-Doctoral Fellow at
+                              Staffordshire University, U.K. She was a
+                              University Lecturer at the University of
+                              Birmingham, U.K, 1995-1996 before joining
+                              Chalmers. Since Sept. 1996, she has been with the
+                              Department of Signals and Systems, Chalmers
+                              University of Technology, where she has been a
+                              Professor since 2004. She has coauthored over 200
+                              journal and conference articles, and coauthored
+                              the book on Signal Processing of Power Quality
+                              Disturbances. Irene Gu’s main research areas
+                              include statistical image analysis and video
+                              processing, machine learning and deep learning,
+                              visual object tracking and recognition, signal
+                              analysis and processing with applications to
+                              electric power systems, and biomedical image
+                              analysis for AI-assisted brain disease diagnosis.
+                              Her current main research activities include:
+                              Biomedical image analysis for diagnosis of brain
+                              tumors and Alzheimers' disease; Privacy-protected
+                              machine learning for vehicle/traffic safety and
+                              transportation systems; Signal processing and
+                              machine learning with applications to big data
+                              analytics in power systems (finding underlying
+                              causes and patterns from disturbance and variation
+                              measurement data).
+                            </p>
+                          </div>
+                          <div>
+                            <h2
+                              class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6"
+                            >
+                              Prof. Irene Yu-Hua Gu
+                            </h2>
+                            <p
+                              class="font-body font-medium text-secondary text-md md:text-md mt-6"
+                            >
+                              Professor, Chalmers University of Technology,
+                              Sweden
+                            </p>
+                            <span class="flex mt-2">
+                              <a
+                                href="https://www.linkedin.com/in/irene-yu-hua-gu-a3a54816/?originalSubdomain=se"
+                              >
+                                <i
+                                  class="bx bxl-linkedin text-xl text-primary hover:text-brand-400"
+                                ></i>
+                              </a>
+                            </span>
+                          </div>
+                        </div>
+                        <!-- <div class="w-1/3"> -->
                         <img
-                          src="assets/img/prof_nilimi.jpeg"
+                          src="assets/img/prof_irene.jpeg"
                           class="w-full h-80 md:h-100 object-fir rounded-2xl"
                           alt="image"
+                          style="width: 20%; height: 30%"
                         />
+                        <!-- </div> -->
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="relative">
-                  <div
-                    class="absolute top-7 md:top-0 xl:top-32 lg:-left-156 xl:-left-120 2xl:-left-52"
-                  >
-                    <img src="assets/img/authors-shape-02.svg" alt="shape" />
-                  </div>
+                  <div class="relative">
+                    <div
+                      class="absolute top-7 md:top-0 xl:top-32 lg:-left-156 xl:-left-120 2xl:-left-52"
+                    >
+                      <img src="assets/img/authors-shape-02.svg" alt="shape" />
+                    </div>
 
-                  <div class="container my-16 md:my-24 relative z-30">
-                    <div class="flex flex-col lg:flex-row justify-between">
-                      <div class="lg:w-1/4">
+                    <div class="container my-16 md:my-24 relative z-30">
+                      <div
+                        class="flex flex-col lg:flex-row justify-between md:gap-8"
+                      >
+                        <!-- <div class="w-1/3"> -->
                         <img
-                          src="assets/img/prof_maryam.jpg"
+                          src="assets/img/bina_patel.jpeg"
                           class="w-full h-80 md:h-100 object-cover rounded-2xl"
                           alt="image"
+                          style="width: 20%; height: 30%"
                         />
-                      </div>
-                      <div
-                        class="lg:w-3/4 2xl:w-2/5 lg:pl-16 2xl:pl-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0"
-                      >
-                        <div>
-                          <h4
-                            class="font-header text-brand-400 text-3xl md:text-4xl"
-                          >
-                            Modular Sensor Interfacing and Signal Conditioning
-                          </h4>
-                          <p
-                            class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed"
-                          >
-                            Sensing devices are becoming a part of communication
-                            technologies or a part of portable and mobile
-                            measurement devices to bring a new age of ubiquitous
-                            sensing. Integrable sensor modules demand modular
-                            interfacing, analog signal conditioning and
-                            integrable solutions compatible with the analog to
-                            data and information transformation. The solutions
-                            must suppress the noise, have the required
-                            sensitivity, and reduce effect of non-idealities. In
-                            this talk examples of low-noise, discrete and
-                            integrated designs for the interacting and signal
-                            conditioning of sensor signals in various forms and
-                            from different sensing elements are presented.
-                          </p>
-                        </div>
-                        <div>
-                          <h2
-                            class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6"
-                          >
-                            Prof. Maryam Shojaei Baghini
-                          </h2>
-                          <p
-                            class="font-body font-medium text-secondary text-md md:text-md mt-6"
-                          >
-                            IIT-Bombay
-                          </p>
-
-                          <span class="flex mt-2">
-                            <a
-                              href="https://www.linkedin.com/in/maryam-shojaei-baghini-04697b13/"
+                        <!-- </div> -->
+                        <div
+                          class="lg:w-3/4 lg:pl-16 2xl:pl-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0"
+                        >
+                          <div>
+                            <h4
+                              class="font-header text-brand-400 text-5xl md:text-3xl"
                             >
-                              <i
-                                class="bx bxl-linkedin text-xl text-primary hover:text-brand-400"
-                              ></i>
-                            </a>
-                          </span>
+                              Career for Women in Semiconductors
+                            </h4>
+                            <p
+                              class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed text-align-justify"
+                            >
+                              Binta Patel is Chief Engineer at Intel, Austin,
+                              Texas, United States. She is an experienced Senior
+                              Principal Engineer with a demonstrated history of
+                              working in the semiconductors industry as a
+                              Technologist. She did her BE in Electronics
+                              Engineering from Nagpur University, and MS in
+                              Electrical Engineering from New York University.
+                              Her areas of specialization are Low Power PLL and
+                              Clocking Design, SoC, Microarchitectural Design,
+                              Sensors. She has several patents to her credit.
+                            </p>
+                          </div>
+                          <div>
+                            <h2
+                              class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6"
+                            >
+                              Binta Patel
+                            </h2>
+                            <p
+                              class="font-body font-medium text-secondary text-md md:text-md mt-6"
+                            >
+                              Cloud Architect - Intel
+                            </p>
+
+                            <span class="flex mt-2">
+                              <a
+                                href="https://www.linkedin.com/in/binta-patel-0a26421a/"
+                              >
+                                <i
+                                  class="bx bxl-linkedin text-xl text-primary hover:text-brand-400"
+                                ></i>
+                              </a>
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div x-show=" activeTab == '2023' ">
-              <div
-                class="relative overflow-hidden border-b-20 border-brand-300"
-              >
-                <div class="relative">
-                  <h2
-                    class="text-brand-400 font-header text-3xl md:text-4xl uppercase mt-4 text-center"
-                  >
-                    2023
-                  </h2>
 
-                  <div
-                    class="absolute top md:top-0 xl:top-32 lg:-right-156 xl:-right-120 2xl:-right-52"
-                  >
-                    <img src="assets/img/authors-shape-02.svg" alt="shape" />
-                  </div>
-                  <div class="container my-8 md:my-24 relative z-30">
+                  <div class="relative">
                     <div
-                      class="flex flex-col-reverse lg:flex-row justify-between md:gap-5"
+                      class="absolute top md:top-0 xl:top-32 lg:-right-156 xl:-right-120 2xl:-right-52"
                     >
-                      <div
-                        class="lg:w-3/4 lg:pr-16 2xl:pr-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0"
-                      >
-                        <div>
-                          <h4
-                            class="font-header text-brand-400 text-5xl md:text-3xl"
-                          >
-                            Characteristics in MRIs: Can we train DL networks
-                            using tumor bounding box images without requiring
-                            tumor annotation?"
-                          </h4>
-                          <p
-                            class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed text-align-justify"
-                          >
-                            Irene Gu is a Professor in the Department of
-                            Electrical Engineering, Chalmers University of
-                            Technology, Sweden. She has received the PhD degree
-                            in electrical engineering from Eindhoven University
-                            of Technology, The Netherlands, in 1992. From 1992
-                            to 1994, she was a Research Fellow at the Philips
-                            Research Institute IPO, The Netherlands, and a
-                            Post-Doctoral Fellow at Staffordshire University,
-                            U.K. She was a University Lecturer at the University
-                            of Birmingham, U.K, 1995-1996 before joining
-                            Chalmers. Since Sept. 1996, she has been with the
-                            Department of Signals and Systems, Chalmers
-                            University of Technology, where she has been a
-                            Professor since 2004. She has coauthored over 200
-                            journal and conference articles, and coauthored the
-                            book on Signal Processing of Power Quality
-                            Disturbances. Irene Gu’s main research areas include
-                            statistical image analysis and video processing,
-                            machine learning and deep learning, visual object
-                            tracking and recognition, signal analysis and
-                            processing with applications to electric power
-                            systems, and biomedical image analysis for
-                            AI-assisted brain disease diagnosis. Her current
-                            main research activities include: Biomedical image
-                            analysis for diagnosis of brain tumors and
-                            Alzheimers' disease; Privacy-protected machine
-                            learning for vehicle/traffic safety and
-                            transportation systems; Signal processing and
-                            machine learning with applications to big data
-                            analytics in power systems (finding underlying
-                            causes and patterns from disturbance and variation
-                            measurement data).
-                          </p>
-                        </div>
-                        <div>
-                          <h2
-                            class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6"
-                          >
-                            Prof. Irene Yu-Hua Gu
-                          </h2>
-                          <p
-                            class="font-body font-medium text-secondary text-md md:text-md mt-6"
-                          >
-                            Professor, Chalmers University of Technology, Sweden
-                          </p>
-                          <span class="flex mt-2">
-                            <a
-                              href="https://www.linkedin.com/in/irene-yu-hua-gu-a3a54816/?originalSubdomain=se"
-                            >
-                              <i
-                                class="bx bxl-linkedin text-xl text-primary hover:text-brand-400"
-                              ></i>
-                            </a>
-                          </span>
-                        </div>
-                      </div>
-                      <!-- <div class="w-1/3"> -->
-                      <img
-                        src="assets/img/prof_irene.jpeg"
-                        class="w-full h-80 md:h-100 object-fir rounded-2xl"
-                        alt="image"
-                        style="width: 20%; height: 30%"
-                      />
-                      <!-- </div> -->
+                      <img src="assets/img/authors-shape-02.svg" alt="shape" />
                     </div>
-                  </div>
-                </div>
-
-                <div class="relative">
-                  <div
-                    class="absolute top-7 md:top-0 xl:top-32 lg:-left-156 xl:-left-120 2xl:-left-52"
-                  >
-                    <img src="assets/img/authors-shape-02.svg" alt="shape" />
-                  </div>
-
-                  <div class="container my-16 md:my-24 relative z-30">
-                    <div
-                      class="flex flex-col lg:flex-row justify-between md:gap-8"
-                    >
-                      <!-- <div class="w-1/3"> -->
-                      <img
-                        src="assets/img/bina_patel.jpeg"
-                        class="w-full h-80 md:h-100 object-cover rounded-2xl"
-                        alt="image"
-                        style="width: 20%; height: 30%"
-                      />
-                      <!-- </div> -->
+                    <div class="container my-8 md:my-24 relative z-30">
                       <div
-                        class="lg:w-3/4 lg:pl-16 2xl:pl-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0"
+                        class="flex flex-col-reverse lg:flex-row justify-between md:gap-8"
                       >
-                        <div>
-                          <h4
-                            class="font-header text-brand-400 text-5xl md:text-3xl"
-                          >
-                            Career for Women in Semiconductors
-                          </h4>
-                          <p
-                            class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed text-align-justify"
-                          >
-                            Binta Patel is Chief Engineer at Intel, Austin,
-                            Texas, United States. She is an experienced Senior
-                            Principal Engineer with a demonstrated history of
-                            working in the semiconductors industry as a
-                            Technologist. She did her BE in Electronics
-                            Engineering from Nagpur University, and MS in
-                            Electrical Engineering from New York University. Her
-                            areas of specialization are Low Power PLL and
-                            Clocking Design, SoC, Microarchitectural Design,
-                            Sensors. She has several patents to her credit.
-                          </p>
-                        </div>
-                        <div>
-                          <h2
-                            class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6"
-                          >
-                            Binta Patel
-                          </h2>
-                          <p
-                            class="font-body font-medium text-secondary text-md md:text-md mt-6"
-                          >
-                            Cloud Architect - Intel
-                          </p>
-
-                          <span class="flex mt-2">
-                            <a
-                              href="https://www.linkedin.com/in/binta-patel-0a26421a/"
+                        <div
+                          class="lg:w-3/4 lg:pr-16 2xl:pr-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0"
+                        >
+                          <div>
+                            <!-- <h4 class="font-header text-brand-400 text-3xl md:text-4xl"> Characteristics in MRIs: Can we
+                train DL networks using tumor bounding box images without requiring tumor annotation?"</h4> -->
+                            <h4
+                              class="font-header text-brand-400 text-5xl md:text-3xl"
                             >
-                              <i
-                                class="bx bxl-linkedin text-xl text-primary hover:text-brand-400"
-                              ></i>
-                            </a>
-                          </span>
+                              Career for Women in Semiconductors
+                            </h4>
+                            <p
+                              class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed text-align-justify"
+                            >
+                              Rashmi Sharan Sinha received B.Tech, M.Tech, in
+                              electronics and communication engineering from PTU
+                              Punjab, Rep. of India and PhD degrees in
+                              electronics and electrical engineering from
+                              Dongguk University, Seoul, Rep. of Korea in 2011,
+                              2015, and 2020, respectively. From 2015 to 2020,
+                              she received SRD scholarship funded by Dongguk
+                              University to work in the field of 5G LTE,
+                              Cellular Networks, Artificial Intelligence,
+                              Convolutional Neural Network, Indoor Positioning
+                              System, Localization in Dongguk University, Rep.
+                              of Korea. She is now a Research Scientist, Urban
+                              Sensing in the Division of Centre of Communication
+                              & Signal Processing at Nanyang Technological
+                              University, Singapore.
+                            </p>
+                          </div>
+                          <div>
+                            <h2
+                              class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6"
+                            >
+                              Dr. Rashmi Sharan Sinha
+                            </h2>
+                            <p
+                              class="font-body font-medium text-secondary text-md md:text-md mt-6"
+                            >
+                              Research Scientist, Urban Sensing in the Division
+                              of Centre of Communication & Signal Processing at
+                              Nanyang Technological University, Singapore
+                            </p>
+                            <!-- <span class="flex mt-2">
+                <a href="https://www.linkedin.com/in/irene-yu-hua-gu-a3a54816/?originalSubdomain=se">
+                  <i class='bx bxl-linkedin text-xl text-primary hover:text-brand-400'></i>
+                </a>
+              </span> -->
+                          </div>
                         </div>
+                        <!-- <div class="w-1/3"> -->
+                        <img
+                          src="assets/img/rashmi.jpeg"
+                          class="w-full h-80 md:h-100 object-fir rounded-2xl"
+                          alt="image"
+                          style="width: 20%; height: 30%"
+                        />
+                        <!-- </div> -->
                       </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="relative">
-                  <div
-                    class="absolute top md:top-0 xl:top-32 lg:-right-156 xl:-right-120 2xl:-right-52"
-                  >
-                    <img src="assets/img/authors-shape-02.svg" alt="shape" />
-                  </div>
-                  <div class="container my-8 md:my-24 relative z-30">
-                    <div
-                      class="flex flex-col-reverse lg:flex-row justify-between md:gap-8"
-                    >
-                      <div
-                        class="lg:w-3/4 lg:pr-16 2xl:pr-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0"
-                      >
-                        <div>
-                          <!-- <h4 class="font-header text-brand-400 text-3xl md:text-4xl"> Characteristics in MRIs: Can we
-                          train DL networks using tumor bounding box images without requiring tumor annotation?"</h4> -->
-                          <h4
-                            class="font-header text-brand-400 text-5xl md:text-3xl"
-                          >
-                            Career for Women in Semiconductors
-                          </h4>
-                          <p
-                            class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed text-align-justify"
-                          >
-                            Rashmi Sharan Sinha received B.Tech, M.Tech, in
-                            electronics and communication engineering from PTU
-                            Punjab, Rep. of India and PhD degrees in electronics
-                            and electrical engineering from Dongguk University,
-                            Seoul, Rep. of Korea in 2011, 2015, and 2020,
-                            respectively. From 2015 to 2020, she received SRD
-                            scholarship funded by Dongguk University to work in
-                            the field of 5G LTE, Cellular Networks, Artificial
-                            Intelligence, Convolutional Neural Network, Indoor
-                            Positioning System, Localization in Dongguk
-                            University, Rep. of Korea. She is now a Research
-                            Scientist, Urban Sensing in the Division of Centre
-                            of Communication & Signal Processing at Nanyang
-                            Technological University, Singapore.
-                          </p>
-                        </div>
-                        <div>
-                          <h2
-                            class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6"
-                          >
-                            Dr. Rashmi Sharan Sinha
-                          </h2>
-                          <p
-                            class="font-body font-medium text-secondary text-md md:text-md mt-6"
-                          >
-                            Research Scientist, Urban Sensing in the Division of
-                            Centre of Communication & Signal Processing at
-                            Nanyang Technological University, Singapore
-                          </p>
-                          <!-- <span class="flex mt-2">
-                          <a href="https://www.linkedin.com/in/irene-yu-hua-gu-a3a54816/?originalSubdomain=se">
-                            <i class='bx bxl-linkedin text-xl text-primary hover:text-brand-400'></i>
-                          </a>
-                        </span> -->
-                        </div>
-                      </div>
-                      <!-- <div class="w-1/3"> -->
-                      <img
-                        src="assets/img/rashmi.jpeg"
-                        class="w-full h-80 md:h-100 object-fir rounded-2xl"
-                        alt="image"
-                        style="width: 20%; height: 30%"
-                      />
-                      <!-- </div> -->
                     </div>
                   </div>
                 </div>
