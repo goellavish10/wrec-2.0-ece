@@ -130,24 +130,18 @@
 .boxaf {
   display: flex;
   position: absolute;
-  max-width: 450px;
+  max-width: 400px;
+  min-height: 100px;
   background-color: black;
   position: sticky;
-  bottom: 0;
-  top: 85vh;
-  left: 100vw;
+  top: 83vh;
+  left: 2vh;
   height: 15vh;
   overflow-y: hidden;
   z-index: 100;
-  margin: 10px;
   border: none;
-  border-radius: 16px;
+  border-radius: 24px;
   transition: ease-out;
-}
-.img-melon {
-  width: 35%;
-  position: relative;
-  /* background-color: #f5c432; */
 }
 
 @media (max-width: 830px) {
