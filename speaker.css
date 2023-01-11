@@ -1,0 +1,197 @@
+/* *,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+} */
+
+body {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, "Segoe UI", Arial,
+    sans-serif;
+  color: #463f51;
+  background: #222127;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  outline: none;
+  color: #694f9b;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover,
+a:focus {
+  color: #fff;
+}
+
+.hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+/* Icons */
+
+.icon {
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+  margin: 0 auto;
+  fill: currentColor;
+}
+
+/* Content */
+
+.content {
+  padding: 0 0 4em;
+  height: 800px;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.tilter {
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 415px;
+  margin: 1.5em 2.5em;
+  color: #fff;
+  flex: none;
+  perspective: 1000px;
+}
+
+.tilter * {
+  pointer-events: none;
+}
+
+.tilter:hover,
+.tilter:focus {
+  color: #fff;
+  outline: none;
+}
+
+/*
+.tilter__figure,
+.tilter__deco,
+.tilter__caption {
+	will-change: transform;
+}*/
+
+.tilter__figure,
+.tilter__image {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.tilter__figure > * {
+  transform: translateZ(0px);
+  /* Force correct stacking order */
+}
+
+.smooth .tilter__figure,
+.smooth .tilter__deco--overlay,
+.smooth .tilter__deco--lines,
+.smooth .tilter__deco--shine div,
+.smooth .tilter__caption {
+  transition: transform 0.2s ease-out;
+}
+
+.tilter__figure {
+  position: relative;
+}
+
+.tilter__figure::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  box-shadow: 0 30px 20px rgba(35, 32, 39, 0.5);
+}
+
+.tilter__deco {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.tilter__deco--overlay {
+  background-image: linear-gradient(
+    45deg,
+    rgba(226, 60, 99, 0.4),
+    rgba(145, 58, 252, 0.4),
+    rgba(16, 11, 192, 0.4)
+  );
+}
+
+.tilter__deco--shine div {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background-image: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(255, 255, 255, 0.25) 50%,
+    transparent 100%
+  );
+}
+
+.tilter__deco--lines {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 5px;
+}
+
+.tilter__caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 4em;
+}
+
+.tilter__title {
+  margin: 0;
+  font-weight: normal;
+  font-size: 2.5em;
+  font-family: "Abril Fatface", serif;
+  line-height: 1;
+}
+
+.tilter__description {
+  margin: 1em 0 0 0;
+  font-size: 0.85em;
+  letter-spacing: 0.15em;
+}
+
+/* Example 5 (line animating) */
+
+.tilter--5 .tilter__deco--lines path {
+  stroke-dasharray: 1270;
+  stroke-dashoffset: 1270;
+  transition: stroke-dashoffset 0.7s;
+}
+
+.tilter--5:hover .tilter__deco--lines path {
+  stroke-dashoffset: 0;
+}
+
+.tilter--5 .tilter__figure::before {
+  box-shadow: none;
+}

@@ -49,6 +49,11 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="assets/styles/dropdown.css" />
     <link
@@ -194,7 +199,7 @@
           class="absolute top-0 z-40 w-full"
           style="
             position: fixed;
-            background-color: rgba(0, 0, 0, 0.1);
+            background-color: rgba(0, 0, 0, 0.99);
             display: flex;
             justify-content: center;
             flex-direction: row;
@@ -215,9 +220,11 @@
                 <p
                   class="text-bold text-2xl"
                   style="
-                    font-size: 1.8rem;
+                    font-size: 2.5rem;
                     font-weight: bolder;
                     margin-left: 8px;
+                    color: #f7bd14;
+                    font-family: 'Caveat', cursive;
                   "
                 >
                   WREC'23
@@ -1092,21 +1099,19 @@
                 </div>
               </div>
               <div x-show=" activeTab == '2023' ">
-                <div
-                  class="relative overflow-hidden border-b-20 border-brand-300"
-                >
+                <div class="relative overflow-hidden">
                   <div class="relative">
                     <h2
                       class="text-brand-400 font-header text-3xl md:text-4xl uppercase mt-4 text-center"
                     >
                       2023
                     </h2>
-                    <div class="container my-8 md:my-24 relative z-30">
+                    <div class="container my-16 md:my-16 relative z-30">
                       <div
-                        class="flex flex-col-reverse lg:flex-row justify-between md:gap-5"
+                        class="flex flex-col-reverse lg:flex-row justify-between md:gap-2"
                       >
                         <div
-                          class="lg:w-3/4 lg:pr-16 2xl:pr-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0"
+                          class="lg:w-3/4 lg:pr-16 2xl:pr-0 flex flex-col justify-center gap-8 mt-8 md:mt-10 lg:mt-0"
                         >
                           <div>
                             <h4
@@ -1114,9 +1119,10 @@
                             >
                               Characteristics in MRIs: Can we train DL networks
                               using tumor bounding box images without requiring
-                              tumor annotation?"
+                              tumor annotation?
                             </h4>
-                            <p
+
+                            <!-- <p
                               class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed text-align-justify"
                             >
                               Irene Gu is a Professor in the Department of
@@ -1135,21 +1141,21 @@
                               transportation systems; Signal processing and
                               machine learning with applications to big data
                               analytics in power systems.
-                            </p>
+                            </p> -->
                           </div>
                           <div>
                             <h2
-                              class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6"
+                              class="font-body font-medium text-secondary text-2xl md:text-3xl"
                             >
                               Prof. Irene Yu-Hua Gu
                             </h2>
                             <p
-                              class="font-body font-medium text-secondary text-md md:text-md mt-6"
+                              class="font-body font-medium text-secondary text-md md:text-md"
                             >
                               Professor, Chalmers University of Technology,
                               Sweden
                             </p>
-                            <span class="flex mt-2">
+                            <span class="flex">
                               <a
                                 href="https://www.linkedin.com/in/irene-yu-hua-gu-a3a54816/?originalSubdomain=se"
                               >
@@ -1159,6 +1165,7 @@
                               </a>
                             </span>
                           </div>
+                          <a href="/speaker.html">Know more...</a>
                         </div>
                         <!-- <div class="w-1/3"> -->
                         <img
@@ -1173,7 +1180,7 @@
                   </div>
 
                   <div class="relative">
-                    <div class="container my-16 md:my-24 relative z-30">
+                    <div class="container my-4 md:my-4 relative z-30">
                       <div
                         class="flex flex-col lg:flex-row md:gap-8"
                         style="justify-content: space-between"
@@ -1182,7 +1189,7 @@
 
                         <!-- </div> -->
                         <div
-                          class="lg:w-3/4 2xl:pl-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0"
+                          class="lg:w-3/4 2xl:pl-0 flex flex-col justify-center mt-8 md:mt-10 lg:mt-0"
                         >
                           <div>
                             <h4
@@ -1190,7 +1197,7 @@
                             >
                               Career for Women in Semiconductors
                             </h4>
-                            <p
+                            <!-- <p
                               class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed text-align-justify"
                             >
                               Binta Patel is Chief Engineer at Intel, Austin,
@@ -1203,21 +1210,21 @@
                               Her areas of specialization are Low Power PLL and
                               Clocking Design, SoC, Microarchitectural Design,
                               Sensors. She has several patents to her credit.
-                            </p>
+                            </p> -->
                           </div>
                           <div>
                             <h2
-                              class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6"
+                              class="font-body font-medium text-secondary text-2xl md:text-3xl"
                             >
                               Binta Patel
                             </h2>
                             <p
-                              class="font-body font-medium text-secondary text-md md:text-md mt-6"
+                              class="font-body font-medium text-secondary text-md md:text-md"
                             >
                               Cloud Architect - Intel
                             </p>
 
-                            <span class="flex mt-2">
+                            <span class="flex">
                               <a
                                 href="https://www.linkedin.com/in/binta-patel-0a26421a/"
                               >
@@ -1227,6 +1234,7 @@
                               </a>
                             </span>
                           </div>
+                          <a href="/speaker.html">Know more...</a>
                         </div>
                         <img
                           src="assets/img/bina_patel.jpeg"
@@ -1237,19 +1245,141 @@
                       </div>
                     </div>
                   </div>
-
                   <div class="relative">
-                    <div
-                      class="absolute top md:top-0 xl:top-32 lg:-right-156 xl:-right-120 2xl:-right-52"
-                    >
-                      <img src="assets/img/authors-shape-02.svg" alt="shape" />
-                    </div>
                     <div class="container my-8 md:my-24 relative z-30">
                       <div
                         class="flex flex-col-reverse lg:flex-row justify-between md:gap-8"
                       >
                         <div
-                          class="lg:w-3/4 lg:pr-16 2xl:pr-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0"
+                          class="lg:w-3/4 lg:pr-16 2xl:pr-0 flex flex-col justify-center mt-8 md:mt-10 lg:mt-0"
+                        >
+                          <div>
+                            <h4
+                              class="font-header text-brand-400 text-5xl md:text-3xl"
+                            >
+                              Game-driven Electronic Design Automation
+                            </h4>
+                            <!-- <p
+                              class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed text-align-justify"
+                            >
+                              In this tutorial, I will present highly visual
+                              interactive design frameworks that we have developed to
+                              harness human intelligence for mapping/placement and
+                              architecture design for custom reconfigurable devices.
+                              People excel at navigating complex and dynamically
+                              changing situations, recognizing recurring patterns, and
+                              identifying potential opportunities. I will show how
+                              these reasoning and problem solving skills can be
+                              brought to bear in solving the mapping challenge for
+                              custom reconfigurable architectures.
+                            </p> -->
+                          </div>
+                          <div>
+                            <h2
+                              class="font-body font-medium text-secondary text-2xl md:text-3xl"
+                            >
+                              Dr Gayatri Mehta
+                            </h2>
+                            <p
+                              class="font-body font-medium text-secondary text-md md:text-md"
+                            >
+                              University of North Texas
+                            </p>
+                            <span class="flex">
+                              <a
+                                href="https://www.linkedin.com/in/gayatri-mehta-64aa7411/"
+                              >
+                                <i
+                                  class="bx bxl-linkedin text-xl text-primary hover:text-brand-400"
+                                ></i>
+                              </a>
+                            </span>
+                          </div>
+                          <a href="/speaker.html">Know More...</a>
+                        </div>
+                        <!-- <div class="lg:w-1/4"> -->
+                        <img
+                          src="assets/img/prof_gaytri.jpg"
+                          class="h-80 md:h-100 object-fit rounded-2xl"
+                          alt="image"
+                          style="width: 20%; height: 200px"
+                        />
+                        <!-- </div> -->
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="relative">
+                    <div class="container my-8 md:my-24 relative z-30">
+                      <div
+                        class="flex flex-col-reverse lg:flex-row justify-between md:gap-8"
+                      >
+                        <div
+                          class="lg:w-3/4 lg:pr-16 2xl:pr-0 flex flex-col justify-center mt-8 md:mt-10 lg:mt-0"
+                        >
+                          <div>
+                            <h4
+                              class="font-header text-brand-400 text-5xl md:text-3xl"
+                            >
+                              Wireless Sensor Networks and its application
+                            </h4>
+                            <!-- <p
+                              class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed text-align-justify"
+                            >
+                              In this tutorial, I will present highly visual
+                              interactive design frameworks that we have developed to
+                              harness human intelligence for mapping/placement and
+                              architecture design for custom reconfigurable devices.
+                              People excel at navigating complex and dynamically
+                              changing situations, recognizing recurring patterns, and
+                              identifying potential opportunities. I will show how
+                              these reasoning and problem solving skills can be
+                              brought to bear in solving the mapping challenge for
+                              custom reconfigurable architectures.
+                            </p> -->
+                          </div>
+                          <div>
+                            <h2
+                              class="font-body font-medium text-secondary text-2xl md:text-3xl"
+                            >
+                              Prof. S. Indu
+                            </h2>
+                            <p
+                              class="font-body font-medium text-secondary text-md md:text-md"
+                            >
+                              Delhi Technological University
+                            </p>
+                            <span class="flex">
+                              <a
+                                href="https://www.linkedin.com/in/gayatri-mehta-64aa7411/"
+                              >
+                                <i
+                                  class="bx bxl-linkedin text-xl text-primary hover:text-brand-400"
+                                ></i>
+                              </a>
+                            </span>
+                          </div>
+                          <a href="/speaker.html">Know More...</a>
+                        </div>
+                        <!-- <div class="lg:w-1/4"> -->
+                        <img
+                          src="assets/img/indu_dtu.jpeg"
+                          class="h-80 md:h-100 object-fit rounded-2xl"
+                          alt="image"
+                          style="width: 20%; height: 90%"
+                        />
+                        <!-- </div> -->
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="relative">
+                    <div class="container my-8 md:my-24 relative z-30">
+                      <div
+                        class="flex flex-col-reverse lg:flex-row justify-between md:gap-8"
+                      >
+                        <div
+                          class="lg:w-3/4 lg:pr-16 2xl:pr-0 flex flex-col justify-center mt-8 md:mt-10 lg:mt-0"
                         >
                           <div>
                             <!-- <h4 class="font-header text-brand-400 text-3xl md:text-4xl"> Characteristics in MRIs: Can we
@@ -1259,7 +1389,7 @@
                             >
                               5G Current Scenario and Career Opportunities
                             </h4>
-                            <p
+                            <!-- <p
                               class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed text-align-justify"
                             >
                               Rashmi Sharan Sinha received B.Tech, M.Tech, in
@@ -1277,22 +1407,22 @@
                               Sensing in the Division of Centre of Communication
                               & Signal Processing at Nanyang Technological
                               University, Singapore.
-                            </p>
+                            </p> -->
                           </div>
                           <div>
                             <h2
-                              class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6"
+                              class="font-body font-medium text-secondary text-2xl md:text-3xl"
                             >
                               Dr. Rashmi Sharan Sinha
                             </h2>
                             <p
-                              class="font-body font-medium text-secondary text-md md:text-md mt-6"
+                              class="font-body font-medium text-secondary text-md md:text-md"
                             >
                               Research Scientist, Urban Sensing in the Division
                               of Centre of Communication & Signal Processing at
                               Nanyang Technological University, Singapore
                             </p>
-                            <span class="flex mt-2">
+                            <span class="flex">
                               <a
                                 href="https://www.linkedin.com/in/rashmi-sharan-sinha-641b4b9a/"
                               >
@@ -1307,6 +1437,7 @@
                 </a>
               </span> -->
                           </div>
+                          <a href="/speaker.html">Know More...</a>
                         </div>
                         <!-- <div class="w-1/3"> -->
                         <img
@@ -1326,93 +1457,16 @@
 
           <div class="relative overflow-hidden border-b-20 border-brand-300">
             <div class="relative">
-              <h2
-                class="text-brand-400 font-header text-3xl md:text-5xl uppercase text-center"
-              >
-                Tutorials 2021
-              </h2>
               <div
-                class="absolute top-7 md:top-0 xl:top-32 lg:-right-156 xl:-right-120 2xl:-right-52"
+                class="container my-12 md:my-16 relative z-30"
+                style="margin-bottom: 40px"
               >
-                <img src="assets/img/authors-shape-02.svg" alt="shape" />
-              </div>
-              <div class="container my-16 md:my-24 relative z-30">
-                <div
-                  class="flex flex-col-reverse lg:flex-row justify-between md:gap-8"
-                  style="padding: 0 8.8rem 0 6.8rem"
-                >
-                  <div
-                    class="lg:w-3/4 lg:pr-16 2xl:pr-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0"
-                  >
-                    <div>
-                      <h4
-                        class="font-header text-brand-400 text-3xl md:text-4xl"
-                      >
-                        Game-driven Electronic Design Automation
-                      </h4>
-                      <p
-                        class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed text-align-justify"
-                      >
-                        In this tutorial, I will present highly visual
-                        interactive design frameworks that we have developed to
-                        harness human intelligence for mapping/placement and
-                        architecture design for custom reconfigurable devices.
-                        People excel at navigating complex and dynamically
-                        changing situations, recognizing recurring patterns, and
-                        identifying potential opportunities. I will show how
-                        these reasoning and problem solving skills can be
-                        brought to bear in solving the mapping challenge for
-                        custom reconfigurable architectures.
-                      </p>
-                    </div>
-                    <div>
-                      <h2
-                        class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6"
-                      >
-                        Dr Gayatri Mehta
-                      </h2>
-                      <p
-                        class="font-body font-medium text-secondary text-md md:text-md mt-6"
-                      >
-                        University of North Texas
-                      </p>
-                      <span class="flex mt-2">
-                        <a
-                          href="https://www.linkedin.com/in/gayatri-mehta-64aa7411/"
-                        >
-                          <i
-                            class="bx bxl-linkedin text-xl text-primary hover:text-brand-400"
-                          ></i>
-                        </a>
-                      </span>
-                    </div>
-                  </div>
-                  <!-- <div class="lg:w-1/4"> -->
-                  <img
-                    src="assets/img/prof_gaytri.jpg"
-                    class="h-80 md:h-100 object-fit rounded-2xl"
-                    alt="image"
-                    style="width: 20%; height: 90%"
-                  />
-                  <!-- </div> -->
-                </div>
-              </div>
-            </div>
-
-            <div class="relative">
-              <div
-                class="absolute top-7 md:top-0 xl:top-32 lg:-left-156 xl:-left-120 2xl:-left-52"
-              >
-                <img src="assets/img/authors-shape-02.svg" alt="shape" />
-              </div>
-
-              <div class="container my-16 md:my-24 relative z-30">
                 <div
                   class="flex flex-col lg:flex-row justify-between md:gap-8"
-                  style="padding: 0 8.8rem 0 6.8rem"
+                  style="padding: 0 8.8rem 0 2.8rem"
                 >
                   <div
-                    class="lg:w-3/4 lg:pl-16 2xl:pl-0 flex flex-col justify-between mt-8 md:mt-10 lg:mt-0"
+                    class="lg:w-3/4 lg:pl-16 2xl:pl-0 flex flex-col justify-center mt-8 md:mt-5 lg:mt-0"
                   >
                     <div>
                       <h4
@@ -1420,7 +1474,7 @@
                       >
                         AI tools to combat antimicrobial resistance (AMR)
                       </h4>
-                      <p
+                      <!-- <p
                         class="font-body font-medium text-secondary mt-5 md:mt-7 xs:leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed text-align-justify"
                       >
                         Antimicrobial Resistance is fast emerging to be one of
@@ -1431,23 +1485,23 @@
                         data analytics and AI based decision support systems in
                         driving the judicious use of antibiotics in healthcare
                         practice.
-                      </p>
+                      </p> -->
                     </div>
                     <div>
                       <h2
-                        class="font-body font-medium text-secondary text-2xl md:text-3xl mt-6"
+                        class="font-body font-medium text-secondary text-2xl md:text-3xl"
                       >
                         Dr Seema Singh
                       </h2>
                       <p
-                        class="font-body font-medium text-secondary text-md md:text-md mt-6"
+                        class="font-body font-medium text-secondary text-md md:text-md"
                       >
                         MS (Surgery), PGDM (IIM-A)
                         <br />
                         Digital Health Consultant
                       </p>
 
-                      <span class="flex mt-2">
+                      <span class="flex">
                         <a href="https://www.linkedin.com/in/drseema/">
                           <i
                             class="bx bxl-linkedin text-xl text-primary hover:text-brand-400"
@@ -1455,6 +1509,7 @@
                         </a>
                       </span>
                     </div>
+                    <a href="/speaker.html">Know More...</a>
                   </div>
                   <!-- <div class="lg:w-1/4"> -->
                   <img

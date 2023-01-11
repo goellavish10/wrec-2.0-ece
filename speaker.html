@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      name="viewport"
+    />
+    <title>WREC'23</title>
+    <meta
+      name="description"
+      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    />
+
+    <meta property="og:title" content="WREC'23" />
+
+    <meta property="og:locale" content="en_US" />
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:site_name" content="NITJ WREC'23" />
+
+    <meta property="og:image" content="assets/img/logo_nitj.png" />
+
+    <link rel="canonical" href="index.html" />
+
+    <meta property="og:url" content="/img/logo_nitj.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="twitter:site" content="@lavishG10" />
+
+    <link rel="icon" type="image/png" href="/img/logo_nitj.pngg" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&amp;family=Poppins:wght@100;200;300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="assets/styles/main.min.css" />
+    <link rel="stylesheet" href="assets/styles/design.css" />
+    <link rel="stylesheet" href="assets/styles/new.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/styles/dropdown.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .underLineOnHover:hover {
+        text-decoration: underline;
+        font-size: 16px;
+      }
+    </style>
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+        overflow-y: scroll;
+      }
+    </style>
+  </head>
+
+  <body
+    x-data="{ mobileMenu: false }"
+    :class="{'relative overflow-hidden max-h-screen': mobileMenu }"
+  >
+    <main>
+      <!-- <div
+        style="
+          position: fixed;
+          right: 0;
+          top: 80vh;
+          z-index: 1000;
+          height: 20vh;
+          border-radius: 10%;
+          margin: 0 0 5px 5px;
+          width: 25vw;
+          background-color: #1c0a0a;
+          color: white;
+          padding: 50px;
+        "
+      >
+        Best paper award for every session
+      </div> -->
+
+      <div>
+        <!--Mobile menu-->
+        <div x-cloak x-show="mobileMenu">
+          <div class="absolute inset-0 z-50 bg-black/75"></div>
+          <div class="fixed right-0 z-50 h-screen w-64 bg-slate-500 xl:hidden">
+            <button
+              class="absolute top-0 right-0 mt-4 mr-4"
+              @click="mobileMenu = false"
+            >
+              <img src="/assets/img/logo_nitj.png" class="h-10 w-auto" alt="" />
+            </button>
+            <ul class="absolute top-20 py-10 text-left">
+              <li class="py-3">
+                <a
+                  href="index.html"
+                  class="rounded-full px-5 py-2 font-header text-xl text-bolduppercase text-black transition-colors"
+                  ><b>Home</b></a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  href="episodes/index.html"
+                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
+                  ><b>Dates</b></a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  href="episode/index.html"
+                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
+                  ><b>Tracks</b></a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  href="blog/index.html"
+                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
+                  ><b>Keynote Speakers</b></a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  href="#eventSchedule"
+                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
+                  ><b>Schedule</b></a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  href="single/index.html"
+                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
+                  ><b>Committee</b></a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  href="single/index.html"
+                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
+                  ><b>For Authors</b></a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  href="single/index.html"
+                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
+                  ><b>About</b></a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  href="single/index.html"
+                  class="rounded-full px-5 py-2 font-header text-xl uppercase text-black transition-colors"
+                  ><b>Contact</b></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- <div class="absolute top-0 z-40 w-full bg-gradient-to-b from-black/70 to-transparent"> -->
+        <div
+          class="absolute top-0 z-40 w-full"
+          style="
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+          "
+        >
+          <div class="z-40 flex items-center justify-between py-7">
+            <div class="flex items-center justify-between">
+              <a
+                href="index.html"
+                class="w-40 flex flex-row justify-center items-center"
+              >
+                <img
+                  src="assets/img/logo_nitj.png"
+                  height="80"
+                  width="80"
+                  alt="logo"
+                />
+                <p
+                  class="text-bold text-2xl"
+                  style="
+                    font-size: 1.8rem;
+                    font-weight: bolder;
+                    margin-left: 8px;
+                  "
+                >
+                  WREC'23
+                </p>
+              </a>
+
+              <!--Menu -->
+              <ul class="ml-12 hidden xl:flex bg-primary p-6 rounded-full">
+                <li>
+                  <a
+                    href="index.html"
+                    class="rounded-full px-5 py-2 font-header uppercase text-black text-bold transition-colors hover:bg-primary"
+                    ><b>Home</b></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.html#eventTimeline"
+                    class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"
+                  >
+                    <b>Dates</b></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.html#conferenceTracks"
+                    class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"
+                  >
+                    <b>Tracks</b></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.html#keynoteSpeakers"
+                    class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"
+                    ><b>Keynote Speakers</b></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/index.html#eventSchedule"
+                    class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"
+                  >
+                    <b>Schedule</b></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="commitee.html"
+                    class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"
+                    ><b>Committee</b></a
+                  >
+                </li>
+                <li>
+                  <!-- <a href=""
+                  class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary">For
+                  Authors</a> -->
+                  <div class="dropdown">
+                    <button class="dropbtn">
+                      <b>For Authors</b>
+                      <!-- <i class="far fa-caret-down"></i> -->
+                      <i class="bx bxs-down-arrow"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="call_for_papers.html">Call for papers</a>
+                      <a href="paper-submission.html">Paper Submission</a>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <a
+                    href="about.html"
+                    class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"
+                    ><b>About Us</b>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="about.html#contact"
+                    class="rounded-full px-5 py-2 font-header uppercase text-black transition-colors hover:bg-primary"
+                    ><b>Contact</b></a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!--Mobile menu button-->
+            <div class="absolute right-0 md:right-2 xl:hidden">
+              <button @click="mobileMenu = true" x-show=" !mobileMenu ">
+                <i class="bx bx-menu-alt-right text-4xl text-black"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-brand-50 relative overflow-hidden border-b-20 border-brand-200"
+        style="height: 100vh"
+      >
+        <div class="absolute xl:top-24 -left-56 2xl:-left-32">
+          <img src="assets/img/about-shape-01.svg" alt="" />
+        </div>
+        <div class="container py-20 md:py-24 grid-2 grid-cols-3 z-20 relative">
+          <div class="flex justify-between items-center">
+            <div
+              class="lg:w-1/2 xl:w-2/5 flex"
+              style="
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                flex-direction: column;
+              "
+            >
+              <div class="sm:p-4">
+                <img
+                  src="assets/img/prof_irene.jpeg"
+                  width="450"
+                  class="m-20 rounded-2xl"
+                  alt="image"
+                />
+              </div>
+              <h2
+                class="font-body font-medium text-secondary text-xl md:text-3xl mt-6"
+              >
+                Prof. Irene Yu-Hua Gu
+              </h2>
+              <p
+                class="font-body font-medium text-secondary text-md md:text-md"
+              >
+                Professor, Chalmers University of Technology, Sweden
+              </p>
+              <span class="" style="width: 100%">
+                <a
+                  href="https://www.linkedin.com/in/irene-yu-hua-gu-a3a54816/?originalSubdomain=se"
+                >
+                  <i
+                    class="bx bxl-linkedin text-xl text-primary hover:text-brand-400"
+                  ></i>
+                </a>
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="lg:pl-12 xl:pl-20 2xl:pr-10 relative mt-8 lg:mt-0 w-100 lg:pt-24"
+          >
+            <!-- <h3
+              class="text-center text-5xl uppercase"
+              style="
+                color: #2a3a5a;
+                font-family: 'Merriweather Sans', sans-serif;
+              "
+            >
+              About
+            </h3> -->
+            <div
+              class="z-30 relative text-lg text-align-justify mt-8"
+              style="padding-top: 30px"
+            >
+              <p>
+                Though women are underrepresented in engineering, but the number
+                has been growing consistently as more women are opting to pursue
+                studies in this field and still there is a lot required to be
+                done to encourage this trend. We would like to dedicate this
+                conference so as to promote and encourage women engineers and
+                motivate young girls to follow their academic interests to a
+                career in engineering. With a view to inspire women engineers,
+                pioneer and successful women achievers in the domains of VLSI
+                design, wireless sensor networks, communication, image/ signal
+                processing, machine learning, and emerging technologies have
+                been identified from across the globe and invited to present
+                their work and address the participants in this women oriented
+                conference. All the keynote speakers, tutorial presenters,
+                session chairs and the members of conference organizing team are
+                women. The conference aspires to provide a platform for
+                researchers, engineers, academicians as well as industrial
+                professionals to showcase innovative and interdisciplinary
+                research findings on practical as well as theoretical
+                advancements in Electronics, Communication and Signal
+                Processing. <br /><b
+                  >However, participation is not limited to women candidates
+                  only. It is open for all the researchers in specified
+                  areas.</b
+                >
+              </p>
+            </div>
+            <div
+              class="absolute -bottom-24 2xl:bottom-48 -left-40 xl:left-auto right-0 xl:-right-24 2xl:-right-32"
+            >
+              <img src="assets/img/about-shape-02.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
