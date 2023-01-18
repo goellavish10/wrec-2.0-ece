@@ -309,7 +309,7 @@
           class="container py-20 md:py-24 grid-2 grid-cols-3 z-20 relative"
           style="height: 100vh"
         >
-          <div class="flex justify-between items-center">
+          <div class="flex justify-between items-center pt-20 md:py-0">
             <div
               class="lg:w-1/2 xl:w-2/5 flex"
               style="
@@ -348,15 +348,17 @@
               </span>
             </div>
           </div>
-
+          <style>
+            @media screen and (max-width: 640px) {
+              #keynoteSpeakerDescriotion {
+                display: block;
+              }
+            }
+          </style>
           <div
-            class="lg:pl-12 xl:pl-20 2xl:pr-10 relative mt-8 lg:mt-0 w-100 lg:pt-24"
-            style="
-              overflow: scroll;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-            "
+            class="lg:pl-12 xl:pl-20 2xl:pr-10 relative mt-8 lg:mt-0 w-100 lg:pt-24 flex justify-center items-center"
+            style="overflow-y: scroll"
+            id="keynoteSpeakerDescriotion"
           >
             <!-- <h3
               class="text-center text-5xl uppercase"
@@ -367,10 +369,7 @@
             >
               About
             </h3> -->
-            <div
-              class="z-30 relative text-lg text-align-justify"
-              style="overflow: scroll"
-            >
+            <div class="z-30 relative text-lg text-align-justify">
               <p>
                 Binta Patel is Chief Engineer at Intel, Austin, Texas, United
                 States. She is an experienced Senior Principal Engineer with a
